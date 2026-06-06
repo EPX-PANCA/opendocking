@@ -294,7 +294,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case strings.HasPrefix(r.URL.Path, "/api/webhooks"):
 		http.StripPrefix("/api", h.WebhookHandler).ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/api/licenses"):
-		serveStubJSON(w, `{"valid": true}`)
+		serveStubJSON(w, `{"valid":true,"nodeAllowance":-1,"nodes":0,"type":"OpenDocking","expiresAt":"2099-12-31T23:59:59Z"}`)
 	case strings.HasPrefix(r.URL.Path, "/api/backup/s3"):
 		serveStubJSON(w, `{"status": "ok"}`)
 	case strings.HasPrefix(r.URL.Path, "/api/settings/experimental"):

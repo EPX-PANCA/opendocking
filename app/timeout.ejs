@@ -25,7 +25,9 @@
           <!-- simple box logo -->
           <div class="row">
             <img ng-if="logo" ng-src="{{ logo }}" class="simple-box-logo" />
-            <img ng-if="!logo" src="<%= require('./assets/images/logo_alt.svg') %>" class="simple-box-logo" alt="OpenDocking" />
+            <div ng-if="!logo">
+              <span class="text-4xl font-bold text-gray-8">OpenDocking</span>
+            </div>
           </div>
 
           <div class="panel panel-default">
