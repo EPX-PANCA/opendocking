@@ -21,7 +21,7 @@ export function Header({ logo: customLogo }: Props) {
         })}
       >
         <Link
-          to="opendocking.home"
+          to="portainer.home"
           data-cy="opendockingSidebar-homeImage"
           className="text-2xl text-white no-underline hover:text-white hover:no-underline focus:text-white focus:no-underline focus:outline-none"
         >

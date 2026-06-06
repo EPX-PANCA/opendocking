@@ -105,7 +105,7 @@ class PorAccessManagementController {
       this.availableUsersAndTeams = _.orderBy(data.availableUsersAndTeams, 'Name', 'asc');
       this.authorizedUsersAndTeams = data.authorizedUsersAndTeams;
     } catch (err) {
-      this.$state.go('opendocking.home');
+      this.$state.go('portainer.home');
       this.availableUsersAndTeams = [];
       this.authorizedUsersAndTeams = [];
       this.Notifications.error('Failure', err, 'Unable to retrieve accesses');

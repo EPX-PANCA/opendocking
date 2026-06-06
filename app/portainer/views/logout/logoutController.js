@@ -38,7 +38,7 @@ class LogoutController {
       if (settings.OAuthLogoutURI && this.Authentication.getUserDetails().ID !== 1) {
         this.$window.location.href = settings.OAuthLogoutURI;
       } else {
-        this.$state.go('opendocking.auth', { reload: true });
+        this.$state.go('portainer.auth', { reload: true });
       }
     }
   }

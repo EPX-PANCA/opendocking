@@ -33,7 +33,7 @@ export function EditButtons({ environment }: { environment: Environment }) {
       <LinkButton
         disabled={!isPureAdmin}
         to="portainer.endpoints.endpoint"
-        params={{ id: environment.Id, redirectTo: 'opendocking.home' }}
+        params={{ id: environment.Id, redirectTo: 'portainer.home' }}
         color="none"
         icon={Edit2}
         size="medium"

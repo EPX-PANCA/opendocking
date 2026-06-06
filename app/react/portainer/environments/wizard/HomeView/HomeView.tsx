@@ -65,7 +65,7 @@ export function HomeView() {
                 <div className="flex flex-wrap gap-4">
                   {localEnvironmentAdded.status === 'success' && (
                     <Link
-                      to="opendocking.home"
+                      to="portainer.home"
                       className={styles.link}
                       data-cy="wizard-get-started-link"
                     >

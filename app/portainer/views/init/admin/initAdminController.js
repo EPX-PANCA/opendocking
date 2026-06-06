@@ -68,7 +68,7 @@ angular.module('opendocking.app').controller('InitAdminController', [
           if (data.value.length === 0) {
             $state.go('portainer.wizard');
           } else {
-            $state.go('opendocking.home');
+            $state.go('portainer.home');
           }
         })
         .catch(function error(err) {
@@ -143,7 +143,7 @@ angular.module('opendocking.app').controller('InitAdminController', [
       try {
         await waitPortainerRestart();
         Notifications.success('Success', 'The backup has successfully been restored');
-        $state.go('opendocking.auth');
+        $state.go('portainer.auth');
       } catch (err) {
         handleError(err);
         Notifications.error('Failure', err, 'Unable to check for status');

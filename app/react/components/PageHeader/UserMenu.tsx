@@ -54,7 +54,7 @@ export function UserMenu() {
         />
 
         <MenuLink
-          to="opendocking.logout"
+          to="portainer.logout"
           label="Log out"
           data-cy="userMenu-logOut"
         />

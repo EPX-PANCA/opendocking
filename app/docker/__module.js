@@ -21,7 +21,7 @@ angular.module('opendocking.docker', ['opendocking.app', reactModule]).config([
           const dockerTypes = [PortainerEndpointTypes.DockerEnvironment, PortainerEndpointTypes.AgentOnDockerEnvironment, PortainerEndpointTypes.EdgeAgentOnDockerEnvironment];
 
           if (!dockerTypes.includes(endpoint.Type)) {
-            $state.go('opendocking.home');
+            $state.go('portainer.home');
             return;
           }
 
@@ -47,7 +47,7 @@ angular.module('opendocking.docker', ['opendocking.app', reactModule]).config([
               EndpointProvider.clean();
               Notifications.error('Failed loading environment', e);
             }
-            $state.go('opendocking.home', params, { reload: true, inherit: false });
+            $state.go('portainer.home', params, { reload: true, inherit: false });
             return false;
           }
 

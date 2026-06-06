@@ -77,7 +77,7 @@ angular.module('opendocking.app').controller('UserController', [
           Notifications.success('Success', 'Password successfully updated');
 
           if (isCurrentUser) {
-            $state.go('opendocking.logout');
+            $state.go('portainer.logout');
           } else {
             $state.reload();
           }

@@ -3,7 +3,7 @@ import { ComponentType } from 'react';
 
 import { isBE } from '@/react/portainer/feature-flags/feature-flags.service';
 
-export function useLimitToBE(defaultPath = 'opendocking.home') {
+export function useLimitToBE(defaultPath = 'portainer.home') {
   const router = useRouter();
   if (!isBE) {
     router.stateService.go(defaultPath);
@@ -15,7 +15,7 @@ export function useLimitToBE(defaultPath = 'opendocking.home') {
 
 export function withLimitToBE<T>(
   WrappedComponent: ComponentType<T>,
-  defaultPath = 'opendocking.home'
+  defaultPath = 'portainer.home'
 ): ComponentType<T> {
   // Try to create a nice displayName for React Dev Tools.
   const displayName =

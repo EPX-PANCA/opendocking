@@ -164,7 +164,7 @@ export function EnvironmentCreationView() {
       router.stateService.go('portainer.endpoints');
       return;
     }
-    router.stateService.go('opendocking.home');
+    router.stateService.go('portainer.home');
   }
 }
 

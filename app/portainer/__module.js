@@ -48,7 +48,7 @@ angular
               const loggedIn = await initAuthentication(Authentication);
               await StateManager.initialize();
               if (!loggedIn && isTransitionRequiresAuthentication($state.transition)) {
-                $state.go('opendocking.logout');
+                $state.go('portainer.logout');
                 return Promise.reject('Unauthenticated');
               }
             } catch (err) {
@@ -89,7 +89,7 @@ angular
                 return endpoint;
               } catch (e) {
                 Notifications.error('Failed loading environment', e);
-                $state.go('opendocking.home', {}, { reload: true });
+                $state.go('portainer.home', {}, { reload: true });
                 return;
               }
             });
@@ -138,7 +138,7 @@ angular
       };
 
       var authentication = {
-        name: 'opendocking.auth',
+        name: 'portainer.auth',
         url: '/auth',
         params: {
           reload: false,
@@ -157,7 +157,7 @@ angular
       };
 
       const logout = {
-        name: 'opendocking.logout',
+        name: 'portainer.logout',
         url: '/logout',
         params: {
           error: '',
@@ -280,7 +280,7 @@ angular
       };
 
       var home = {
-        name: 'opendocking.home',
+        name: 'portainer.home',
         url: '/home?redirect&environmentId&environmentName&route&groupBy&groupFilter&search&order',
         params: {
           ...paginationParams(),
@@ -368,7 +368,7 @@ angular
       };
 
       var initAdmin = {
-        name: 'opendocking.init.admin',
+        name: 'portainer.init.admin',
         url: '/admin',
         views: {
           'content@': {
@@ -379,7 +379,7 @@ angular
       };
 
       var settings = {
-        name: 'opendocking.settings',
+        name: 'portainer.settings',
         url: '/settings',
         views: {
           'content@': {
@@ -493,7 +493,7 @@ angular
   .run(run);
 
 function isTransitionRequiresAuthentication(transition) {
-  const UNAUTHENTICATED_ROUTES = ['opendocking.logout', 'opendocking.auth'];
+  const UNAUTHENTICATED_ROUTES = ['portainer.logout', 'portainer.auth'];
   if (!transition) {
     return true;
   }

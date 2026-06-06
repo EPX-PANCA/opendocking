@@ -25,7 +25,7 @@ angular.module('opendocking.app').controller('AccountController', [
           Notifications.success('Success', 'Password successfully updated');
           StateManager.resetPasswordChangeSkips($scope.userID.toString());
           $scope.forceChangePassword = false;
-          $state.go('opendocking.logout');
+          $state.go('portainer.logout');
         } catch (err) {
           Notifications.error('Failure', err, err.msg);
         }
@@ -37,7 +37,7 @@ angular.module('opendocking.app').controller('AccountController', [
         if ($scope.userCanSkip()) {
           StateManager.setPasswordChangeSkipped($scope.userID.toString());
           $scope.forceChangePassword = false;
-          $state.go('opendocking.home');
+          $state.go('portainer.home');
         }
       } catch (err) {
         Notifications.error('Failure', err, err.msg);
@@ -53,7 +53,7 @@ angular.module('opendocking.app').controller('AccountController', [
         if ($scope.userRole === 1 && newTransition.to().name === 'portainer.settings.authentication') {
           return true;
         }
-        if (newTransition.to().name === 'opendocking.logout') {
+        if (newTransition.to().name === 'portainer.logout') {
           return true;
         }
       }

@@ -124,7 +124,7 @@ class AuthenticationController {
       if (endpoints.value.length === 0 && isAdmin) {
         return this.$state.go('portainer.wizard');
       } else {
-        return this.$state.go('opendocking.home');
+        return this.$state.go('portainer.home');
       }
     } catch (err) {
       this.error(err, 'Unable to retrieve environments');
@@ -201,7 +201,7 @@ class AuthenticationController {
     try {
       const exists = await this.UserService.administratorExists();
       if (!exists) {
-        this.$state.go('opendocking.init.admin');
+        this.$state.go('portainer.init.admin');
       }
     } catch (err) {
       this.error(err, 'Unable to verify administrator account existence');

@@ -40,7 +40,7 @@ export async function checkAuthorizations(transition: Transition) {
       'User is not authenticated, redirecting to login, access:',
       access
     );
-    return $state.target('opendocking.logout');
+    return $state.target('portainer.logout');
   }
 
   if (typeof access === 'string') {
@@ -58,7 +58,7 @@ export async function checkAuthorizations(transition: Transition) {
         'User is not an admin, redirecting to home, access:',
         access
       );
-      return $state.target('opendocking.home');
+      return $state.target('portainer.home');
     }
 
     if (access === 'edge-admin') {
@@ -71,7 +71,7 @@ export async function checkAuthorizations(transition: Transition) {
         'User is not an edge admin, redirecting to home, access:',
         access
       );
-      return $state.target('opendocking.home');
+      return $state.target('portainer.home');
     }
   }
 
@@ -80,7 +80,7 @@ export async function checkAuthorizations(transition: Transition) {
     console.info(
       'User does not have the required authorizations, redirecting to home'
     );
-    return $state.target('opendocking.home');
+    return $state.target('portainer.home');
   }
 
   return undefined;

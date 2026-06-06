@@ -97,7 +97,7 @@ angular.module('opendocking.kubernetes', ['opendocking.app', registriesModule, c
           ];
 
           if (!kubeTypes.includes(endpoint.Type)) {
-            $state.go('opendocking.home');
+            $state.go('portainer.home');
             return;
           }
 
@@ -132,7 +132,7 @@ angular.module('opendocking.kubernetes', ['opendocking.app', registriesModule, c
             if (nextTransitionName === 'kubernetes.kubectlshell') {
               return;
             }
-            $state.go('opendocking.home', params, { reload: true, inherit: false });
+            $state.go('portainer.home', params, { reload: true, inherit: false });
             return false;
           }
 

@@ -170,7 +170,7 @@ angular.module('opendocking.app').factory('Authentication', [
     function redirectIfUnauthorized(authorizations) {
       const authorized = hasAuthorizations(authorizations);
       if (!authorized) {
-        $state.go('opendocking.home');
+        $state.go('portainer.home');
       }
     }
   },

@@ -26,14 +26,14 @@ function config($stateRegistryProvider: StateRegistry) {
     ) {
       return $async(async () => {
         if (endpoint.Type !== 3) {
-          $state.go('opendocking.home');
+          $state.go('portainer.home');
           return;
         }
         try {
           await StateManager.updateEndpointState(endpoint);
         } catch (e) {
           notifyError('Failed loading environment', e as Error);
-          $state.go('opendocking.home', {}, { reload: true });
+          $state.go('portainer.home', {}, { reload: true });
         }
       });
     },
