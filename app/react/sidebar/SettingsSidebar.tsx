@@ -114,15 +114,6 @@ export function SettingsSidebar({
             data-cy="portainerSidebar-registries"
           />
 
-          {isBE && (
-            <SidebarItem
-              to="portainer.licenses"
-              label="Licenses"
-              icon={Award}
-              data-cy="portainerSidebar-licenses"
-            />
-          )}
-
           <SidebarParent
             label="Logs"
             to="portainer.authLogs"
@@ -193,15 +184,6 @@ export function SettingsSidebar({
               data-cy="portainerSidebar-authentication"
             />
           )}
-          {isBE && (
-            <SidebarItem
-              to="portainer.settings.sharedcredentials"
-              label="Shared Credentials"
-              isSubMenu
-              data-cy="portainerSidebar-cloud"
-            />
-          )}
-
           <SidebarItem
             to="portainer.settings.edgeCompute"
             label="Edge Compute"
