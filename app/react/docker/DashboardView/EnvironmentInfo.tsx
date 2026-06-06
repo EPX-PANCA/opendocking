@@ -44,7 +44,7 @@ export function EnvironmentInfo() {
           <DetailsTable.Row label="Environment">
             <div className="flex items-center gap-2">
               {environment.Name}
-              <SnapshotStats snapshot={environment.Snapshots[0]} />
+              <SnapshotStats snapshot={environment.Snapshots?.[0]} />
               <span className="text-muted">-</span>
               <DockerInfo isAgent={isAgent} />
             </div>
