@@ -3,8 +3,8 @@ package sdk
 import (
 	"sort"
 
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/release"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/release"
 	"github.com/rs/zerolog/log"
 	"helm.sh/helm/v4/pkg/action"
 	sdkrelease "helm.sh/helm/v4/pkg/release"

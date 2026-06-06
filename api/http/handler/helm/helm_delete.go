@@ -3,10 +3,10 @@ package helm
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 // @id HelmDelete

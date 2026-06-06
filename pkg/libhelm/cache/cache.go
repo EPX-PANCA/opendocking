@@ -5,14 +5,14 @@ import (
 	"time"
 
 	"github.com/patrickmn/go-cache"
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 	"github.com/rs/zerolog/log"
 	"helm.sh/helm/v4/pkg/registry"
 )
 
 // Cache manages Helm registry clients with TTL-based expiration
 // Registry clients are cached per registry ID rather than per user session
-// to optimize rate limiting - one login per registry per Portainer instance
+// to optimize rate limiting - one login per registry per OpenDocking instance
 type Cache struct {
 	cache *cache.Cache
 }
@@ -38,7 +38,7 @@ func newCache(userSessionTimeout string) (*Cache, error) {
 
 // getByRegistryID retrieves a cached registry client by registry ID
 // Cache key strategy: use registryID for maximum efficiency against rate limits
-// This means one login per registry per Portainer instance, regardless of user/environment
+// This means one login per registry per OpenDocking instance, regardless of user/environment
 func (c *Cache) getByRegistryID(registryID portainer.RegistryID) (*registry.Client, bool) {
 	key := generateRegistryIDCacheKey(registryID)
 
@@ -118,7 +118,7 @@ func (c *Cache) flushAll() {
 // generateRegistryIDCacheKey creates a cache key from registry ID
 // Key strategy decision: Use registry ID instead of user sessions or URL+username
 // This provides optimal rate limiting protection since each registry only gets
-// logged into once per Portainer instance, regardless of how many users access it
+// logged into once per OpenDocking instance, regardless of how many users access it
 // RBAC security is enforced before reaching this caching layer
 // When a new user needs access, they reuse the same cached client
 func generateRegistryIDCacheKey(registryID portainer.RegistryID) string {

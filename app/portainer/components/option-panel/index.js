@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import controller from './option-panel.controller.js';
 
-angular.module('portainer.app').component('optionPanel', {
+angular.module('opendocking.app').component('optionPanel', {
   templateUrl: './option-panel.html',
   controller,
   bindings: {

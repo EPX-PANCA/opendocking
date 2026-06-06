@@ -1,7 +1,7 @@
 package migrator
 
 import (
-	"github.com/portainer/portainer/api/roar"
+	"github.com/opendocking/opendocking/api/roar"
 )
 
 func (m *Migrator) migrateEdgeGroupEndpointsToRoars_2_33_0() error {

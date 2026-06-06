@@ -2,7 +2,7 @@ import { cpuHumanValue } from '@/react/kubernetes/applications/utils/cpuHumanVal
 import { nodeAffinityValues } from './application';
 
 angular
-  .module('portainer.kubernetes')
+  .module('opendocking.kubernetes')
   .filter('kubernetesApplicationCPUValue', function () {
     'use strict';
     return cpuHumanValue;

@@ -4,11 +4,11 @@ import (
 	"context"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/docker/images"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/docker/images"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/docker/docker/api/types"

@@ -4,14 +4,14 @@ import (
 	"context"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/docker/consts"
-	"github.com/portainer/portainer/api/docker/images"
-	"github.com/portainer/portainer/api/http/middlewares"
-	"github.com/portainer/portainer/api/internal/authorization"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/docker/consts"
+	"github.com/opendocking/opendocking/api/docker/images"
+	"github.com/opendocking/opendocking/api/http/middlewares"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 
 	"github.com/rs/zerolog/log"
 )

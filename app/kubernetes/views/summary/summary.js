@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesSummaryView', {
+angular.module('opendocking.kubernetes').component('kubernetesSummaryView', {
   templateUrl: './summary.html',
   controller: 'KubernetesSummaryController',
   controllerAs: '$ctrl',

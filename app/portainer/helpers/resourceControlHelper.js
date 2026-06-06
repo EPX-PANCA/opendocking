@@ -92,4 +92,4 @@ class ResourceControlHelper {
 }
 
 export default ResourceControlHelper;
-angular.module('portainer.app').service('ResourceControlHelper', ResourceControlHelper);
+angular.module('opendocking.app').service('ResourceControlHelper', ResourceControlHelper);

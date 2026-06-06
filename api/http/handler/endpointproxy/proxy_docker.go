@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	portainer "github.com/opendocking/opendocking/api"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 )
 
 func (handler *Handler) proxyRequestsToDockerAPI(w http.ResponseWriter, r *http.Request) *httperror.HandlerError {

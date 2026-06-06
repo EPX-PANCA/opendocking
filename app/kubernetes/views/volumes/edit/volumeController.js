@@ -214,4 +214,4 @@ class KubernetesVolumeController {
 }
 
 export default KubernetesVolumeController;
-angular.module('portainer.kubernetes').controller('KubernetesVolumeController', KubernetesVolumeController);
+angular.module('opendocking.kubernetes').controller('KubernetesVolumeController', KubernetesVolumeController);

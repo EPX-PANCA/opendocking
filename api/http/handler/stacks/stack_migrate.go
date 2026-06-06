@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/stacks/deployments"
-	"github.com/portainer/portainer/api/stacks/stackutils"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/stacks/deployments"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 type stackMigratePayload struct {
@@ -110,7 +110,7 @@ func (handler *Handler) stackMigrate(w http.ResponseWriter, r *http.Request) *ht
 		return httperror.Forbidden("Access denied to resource", httperrors.ErrResourceAccessDenied)
 	}
 
-	// TODO: this is a work-around for stacks created with Portainer version >= 1.17.1
+	// TODO: this is a work-around for stacks created with OpenDocking/Portainer version >= 1.17.1
 	// The EndpointID property is not available for these stacks, this API environment(endpoint)
 	// can use the optional EndpointID query parameter to associate a valid environment(endpoint) identifier to the stack.
 	endpointID, err := request.RetrieveNumericQueryParameter(r, "endpointId", true)

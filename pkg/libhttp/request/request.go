@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 	"github.com/segmentio/encoding/json"
 )
 

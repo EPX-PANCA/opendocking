@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Templates', [
+angular.module('opendocking.app').factory('Templates', [
   '$resource',
   'API_ENDPOINT_TEMPLATES',
   function TemplatesFactory($resource, API_ENDPOINT_TEMPLATES) {

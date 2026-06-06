@@ -3,7 +3,7 @@ package cli
 import (
 	"testing"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	batchv1 "k8s.io/api/batch/v1"

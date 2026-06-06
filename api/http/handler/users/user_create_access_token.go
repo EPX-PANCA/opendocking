@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/api/http/security"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
-	"github.com/portainer/portainer/pkg/validate"
+	portainer "github.com/opendocking/opendocking/api"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/api/http/security"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/pkg/validate"
 )
 
 type userAccessTokenCreatePayload struct {

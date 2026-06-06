@@ -1,7 +1,7 @@
 import _ from 'lodash-es';
 import angular from 'angular';
 
-angular.module('portainer.app').controller('SettingsEdgeComputeController', SettingsEdgeComputeController);
+angular.module('opendocking.app').controller('SettingsEdgeComputeController', SettingsEdgeComputeController);
 
 /* @ngInject */
 export default function SettingsEdgeComputeController($q, $async, $state, Notifications, SettingsService, StateManager) {

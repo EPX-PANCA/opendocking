@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/apikey"
-	"github.com/portainer/portainer/api/dataservices"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/apikey"
+	"github.com/opendocking/opendocking/api/dataservices"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"

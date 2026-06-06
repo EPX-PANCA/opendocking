@@ -5,11 +5,11 @@ import (
 	"errors"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 
 	"github.com/rs/zerolog/log"
 )

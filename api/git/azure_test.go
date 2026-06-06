@@ -10,8 +10,8 @@ import (
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	githttp "github.com/go-git/go-git/v5/plumbing/transport/http"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	"github.com/portainer/portainer/pkg/fips"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	"github.com/opendocking/opendocking/pkg/fips"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

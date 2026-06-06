@@ -5,8 +5,8 @@ import (
 	"crypto/x509"
 	"os"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/pkg/fips"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/pkg/fips"
 )
 
 // CreateTLSConfiguration creates a basic tls.Config with recommended TLS settings

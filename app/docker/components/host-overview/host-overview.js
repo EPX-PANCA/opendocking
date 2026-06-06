@@ -1,4 +1,4 @@
-angular.module('portainer.docker').component('hostOverview', {
+angular.module('opendocking.docker').component('hostOverview', {
   templateUrl: './host-overview.html',
   bindings: {
     hostDetails: '<',

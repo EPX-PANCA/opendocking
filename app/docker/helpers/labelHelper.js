@@ -1,4 +1,4 @@
-angular.module('portainer.docker').factory('LabelHelper', [
+angular.module('opendocking.docker').factory('LabelHelper', [
   function LabelHelperFactory() {
     'use strict';
     return {

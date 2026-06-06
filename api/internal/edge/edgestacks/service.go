@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/api/internal/edge"
-	edgetypes "github.com/portainer/portainer/api/internal/edge/types"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/api/internal/edge"
+	edgetypes "github.com/opendocking/opendocking/api/internal/edge/types"
 
 	"github.com/pkg/errors"
 )

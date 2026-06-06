@@ -3,9 +3,9 @@ package workflows
 import (
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	"github.com/portainer/portainer/api/set"
+	portainer "github.com/opendocking/opendocking/api"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	"github.com/opendocking/opendocking/api/set"
 )
 
 // MapStackToWorkflow converts a stack to a Workflow. gitConfig is passed separately

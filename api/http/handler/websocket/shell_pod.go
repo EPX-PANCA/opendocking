@@ -3,10 +3,10 @@ package websocket
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/security"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/security"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 )
 
 // @summary Execute a websocket on kubectl shell pod

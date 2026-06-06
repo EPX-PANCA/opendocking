@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	pkgmetrics "github.com/portainer/portainer/pkg/metrics"
+	pkgmetrics "github.com/opendocking/opendocking/pkg/metrics"
 	prometheusreg "github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/promql"

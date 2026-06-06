@@ -3,12 +3,12 @@ package workflows
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/authorization"
-	"github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
 
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

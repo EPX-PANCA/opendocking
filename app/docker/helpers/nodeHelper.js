@@ -1,4 +1,4 @@
-angular.module('portainer.docker').factory('NodeHelper', [
+angular.module('opendocking.docker').factory('NodeHelper', [
   function NodeHelperFactory() {
     'use strict';
     return {

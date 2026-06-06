@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	gittypes "github.com/portainer/portainer/api/git/types"
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
-	"github.com/portainer/portainer/api/roar"
-	"github.com/portainer/portainer/pkg/featureflags"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
+	"github.com/opendocking/opendocking/api/roar"
+	"github.com/opendocking/opendocking/pkg/featureflags"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/image"
@@ -143,7 +143,7 @@ type (
 		// Valid values are: 1 - 'linux', 2 - 'windows'
 		Platform CustomTemplatePlatform `json:"Platform" example:"1" enums:"1,2"`
 		// URL of the template's logo
-		Logo string `json:"Logo" example:"https://portainer.io/img/logo.svg"`
+		Logo string `json:"Logo" example:"https://opendocking.io/img/logo.svg"`
 		// Type of created stack:
 		// * 1 - swarm
 		// * 2 - compose
@@ -470,7 +470,7 @@ type (
 		TeamAccessPolicies TeamAccessPolicies `json:"TeamAccessPolicies,omitempty"`
 		// The identifier of the edge agent associated with this environment(endpoint)
 		EdgeID string `json:"EdgeID,omitempty"`
-		// The key which is used to map the agent to Portainer
+		// The key which is used to map the agent to OpenDocking
 		EdgeKey string `json:"EdgeKey" validate:"required"`
 		// The check in interval for edge agent (in seconds)
 		EdgeCheckinInterval int `json:"EdgeCheckinInterval" example:"5" validate:"required"`
@@ -727,7 +727,7 @@ type (
 		MigrateRegistrySASecrets bool `json:"MigrateRegistrySASecrets"`
 	}
 
-	// Extension represents a deprecated Portainer extension
+	// Extension represents a deprecated extension
 	Extension struct {
 		ID               ExtensionID                 `json:"Id" example:"1"`
 		Enabled          bool                        `json:"Enabled"`
@@ -1146,11 +1146,11 @@ type (
 
 	// Settings represents the application settings
 	Settings struct {
-		// URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default Portainer logo when value is empty string
+		// URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default OpenDocking logo when value is empty string
 		LogoURL string `json:"LogoURL" example:"https://mycompany.mydomain.tld/logo.png"`
 		// A list of label name & value that will be used to hide containers when querying containers
 		BlackListedLabels []Pair `json:"BlackListedLabels"`
-		// Active authentication method for the Portainer instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth
+		// Active authentication method for the OpenDocking instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth
 		AuthenticationMethod AuthenticationMethod          `json:"AuthenticationMethod" example:"1"`
 		InternalAuthSettings InternalAuthSettings          `json:"InternalAuthSettings"`
 		LDAPSettings         LDAPSettings                  `json:"LDAPSettings"`
@@ -1174,9 +1174,9 @@ type (
 		HelmRepositoryURL string `json:"HelmRepositoryURL" example:"https://charts.bitnami.com/bitnami"`
 		// KubectlImage, defaults to portainer/kubectl-shell
 		KubectlShellImage string `json:"KubectlShellImage" example:"portainer/kubectl-shell"`
-		// TrustOnFirstConnect makes Portainer accepting edge agent connection by default
-		TrustOnFirstConnect bool `json:"TrustOnFirstConnect" example:"false"`
-		// EnforceEdgeID makes Portainer store the Edge ID instead of accepting anyone
+	// TrustOnFirstConnect makes OpenDocking accept edge agent connection by default
+	TrustOnFirstConnect bool `json:"TrustOnFirstConnect"`
+	// EnforceEdgeID makes OpenDocking store the Edge ID instead of accepting any
 		EnforceEdgeID bool `json:"EnforceEdgeID" example:"false"`
 		// Container environment parameter AGENT_SECRET
 		AgentSecret string `json:"AgentSecret"`
@@ -1202,14 +1202,14 @@ type (
 		IsDockerDesktopExtension bool `json:"IsDockerDesktopExtension,omitempty"`
 
 		// ForceSecureCookies forces the Secure attribute on auth cookies regardless of detected scheme.
-		// Enable when Portainer runs behind a TLS-terminating proxy.
+		// Enable when OpenDocking runs behind a TLS-terminating proxy.
 		ForceSecureCookies bool `json:"ForceSecureCookies" example:"false"`
 	}
 
 	// SnapshotJob represents a scheduled job that can create environment(endpoint) snapshots
 	SnapshotJob struct{}
 
-	// SoftwareEdition represents an edition of Portainer
+	// SoftwareEdition represents an edition of OpenDocking
 	SoftwareEdition int
 
 	// SSLSettings represents a pair of SSL certificate and key
@@ -1316,7 +1316,7 @@ type (
 
 	// Status represents the application status
 	Status struct {
-		// Portainer API version
+		// OpenDocking API version
 		Version string `json:"Version" example:"2.0.0"`
 		// Server Instance ID
 		InstanceID string `example:"299ab403-70a8-4c05-92f7-bf7a994d50df"`
@@ -1404,7 +1404,7 @@ type (
 		// Default name for the stack/container to be used on deployment
 		Name string `json:"name,omitempty" example:"mystackname"`
 		// URL of the template's logo
-		Logo string `json:"logo,omitempty" example:"https://portainer.io/img/logo.svg"`
+		Logo string `json:"logo,omitempty" example:"https://opendocking.io/img/logo.svg"`
 		// A list of environment(endpoint) variables used during the template deployment
 		Env []TemplateEnv `json:"env,omitempty"`
 		// A note that will be displayed in the UI. Supports HTML content
@@ -2024,47 +2024,63 @@ type (
 )
 
 const (
-	// APIVersion is the version number of the Portainer API
+	// APIVersion is the version number of the OpenDocking API
 	APIVersion = "2.43.0"
 	// Support annotation for the API version ("STS" for Short-Term Support or "LTS" for Long-Term Support)
 	APIVersionSupport = "STS"
-	// Edition is what this edition of Portainer is called
-	Edition = PortainerCE
+	// Edition is what this edition of OpenDocking is called
+	Edition = OpenDocking
 	// ComposeSyntaxMaxVersion is a maximum supported version of the docker compose syntax
 	ComposeSyntaxMaxVersion = "3.9"
-	// AssetsServerURL represents the URL of the Portainer asset server
-	AssetsServerURL = "https://portainer-io-assets.sfo2.digitaloceanspaces.com"
-	// MessageOfTheDayURL represents the URL where Portainer MOTD message can be retrieved
-	MessageOfTheDayURL = AssetsServerURL + "/motd.json"
-	// ReleasesURL represents the URL used to retrieve all releases of Portainer
-	ReleasesURL = "https://api.github.com/repos/portainer/portainer/releases"
-	// VersionCheckURL represents the URL used to retrieve the latest version of Portainer
-	VersionCheckURL = ReleasesURL + "/latest"
-	// PortainerAgentHeader represents the name of the header available in any agent response
+	// AssetsServerURL represents the URL of the OpenDocking asset server
+	AssetsServerURL = ""
+	// MessageOfTheDayURL represents the URL where OpenDocking MOTD message can be retrieved
+	MessageOfTheDayURL = ""
+	// ReleasesURL represents the URL used to retrieve all releases of OpenDocking
+	ReleasesURL = "https://api.github.com/repos/opendocking/opendocking/releases"
+	// VersionCheckURL represents the URL used to retrieve the latest version of OpenDocking
+	VersionCheckURL = ""
+	// AgentHeader represents the name of the header available in any agent response
+	// NOTE: Kept as "Portainer-Agent" for backward compatibility with Portainer agents
+	AgentHeader = "Portainer-Agent"
+	// PortainerAgentHeader is deprecated - use AgentHeader instead
+	// Kept for backward compatibility with Portainer agents
 	PortainerAgentHeader = "Portainer-Agent"
-	// PortainerAgentEdgeIDHeader represent the name of the header containing the Edge ID associated to an agent/agent cluster
+	// AgentEdgeIDHeader represent the name of the header containing the Edge ID associated to an agent/agent cluster
+	AgentEdgeIDHeader = "X-PortainerAgent-EdgeID"
+	// PortainerAgentEdgeIDHeader is deprecated - use AgentEdgeIDHeader instead
 	PortainerAgentEdgeIDHeader = "X-PortainerAgent-EdgeID"
 	// HTTPResponseAgentPlatform represents the name of the header containing the Agent platform
 	HTTPResponseAgentPlatform = "Portainer-Agent-Platform"
-	// PortainerAgentTargetHeader represent the name of the header containing the target node name
+	// AgentTargetHeader represent the name of the header containing the target node name
+	AgentTargetHeader = "X-PortainerAgent-Target"
+	// PortainerAgentTargetHeader is deprecated - use AgentTargetHeader instead
 	PortainerAgentTargetHeader = "X-PortainerAgent-Target"
-	// PortainerAgentSignatureHeader represent the name of the header containing the digital signature
+	// AgentSignatureHeader represent the name of the header containing the digital signature
+	AgentSignatureHeader = "X-PortainerAgent-Signature"
+	// PortainerAgentSignatureHeader is deprecated - use AgentSignatureHeader instead
 	PortainerAgentSignatureHeader = "X-PortainerAgent-Signature"
-	// PortainerAgentPublicKeyHeader represent the name of the header containing the public key
+	// AgentPublicKeyHeader represent the name of the header containing the public key
+	AgentPublicKeyHeader = "X-PortainerAgent-PublicKey"
+	// PortainerAgentPublicKeyHeader is deprecated - use AgentPublicKeyHeader instead
 	PortainerAgentPublicKeyHeader = "X-PortainerAgent-PublicKey"
-	// PortainerAgentKubernetesSATokenHeader represent the name of the header containing a Kubernetes SA token
+	// AgentKubernetesSATokenHeader represent the name of the header containing a Kubernetes SA token
+	AgentKubernetesSATokenHeader = "X-PortainerAgent-SA-Token"
+	// PortainerAgentKubernetesSATokenHeader is deprecated - use AgentKubernetesSATokenHeader instead
 	PortainerAgentKubernetesSATokenHeader = "X-PortainerAgent-SA-Token"
 	// HTTPAlertStateHeaderName is the name of the header used to transmit edge alert evaluation state
 	HTTPAlertStateHeaderName = "X-PortainerAgent-AlertState"
-	// PortainerAgentSignatureMessage represents the message used to create a digital signature
+	// AgentSignatureMessage represents the message used to create a digital signature
 	// to be used when communicating with an agent
+	AgentSignatureMessage = "Portainer-App"
+	// PortainerAgentSignatureMessage is deprecated - use AgentSignatureMessage instead
 	PortainerAgentSignatureMessage = "Portainer-App"
 	// DefaultSnapshotInterval represents the default interval between each environment snapshot job
 	DefaultSnapshotInterval = "5m"
-	// DefaultEdgeAgentCheckinIntervalInSeconds represents the default interval (in seconds) used by Edge agents to checkin with the Portainer instance
+	// DefaultEdgeAgentCheckinIntervalInSeconds represents the default interval (in seconds) used by Edge agents to checkin with the OpenDocking instance
 	DefaultEdgeAgentCheckinIntervalInSeconds = 5
-	// DefaultTemplatesURL represents the URL to the official templates supported by Portainer
-	DefaultTemplatesURL = "https://raw.githubusercontent.com/portainer/templates/v3/templates.json"
+	// DefaultTemplatesURL represents the URL to the official templates
+	DefaultTemplatesURL = "https://raw.githubusercontent.com/opendocking/templates/main/templates.json"
 	// DefaultHelmrepositoryURL represents the URL to the official templates supported by Bitnami
 	DefaultHelmRepositoryURL = "https://charts.bitnami.com/bitnami"
 	// DefaultUserSessionTimeout represents the default timeout after which the user session is cleared
@@ -2072,13 +2088,15 @@ const (
 	// DefaultUserSessionTimeout represents the default timeout after which the user session is cleared
 	DefaultKubeconfigExpiry = "0"
 	// DefaultKubectlShellImage represents the default image and tag for the kubectl shell
-	DefaultKubectlShellImage = "portainer/kubectl-shell:" + APIVersion
+	DefaultKubectlShellImage = "opendocking/kubectl-shell:" + APIVersion
 	// WebSocketKeepAlive web socket keep alive for edge environments
 	WebSocketKeepAlive = 1 * time.Hour
 	// AuthCookieName is the name of the cookie used to store the JWT token
-	AuthCookieKey = "portainer_api_key"
-	// PortainerCacheHeader is used to enabled FE caching for Kubernetes resources
-	PortainerCacheHeader = "X-Portainer-Cache"
+	AuthCookieKey = "opendocking_api_key"
+	// CacheHeader is used to enabled FE caching for Kubernetes resources
+	CacheHeader = "X-OpenDocking-Cache"
+	// PortainerCacheHeader is deprecated - use CacheHeader instead
+	PortainerCacheHeader = "X-OpenDocking-Cache"
 	// KubectlShellImageEnvVar is the environment variable used to override the default kubectl shell image
 	KubectlShellImageEnvVar = "KUBECTL_SHELL_IMAGE"
 	// PullLimitCheckDisabledEnvVar is the environment variable used to disable the pull limit check
@@ -2087,7 +2105,7 @@ const (
 	FeatureFlagEnvVar = "FEATURE_FLAG"
 	// LicenseServerBaseURL represents the base URL of the API used to validate
 	// an extension license.
-	LicenseServerBaseURL = "https://api.portainer.io"
+	LicenseServerBaseURL = "https://api.opendocking.io"
 	// URL to validate licenses along with system metadata.
 	LicenseCheckInURL = LicenseServerBaseURL + "/licenses/checkin"
 	// TrustedOriginsEnvVar is the environment variable used to set the trusted origins for CSRF protection
@@ -2097,17 +2115,17 @@ const (
 	// CompactDBEnvVar is the environment variable used to enable/disable the startup compaction of the database
 	CompactDBEnvVar = "COMPACT_DB"
 	// NoSetupTokenEnvVar is the environment variable used to disable the setup token requirement on an uninitialized instance
-	NoSetupTokenEnvVar = "PORTAINER_NO_SETUP_TOKEN"
+	NoSetupTokenEnvVar = "OPENDOCKING_NO_SETUP_TOKEN"
 	// SetupTokenEnvVar is the environment variable used to provide a custom setup token for admin initialization and restore on an uninitialized instance
-	SetupTokenEnvVar = "PORTAINER_SETUP_TOKEN"
+	SetupTokenEnvVar = "OPENDOCKING_SETUP_TOKEN"
 )
 
-// List of supported features
-var SupportedFeatureFlags = []featureflags.Feature{"hsts", "csp"}
+// List of supported features in OpenDocking (full feature set)
+var SupportedFeatureFlags = []featureflags.Feature{"hsts", "csp", "disable-external-requests"}
 
 const (
 	_ AuthenticationMethod = iota
-	// AuthenticationInternal represents the internal authentication method (authentication against Portainer API)
+	// AuthenticationInternal represents the internal authentication method (authentication against OpenDocking API)
 	AuthenticationInternal
 	// AuthenticationLDAP represents the LDAP authentication method (authentication against a LDAP server)
 	AuthenticationLDAP
@@ -2215,7 +2233,7 @@ const (
 	_ EndpointType = iota
 	// DockerEnvironment represents an environment(endpoint) connected to a Docker environment(endpoint) via the Docker API or Socket
 	DockerEnvironment
-	// AgentOnDockerEnvironment represents an environment(endpoint) connected to a Portainer agent deployed on a Docker environment(endpoint)
+	// AgentOnDockerEnvironment represents an environment(endpoint) connected to an agent deployed on a Docker environment(endpoint)
 	AgentOnDockerEnvironment
 	// AzureEnvironment represents an environment(endpoint) connected to an Azure environment(endpoint)
 	AzureEnvironment
@@ -2223,7 +2241,7 @@ const (
 	EdgeAgentOnDockerEnvironment
 	// KubernetesLocalEnvironment represents an environment(endpoint) connected to a local Kubernetes environment(endpoint)
 	KubernetesLocalEnvironment
-	// AgentOnKubernetesEnvironment represents an environment(endpoint) connected to a Portainer agent deployed on a Kubernetes environment(endpoint)
+	// AgentOnKubernetesEnvironment represents an environment(endpoint) connected to an agent deployed on a Kubernetes environment(endpoint)
 	AgentOnKubernetesEnvironment
 	// EdgeAgentOnKubernetesEnvironment represents an environment(endpoint) connected to an Edge agent deployed on a Kubernetes environment(endpoint)
 	EdgeAgentOnKubernetesEnvironment
@@ -2253,11 +2271,13 @@ const (
 
 const (
 	_ SoftwareEdition = iota
-	// PortainerCE represents the community edition of Portainer
+	// OpenDocking represents the full-featured edition of OpenDocking
+	OpenDocking
+	// PortainerCE is deprecated - use OpenDocking instead
 	PortainerCE
-	// PortainerBE represents the business edition of Portainer
+	// PortainerBE is deprecated - OpenDocking is now part of OpenDocking
 	PortainerBE
-	// PortainerEE represents the business edition of Portainer
+	// PortainerEE is deprecated - Portainer Enterprise Edition is now part of OpenDocking
 	PortainerEE
 )
 
@@ -2593,9 +2613,11 @@ const (
 	OperationIntegrationStoridgeAdmin         Authorization = "IntegrationStoridgeAdmin"
 )
 
-// GetEditionLabel returns the portainer edition label
+// GetEditionLabel returns the edition label
 func (e SoftwareEdition) GetEditionLabel() string {
 	switch e {
+	case OpenDocking:
+		return "OpenDocking"
 	case PortainerCE:
 		return "CE"
 	case PortainerBE:
@@ -2604,7 +2626,7 @@ func (e SoftwareEdition) GetEditionLabel() string {
 		return "EE"
 	}
 
-	return "CE"
+	return "OpenDocking"
 }
 
 const (

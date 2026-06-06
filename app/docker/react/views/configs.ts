@@ -7,7 +7,7 @@ import { withUIRouter } from '@/react-tools/withUIRouter';
 import { ListView } from '@/react/docker/configs/ListView/ListView';
 
 export const configsModule = angular
-  .module('portainer.docker.react.views.configs', [])
+  .module('opendocking.docker.react.views.configs', [])
   .component(
     'configsListView',
     r2a(withUIRouter(withReactQuery(withCurrentUser(ListView))), [])

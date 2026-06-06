@@ -1,6 +1,6 @@
 package randomstring
 
-import "github.com/portainer/portainer/pkg/librand"
+import "github.com/opendocking/opendocking/pkg/librand"
 
 const letterBytes = "abcdefghijklmnopqrstuvwxyz0123456789"
 

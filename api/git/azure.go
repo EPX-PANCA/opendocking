@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/portainer/portainer/api/archive"
-	"github.com/portainer/portainer/api/crypto"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/archive"
+	"github.com/opendocking/opendocking/api/crypto"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	"github.com/opendocking/opendocking/api/logs"
 	"github.com/rs/zerolog/log"
 
 	"github.com/go-git/go-git/v5"

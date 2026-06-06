@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Teams', [
+angular.module('opendocking.app').factory('Teams', [
   '$resource',
   'API_ENDPOINT_TEAMS',
   function TeamsFactory($resource, API_ENDPOINT_TEAMS) {

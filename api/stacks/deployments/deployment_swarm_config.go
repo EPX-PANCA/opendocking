@@ -6,11 +6,11 @@ import (
 	"log"
 
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/registryutils"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/registryutils"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 )
 
 type SwarmStackDeploymentConfig struct {

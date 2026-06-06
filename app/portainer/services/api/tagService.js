@@ -1,6 +1,6 @@
 import { TagViewModel } from '../../models/tag';
 
-angular.module('portainer.app').factory('TagService', [
+angular.module('opendocking.app').factory('TagService', [
   '$q',
   '$async',
   'Tags',

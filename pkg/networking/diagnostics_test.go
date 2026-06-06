@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/pkg/fips"
 )
 
 // Response structs for each function

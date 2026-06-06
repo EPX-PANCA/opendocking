@@ -28,4 +28,4 @@ class KubernetesControllerRevisionService {
 }
 
 export default KubernetesControllerRevisionService;
-angular.module('portainer.kubernetes').service('KubernetesControllerRevisionService', KubernetesControllerRevisionService);
+angular.module('opendocking.kubernetes').service('KubernetesControllerRevisionService', KubernetesControllerRevisionService);

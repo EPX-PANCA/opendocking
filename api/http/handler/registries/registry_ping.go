@@ -5,12 +5,12 @@ import (
 	"errors"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/pkg/fips"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
-	"github.com/portainer/portainer/pkg/liboras"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/pkg/fips"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/pkg/liboras"
 
 	"github.com/rs/zerolog/log"
 	"oras.land/oras-go/v2/registry/remote/errcode"

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	portainer "github.com/opendocking/opendocking/api"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 	corev1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

@@ -1,6 +1,6 @@
 import { rawResponse } from '@/kubernetes/rest/response/transform';
 
-angular.module('portainer.kubernetes').factory('KubernetesReplicaSets', [
+angular.module('opendocking.kubernetes').factory('KubernetesReplicaSets', [
   '$resource',
   'API_ENDPOINT_ENDPOINTS',
   'EndpointProvider',

@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/portainer/portainer/api/filesystem"
+	"github.com/opendocking/opendocking/api/filesystem"
 )
 
 // BenchmarkApply tests require a Kubernetes cluster.

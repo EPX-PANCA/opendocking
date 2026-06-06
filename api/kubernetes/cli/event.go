@@ -3,7 +3,7 @@ package cli
 import (
 	"context"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

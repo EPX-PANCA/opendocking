@@ -46,7 +46,7 @@ class ExpirationCache {
   }
 }
 
-angular.module('portainer.kubernetes', ['portainer.app', registriesModule, customTemplateModule, reactModule]).config([
+angular.module('opendocking.kubernetes', ['opendocking.app', registriesModule, customTemplateModule, reactModule]).config([
   '$stateRegistryProvider',
   function ($stateRegistryProvider) {
     'use strict';
@@ -97,7 +97,7 @@ angular.module('portainer.kubernetes', ['portainer.app', registriesModule, custo
           ];
 
           if (!kubeTypes.includes(endpoint.Type)) {
-            $state.go('portainer.home');
+            $state.go('opendocking.home');
             return;
           }
 
@@ -132,7 +132,7 @@ angular.module('portainer.kubernetes', ['portainer.app', registriesModule, custo
             if (nextTransitionName === 'kubernetes.kubectlshell') {
               return;
             }
-            $state.go('portainer.home', params, { reload: true, inherit: false });
+            $state.go('opendocking.home', params, { reload: true, inherit: false });
             return false;
           }
 

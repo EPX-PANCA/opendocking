@@ -1,6 +1,6 @@
 import { processItemsInBatches } from '@/react/common/processItemsInBatches';
 
-angular.module('portainer.docker').controller('SecretsController', [
+angular.module('opendocking.docker').controller('SecretsController', [
   '$scope',
   '$state',
   'SecretService',

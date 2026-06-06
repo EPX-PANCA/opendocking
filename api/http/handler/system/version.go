@@ -3,13 +3,13 @@ package system
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/client"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/pkg/build"
-	libclient "github.com/portainer/portainer/pkg/libhttp/client"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/client"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/pkg/build"
+	libclient "github.com/opendocking/opendocking/pkg/libhttp/client"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/rs/zerolog/log"
@@ -17,14 +17,14 @@ import (
 )
 
 type versionResponse struct {
-	// Whether portainer has an update available
+	// Whether OpenDocking has an update available
 	UpdateAvailable bool `json:"UpdateAvailable" example:"false"`
 	// The latest version available
 	LatestVersion string `json:"LatestVersion" example:"2.0.0"`
 
 	ServerVersion   string
 	VersionSupport  string `json:"VersionSupport" example:"STS/LTS"`
-	ServerEdition   string `json:"ServerEdition" example:"CE/EE"`
+	ServerEdition   string `json:"ServerEdition" example:"OpenDocking/CE/EE"`
 	DatabaseVersion string
 	Build           build.BuildInfo
 	Dependencies    build.DependenciesInfo
@@ -32,8 +32,8 @@ type versionResponse struct {
 }
 
 // @id systemVersion
-// @summary Check for portainer updates
-// @description Check if portainer has an update available
+// @summary Check for OpenDocking updates
+// @description Check if OpenDocking has an update available
 // @description **Access policy**: authenticated
 // @security ApiKeyAuth
 // @security jwt
@@ -44,7 +44,7 @@ type versionResponse struct {
 func (handler *Handler) version(w http.ResponseWriter, r *http.Request) *httperror.HandlerError {
 	isAdmin, err := security.IsAdmin(r)
 	if err != nil {
-		return httperror.Forbidden("Permission denied to access Portainer", err)
+		return httperror.Forbidden("Permission denied to access OpenDocking", err)
 	}
 
 	result := &versionResponse{

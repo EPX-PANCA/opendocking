@@ -1,6 +1,6 @@
 import { tlsOptions } from '@/react/portainer/environments/ItemView/tls-options';
 
-angular.module('portainer.app').controller('porEndpointSecurityController', [
+angular.module('opendocking.app').controller('porEndpointSecurityController', [
   '$scope',
   function ($scope) {
     var ctrl = this;

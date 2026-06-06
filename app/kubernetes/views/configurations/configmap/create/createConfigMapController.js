@@ -162,4 +162,4 @@ class KubernetesCreateConfigMapController {
 }
 
 export default KubernetesCreateConfigMapController;
-angular.module('portainer.kubernetes').controller('KubernetesCreateConfigMapController', KubernetesCreateConfigMapController);
+angular.module('opendocking.kubernetes').controller('KubernetesCreateConfigMapController', KubernetesCreateConfigMapController);

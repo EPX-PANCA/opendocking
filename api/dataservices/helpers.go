@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	perrors "github.com/portainer/portainer/api/dataservices/errors"
+	perrors "github.com/opendocking/opendocking/api/dataservices/errors"
 
 	"github.com/rs/zerolog/log"
 )

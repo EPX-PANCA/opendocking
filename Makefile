@@ -26,8 +26,8 @@ build-client: init-dist ## Build the client
 build-server: init-dist ## Build the server binary
 	./build/build_binary.sh "$(PLATFORM)" "$(ARCH)"
 
-build-image: build-all ## Build the Portainer image locally
-	docker buildx build --load -t portainerci/portainer-ce:$(TAG) -f build/linux/Dockerfile .
+build-image: build-all ## Build the OpenDocking image locally
+	docker buildx build --load -t opendocking/opendocking:$(TAG) -f build/linux/Dockerfile .
 
 build-storybook: ## Build and serve the storybook files
 	pnpm run storybook:build

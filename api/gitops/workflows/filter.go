@@ -5,17 +5,17 @@ import (
 	"slices"
 	"strconv"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/models/kubernetes"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/authorization"
-	"github.com/portainer/portainer/api/internal/endpointutils"
-	"github.com/portainer/portainer/api/internal/snapshot"
-	"github.com/portainer/portainer/api/kubernetes/cli"
-	"github.com/portainer/portainer/api/set"
-	"github.com/portainer/portainer/api/slicesx"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/models/kubernetes"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
+	"github.com/opendocking/opendocking/api/internal/snapshot"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
+	"github.com/opendocking/opendocking/api/set"
+	"github.com/opendocking/opendocking/api/slicesx"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 )
 
 func EndpointMatchesStackType(ep portainer.Endpoint, stackType portainer.StackType) bool {

@@ -5,15 +5,15 @@ import (
 	"net/http"
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/internal/edge"
-	"github.com/portainer/portainer/api/internal/edge/cache"
-	"github.com/portainer/portainer/api/internal/endpointutils"
-	"github.com/portainer/portainer/api/slicesx"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/internal/edge"
+	"github.com/opendocking/opendocking/api/internal/edge/cache"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
+	"github.com/opendocking/opendocking/api/slicesx"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 type edgeGroupUpdatePayload struct {

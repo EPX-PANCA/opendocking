@@ -3,9 +3,9 @@ package middlewares
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/pkg/featureflags"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/pkg/featureflags"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/gorilla/mux"
 )

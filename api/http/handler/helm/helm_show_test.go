@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/pkg/libhelm/test"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/pkg/libhelm/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

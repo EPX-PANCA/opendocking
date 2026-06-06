@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strings"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 	"github.com/rs/zerolog/log"
 	rbacv1 "k8s.io/api/rbac/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

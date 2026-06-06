@@ -3,7 +3,7 @@ package cli
 import (
 	"strconv"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 	"k8s.io/client-go/kubernetes"
 )
 

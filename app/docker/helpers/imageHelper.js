@@ -1,6 +1,6 @@
 import { buildImageFullURIFromModel, imageContainsURL, fullURIIntoRepoAndTag } from '@/react/docker/images/utils';
 
-angular.module('portainer.docker').factory('ImageHelper', ImageHelperFactory);
+angular.module('opendocking.docker').factory('ImageHelper', ImageHelperFactory);
 function ImageHelperFactory() {
   return {
     isValidTag,

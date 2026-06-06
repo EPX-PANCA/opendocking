@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"net/http"
 
-	gittypes "github.com/portainer/portainer/api/git/types"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
-	"github.com/portainer/portainer/pkg/validate"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/pkg/validate"
 	"github.com/rs/zerolog/log"
 )
 

@@ -9,8 +9,8 @@ import (
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/api/types/swarm"
 	"github.com/docker/docker/client"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/libstack"
 	"github.com/stretchr/testify/require"
 )
 

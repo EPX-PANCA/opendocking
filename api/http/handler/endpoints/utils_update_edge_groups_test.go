@@ -3,9 +3,9 @@ package endpoints
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/datastore"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/datastore"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

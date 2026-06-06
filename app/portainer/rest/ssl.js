@@ -2,7 +2,7 @@ import angular from 'angular';
 
 const API_ENDPOINT_SSL = 'api/ssl';
 
-angular.module('portainer.app').factory('SSL', SSLFactory);
+angular.module('opendocking.app').factory('SSL', SSLFactory);
 
 /* @ngInject */
 function SSLFactory($resource) {

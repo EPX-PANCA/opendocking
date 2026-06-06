@@ -1,6 +1,6 @@
 import { AccessControlFormData } from '../../../../portainer/components/accessControlForm/porAccessControlFormModel';
 
-angular.module('portainer.docker').controller('CreateSecretController', [
+angular.module('opendocking.docker').controller('CreateSecretController', [
   '$scope',
   '$state',
   'Notifications',

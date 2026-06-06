@@ -1,4 +1,4 @@
-angular.module('portainer.app').directive('autoFocus', [
+angular.module('opendocking.app').directive('autoFocus', [
   '$timeout',
   function porAutoFocus($timeout) {
     var directive = {

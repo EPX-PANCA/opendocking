@@ -3,11 +3,11 @@ package testhelpers
 import (
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/dataservices/errors"
-	"github.com/portainer/portainer/api/slicesx"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/dataservices/errors"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 var _ dataservices.DataStore = &testDatastore{}

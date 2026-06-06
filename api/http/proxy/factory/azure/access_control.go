@@ -3,9 +3,9 @@ package azure
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/authorization"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/authorization"
 
 	"github.com/rs/zerolog/log"
 )

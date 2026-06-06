@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('NodeBrowserController', [
+angular.module('opendocking.docker').controller('NodeBrowserController', [
   '$stateParams',
   'NodeService',
   'HttpRequestHelper',

@@ -3,14 +3,14 @@ package stacks
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/stacks/stackutils"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 
 	"github.com/pkg/errors"
 )

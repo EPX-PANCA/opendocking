@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('SwarmController', [
+angular.module('opendocking.docker').controller('SwarmController', [
   '$q',
   '$scope',
   'SystemService',

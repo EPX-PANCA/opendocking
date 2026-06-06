@@ -9,7 +9,7 @@ require('./includes/secret.html');
 require('./includes/config.html');
 require('./includes/resources-placement.html');
 
-angular.module('portainer.docker').controller('CreateServiceController', [
+angular.module('opendocking.docker').controller('CreateServiceController', [
   '$q',
   '$scope',
   '$state',

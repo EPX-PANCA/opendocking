@@ -5,7 +5,7 @@ import { getTaskLogs } from '@/react/docker/tasks/queries/useTaskLogs';
 import { TaskViewModel } from '../models/task';
 import { formatLogs } from '../helpers/logHelper';
 
-angular.module('portainer.docker').factory('TaskService', TaskServiceFactory);
+angular.module('opendocking.docker').factory('TaskService', TaskServiceFactory);
 
 /* @ngInject */
 function TaskServiceFactory(AngularToReact) {

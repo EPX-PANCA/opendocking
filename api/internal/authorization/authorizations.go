@@ -1,9 +1,9 @@
 package authorization
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
 )
 
 // Service represents a service used to
@@ -408,7 +408,7 @@ func DefaultEndpointAuthorizationsForReadOnlyUserRole(volumeBrowsingAuthorizatio
 	return authorizations
 }
 
-// DefaultPortainerAuthorizations returns the default Portainer authorizations used by non-admin users.
+// DefaultPortainerAuthorizations returns the default OpenDocking authorizations used by non-admin users.
 func DefaultPortainerAuthorizations() portainer.Authorizations {
 	return map[portainer.Authorization]bool{
 		portainer.OperationPortainerDockerHubInspect:  true,

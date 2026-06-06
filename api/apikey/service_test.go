@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/datastore"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/datastore"
 
 	"github.com/rs/zerolog/log"
 	"github.com/stretchr/testify/assert"

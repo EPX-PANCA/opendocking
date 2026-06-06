@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/libstack"
 
 	"github.com/containerd/errdefs"
 	"github.com/distribution/reference"

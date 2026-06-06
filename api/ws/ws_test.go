@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"

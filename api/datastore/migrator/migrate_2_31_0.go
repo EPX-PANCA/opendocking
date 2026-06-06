@@ -1,6 +1,6 @@
 package migrator
 
-import portainer "github.com/portainer/portainer/api"
+import portainer "github.com/opendocking/opendocking/api"
 
 func (m *Migrator) migrateEdgeStacksStatuses_2_31_0() error {
 	edgeStacks, err := m.edgeStackService.EdgeStacks()

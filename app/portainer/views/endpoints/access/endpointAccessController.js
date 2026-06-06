@@ -46,4 +46,4 @@ class EndpointAccessController {
 }
 
 export default EndpointAccessController;
-angular.module('portainer.app').controller('EndpointAccessController', EndpointAccessController);
+angular.module('opendocking.app').controller('EndpointAccessController', EndpointAccessController);

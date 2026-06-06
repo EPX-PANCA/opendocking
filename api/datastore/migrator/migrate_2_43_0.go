@@ -3,9 +3,9 @@ package migrator
 import (
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices/stack"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices/stack"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/rs/zerolog/log"
 )

@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import controller from './por-image-registry-rate-limits.controller';
 
-angular.module('portainer.docker').component('porImageRegistryRateLimits', {
+angular.module('opendocking.docker').component('porImageRegistryRateLimits', {
   bindings: {
     endpoint: '<',
     registry: '<',

@@ -3,12 +3,12 @@ package factory
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/http/proxy/factory/kubernetes"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/kubernetes"
 
-	"github.com/portainer/portainer/api/kubernetes/cli"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
 )
 
 const azureAPIBaseURL = "https://management.azure.com"

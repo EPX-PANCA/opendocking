@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/docker/consts"
-	"github.com/portainer/portainer/api/docker/stats"
-	"github.com/portainer/portainer/api/logs"
-	edgeutils "github.com/portainer/portainer/pkg/edge"
-	networkingutils "github.com/portainer/portainer/pkg/networking"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/docker/consts"
+	"github.com/opendocking/opendocking/api/docker/stats"
+	"github.com/opendocking/opendocking/api/logs"
+	edgeutils "github.com/opendocking/opendocking/pkg/edge"
+	networkingutils "github.com/opendocking/opendocking/pkg/networking"
 
 	"github.com/docker/docker/api/types"
 	dockercontainer "github.com/docker/docker/api/types/container"

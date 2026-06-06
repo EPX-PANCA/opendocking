@@ -11,7 +11,7 @@ import (
 func ParseHostForEdge(portainerURL string) (string, error) {
 	parsedURL, err := url.Parse(portainerURL)
 	if err != nil {
-		return "", errors.Wrap(err, "Unable to parse Portainer URL")
+		return "", errors.Wrap(err, "Unable to parse OpenDocking URL")
 	}
 
 	portainerHost, _, err := net.SplitHostPort(parsedURL.Host)

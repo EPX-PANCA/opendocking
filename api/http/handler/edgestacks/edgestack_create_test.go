@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/roar"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/roar"
 
 	"github.com/segmentio/encoding/json"
 	"github.com/stretchr/testify/require"

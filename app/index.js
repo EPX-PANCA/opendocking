@@ -33,7 +33,7 @@ if (window.origin == 'http://localhost:49000') {
 initFeatureService(Edition[process.env.PORTAINER_EDITION]);
 
 angular
-  .module('portainer', [
+  .module('opendocking', [
     'ui.bootstrap',
     'ui.router',
     UI_ROUTER_REACT_HYBRID,
@@ -46,12 +46,12 @@ angular
     'angular-clipboard',
     'ngFileSaver',
     'luegg.directives',
-    'portainer.app',
-    'portainer.agent',
+    'opendocking.app',
+    'opendocking.agent',
     azureModule,
-    'portainer.docker',
-    'portainer.kubernetes',
-    'portainer.edge',
+    'opendocking.docker',
+    'opendocking.kubernetes',
+    'opendocking.edge',
     'rzModule',
     constantsModule,
   ])

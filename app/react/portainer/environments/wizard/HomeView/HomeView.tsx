@@ -47,11 +47,11 @@ export function HomeView() {
                       Please ensure your environment is correctly exposed. For
                       help with installation visit{' '}
                       <a
-                        href="https://documentation.portainer.io/quickstart/"
+                        href="https://opendocking.io/docs/quickstart/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        https://documentation.portainer.io/quickstart
+                        https://opendocking.io/docs/quickstart
                       </a>
                     </p>
                   )}
@@ -65,7 +65,7 @@ export function HomeView() {
                 <div className="flex flex-wrap gap-4">
                   {localEnvironmentAdded.status === 'success' && (
                     <Link
-                      to="portainer.home"
+                      to="opendocking.home"
                       className={styles.link}
                       data-cy="wizard-get-started-link"
                     >

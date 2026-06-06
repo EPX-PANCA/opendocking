@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('NodeAvailabilitySelectController', [
+angular.module('opendocking.docker').controller('NodeAvailabilitySelectController', [
   function NodeAvailabilitySelectController() {
     this.onChange = onChange;
 

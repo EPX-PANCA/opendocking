@@ -2,7 +2,7 @@ import _ from 'lodash-es';
 import { transformAutoUpdateViewModel } from '@/react/portainer/gitops/AutoUpdateFieldset/utils';
 import { StackViewModel } from '@/react/docker/stacks/view-models/stack';
 
-angular.module('portainer.app').factory('StackService', [
+angular.module('opendocking.app').factory('StackService', [
   '$q',
   '$async',
   'Stack',

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/internal/endpointutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
 
 	"github.com/rs/zerolog/log"
 )

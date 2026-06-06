@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-angular.module('portainer.docker').controller('ContainerStatsController', [
+angular.module('opendocking.docker').controller('ContainerStatsController', [
   '$q',
   '$scope',
   '$transition$',

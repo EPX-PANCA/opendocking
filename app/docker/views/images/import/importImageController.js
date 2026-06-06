@@ -1,6 +1,6 @@
 import { PorImageRegistryModel } from '@/docker/models/porImageRegistry';
 
-angular.module('portainer.docker').controller('ImportImageController', [
+angular.module('opendocking.docker').controller('ImportImageController', [
   '$scope',
   '$state',
   '$async',

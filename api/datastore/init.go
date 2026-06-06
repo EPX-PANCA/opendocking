@@ -3,7 +3,7 @@ package datastore
 import (
 	"os"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 // Init creates the default data set.

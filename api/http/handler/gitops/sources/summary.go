@@ -3,10 +3,10 @@ package sources
 import (
 	"net/http"
 
-	ce "github.com/portainer/portainer/api/gitops/workflows"
-	"github.com/portainer/portainer/api/http/security"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	ce "github.com/opendocking/opendocking/api/gitops/workflows"
+	"github.com/opendocking/opendocking/api/http/security"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 // @id GitOpsSourcesSummary

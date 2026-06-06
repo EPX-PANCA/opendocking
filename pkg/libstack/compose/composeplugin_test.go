@@ -12,8 +12,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/libstack"
 
 	"github.com/compose-spec/compose-go/v2/consts"
 	"github.com/compose-spec/compose-go/v2/types"
@@ -84,7 +84,7 @@ services:
 
 // Detect regression in container injections.
 // Ref BE-12432
-// Ref https://github.com/portainer/portainer/issues/12909
+// Ref https://github.com/opendocking/opendocking/issues/12909
 func Test_UpAndDownWithInjection(t *testing.T) {
 	const content = `
 services:

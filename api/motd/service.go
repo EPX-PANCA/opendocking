@@ -6,10 +6,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/portainer/portainer/api/http/client"
-	"github.com/portainer/portainer/pkg/libcrypto"
-	libclient "github.com/portainer/portainer/pkg/libhttp/client"
-	"github.com/portainer/portainer/pkg/schedule"
+	"github.com/opendocking/opendocking/api/http/client"
+	"github.com/opendocking/opendocking/pkg/libcrypto"
+	libclient "github.com/opendocking/opendocking/pkg/libhttp/client"
+	"github.com/opendocking/opendocking/pkg/schedule"
 	"github.com/rs/zerolog/log"
 
 	"github.com/segmentio/encoding/json"
@@ -41,6 +41,9 @@ func NewService(motdURL string) *Service {
 
 // Start warms the cache immediately and refreshes it every refreshInterval.
 func (s *Service) Start(ctx context.Context) {
+	if s.motdURL == "" {
+		return
+	}
 	if err := libclient.ExternalRequestDisabled(s.motdURL); err != nil {
 		return
 	}

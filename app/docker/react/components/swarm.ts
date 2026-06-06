@@ -5,7 +5,7 @@ import { withUIRouter } from '@/react-tools/withUIRouter';
 import { NodesDatatable } from '@/react/docker/swarm/SwarmView/NodesDatatable';
 
 export const swarmModule = angular
-  .module('portainer.docker.react.components.swarm', [])
+  .module('opendocking.docker.react.components.swarm', [])
   .component(
     'nodesDatatable',
     r2a(withUIRouter(NodesDatatable), [

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/pkg/errors"

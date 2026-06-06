@@ -6,10 +6,10 @@ import (
 	"io"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/proxy/factory/utils"
-	"github.com/portainer/portainer/api/internal/authorization"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/utils"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/docker/docker/api/types/swarm"
 	"github.com/docker/docker/client"

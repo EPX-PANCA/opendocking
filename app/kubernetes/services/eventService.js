@@ -31,4 +31,4 @@ class KubernetesEventService {
 }
 
 export default KubernetesEventService;
-angular.module('portainer.kubernetes').service('KubernetesEventService', KubernetesEventService);
+angular.module('opendocking.kubernetes').service('KubernetesEventService', KubernetesEventService);

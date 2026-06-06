@@ -9,52 +9,52 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/apikey"
-	"github.com/portainer/portainer/api/chisel"
-	"github.com/portainer/portainer/api/cli"
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/api/database"
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/database/models"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/datastore/migrator"
-	"github.com/portainer/portainer/api/datastore/postinit"
-	"github.com/portainer/portainer/api/docker"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/exec"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/git"
-	"github.com/portainer/portainer/api/http"
-	"github.com/portainer/portainer/api/http/proxy"
-	kubeproxy "github.com/portainer/portainer/api/http/proxy/factory/kubernetes"
-	"github.com/portainer/portainer/api/http/security/setuptoken"
-	"github.com/portainer/portainer/api/internal/authorization"
-	"github.com/portainer/portainer/api/internal/edge/edgestacks"
-	"github.com/portainer/portainer/api/internal/endpointutils"
-	"github.com/portainer/portainer/api/internal/snapshot"
-	"github.com/portainer/portainer/api/internal/ssl"
-	"github.com/portainer/portainer/api/internal/upgrade"
-	"github.com/portainer/portainer/api/jwt"
-	"github.com/portainer/portainer/api/kubernetes"
-	kubecli "github.com/portainer/portainer/api/kubernetes/cli"
-	"github.com/portainer/portainer/api/ldap"
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/api/oauth"
-	"github.com/portainer/portainer/api/pendingactions"
-	"github.com/portainer/portainer/api/pendingactions/actions"
-	"github.com/portainer/portainer/api/pendingactions/handlers"
-	"github.com/portainer/portainer/api/platform"
-	"github.com/portainer/portainer/api/scheduler"
-	"github.com/portainer/portainer/api/stacks/deployments"
-	"github.com/portainer/portainer/pkg/build"
-	"github.com/portainer/portainer/pkg/featureflags"
-	"github.com/portainer/portainer/pkg/fips"
-	"github.com/portainer/portainer/pkg/libhelm"
-	"github.com/portainer/portainer/pkg/libstack/compose"
-	libswarm "github.com/portainer/portainer/pkg/libstack/swarm"
-	"github.com/portainer/portainer/pkg/validate"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/apikey"
+	"github.com/opendocking/opendocking/api/chisel"
+	"github.com/opendocking/opendocking/api/cli"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/api/database"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/database/models"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/datastore/migrator"
+	"github.com/opendocking/opendocking/api/datastore/postinit"
+	"github.com/opendocking/opendocking/api/docker"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/exec"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/git"
+	"github.com/opendocking/opendocking/api/http"
+	"github.com/opendocking/opendocking/api/http/proxy"
+	kubeproxy "github.com/opendocking/opendocking/api/http/proxy/factory/kubernetes"
+	"github.com/opendocking/opendocking/api/http/security/setuptoken"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	"github.com/opendocking/opendocking/api/internal/edge/edgestacks"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
+	"github.com/opendocking/opendocking/api/internal/snapshot"
+	"github.com/opendocking/opendocking/api/internal/ssl"
+	"github.com/opendocking/opendocking/api/internal/upgrade"
+	"github.com/opendocking/opendocking/api/jwt"
+	"github.com/opendocking/opendocking/api/kubernetes"
+	kubecli "github.com/opendocking/opendocking/api/kubernetes/cli"
+	"github.com/opendocking/opendocking/api/ldap"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/api/oauth"
+	"github.com/opendocking/opendocking/api/pendingactions"
+	"github.com/opendocking/opendocking/api/pendingactions/actions"
+	"github.com/opendocking/opendocking/api/pendingactions/handlers"
+	"github.com/opendocking/opendocking/api/platform"
+	"github.com/opendocking/opendocking/api/scheduler"
+	"github.com/opendocking/opendocking/api/stacks/deployments"
+	"github.com/opendocking/opendocking/pkg/build"
+	"github.com/opendocking/opendocking/pkg/featureflags"
+	"github.com/opendocking/opendocking/pkg/fips"
+	"github.com/opendocking/opendocking/pkg/libhelm"
+	"github.com/opendocking/opendocking/pkg/libstack/compose"
+	libswarm "github.com/opendocking/opendocking/pkg/libstack/swarm"
+	"github.com/opendocking/opendocking/pkg/validate"
 
 	"github.com/google/uuid"
 	"github.com/rs/zerolog/log"
@@ -131,7 +131,7 @@ func initDataStore(flags *portainer.CLIFlags, secretKey []byte, fileService port
 		// from MigrateData
 		v := models.Version{
 			SchemaVersion: portainer.APIVersion,
-			Edition:       int(portainer.PortainerCE),
+			Edition:       int(portainer.OpenDocking),
 			InstanceID:    instanceId.String(),
 			MigratorCount: migratorCount,
 		}
@@ -381,8 +381,8 @@ func buildServer(flags *portainer.CLIFlags, shutdownCtx context.Context, shutdow
 		}
 	}
 
-	// -ce can not ever be run in FIPS mode
-	fips.InitFIPS(false)
+	fipsEnabled := os.Getenv("OPENDOCKING_FIPS") == "1"
+	fips.InitFIPS(fipsEnabled)
 
 	fileService := initFileService(*flags.Data)
 	encryptionKey := loadEncryptionSecretKey(dbSecretPath(*flags.SecretKeyName))
@@ -529,13 +529,14 @@ func buildServer(flags *portainer.CLIFlags, shutdownCtx context.Context, shutdow
 			if err := dataStore.User().Create(user); err != nil {
 				log.Fatal().Err(err).Msg("failed creating admin user")
 			}
-
-			// notify the admin user is created, the endpoint initialization can start
-			adminCreationDone <- struct{}{}
 		} else {
 			log.Info().Msg("instance already has an administrator user defined, skipping admin password related flags.")
 		}
 	}
+
+	// Always signal admin creation done so endpoint initialization can proceed.
+	// Even if admin already exists, the endpoint still needs to be initialized.
+	adminCreationDone <- struct{}{}
 
 	setupToken := ""
 	if adminPasswordHash == "" && !*flags.NoSetupToken {
@@ -664,7 +665,7 @@ func main() {
 			Str("pnpm_version", build.PnpmVersion).
 			Str("webpack_version", build.WebpackVersion).
 			Str("go_version", build.GoVersion).
-			Msg("starting Portainer")
+			Msg("starting OpenDocking")
 
 		err := server.Start(shutdownCtx)
 

@@ -1,4 +1,4 @@
-angular.module('portainer.app').controller('CodeEditorController', function CodeEditorController($document, CodeMirrorService, $scope) {
+angular.module('opendocking.app').controller('CodeEditorController', function CodeEditorController($document, CodeMirrorService, $scope) {
   var ctrl = this;
 
   this.$onChanges = function $onChanges({ value, readOnly }) {

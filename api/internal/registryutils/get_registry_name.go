@@ -3,7 +3,7 @@ package registryutils
 import (
 	"strconv"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 func RegistrySecretName(registryID portainer.RegistryID) string {

@@ -8,7 +8,7 @@ import { getServiceLogs } from '@/react/docker/services/queries/useServiceLogs';
 import { ServiceViewModel } from '../models/service';
 import { formatLogs } from '../helpers/logHelper';
 
-angular.module('portainer.docker').factory('ServiceService', ServiceServiceFactory);
+angular.module('opendocking.docker').factory('ServiceService', ServiceServiceFactory);
 
 /* @ngInject */
 function ServiceServiceFactory(AngularToReact) {

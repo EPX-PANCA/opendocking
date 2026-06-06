@@ -14,4 +14,4 @@ export const customTemplateSelector = {
   },
 };
 
-angular.module('portainer.app').component('customTemplateSelector', customTemplateSelector);
+angular.module('opendocking.app').component('customTemplateSelector', customTemplateSelector);

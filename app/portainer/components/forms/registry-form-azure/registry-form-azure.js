@@ -4,7 +4,7 @@ class controller {
   }
 }
 
-angular.module('portainer.app').component('registryFormAzure', {
+angular.module('opendocking.app').component('registryFormAzure', {
   templateUrl: './registry-form-azure.html',
   bindings: {
     model: '=',

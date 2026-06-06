@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"net/url"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/proxy/factory/azure"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/azure"
 )
 
 func newAzureProxy(endpoint *portainer.Endpoint, dataStore dataservices.DataStore) (http.Handler, error) {

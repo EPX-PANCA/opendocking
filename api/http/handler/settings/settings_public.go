@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/pkg/featureflags"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/pkg/featureflags"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 type publicSettingsResponse struct {
-	// URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default Portainer logo when value is empty string
+	// URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default OpenDocking logo when value is empty string
 	LogoURL string `json:"LogoURL" example:"https://mycompany.mydomain.tld/logo.png"`
-	// Active authentication method for the Portainer instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth
+	// Active authentication method for the OpenDocking instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth
 	AuthenticationMethod portainer.AuthenticationMethod `json:"AuthenticationMethod" example:"1"`
 	// The minimum required length for a password of any user when using internal auth mode
 	RequiredPasswordLength int `json:"RequiredPasswordLength" example:"1"`
@@ -49,7 +49,7 @@ type publicSettingsResponse struct {
 }
 
 // @id SettingsPublic
-// @summary Retrieve Portainer public settings
+// @summary Retrieve OpenDocking public settings
 // @description Retrieve public settings. Returns a small set of settings that are not reserved to administrators only.
 // @description **Access policy**: public
 // @tags settings

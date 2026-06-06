@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/portainer/portainer/api/http/proxy/factory/kubernetes"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/kubernetes"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 func (factory *ProxyFactory) newKubernetesProxy(endpoint *portainer.Endpoint) (http.Handler, error) {

@@ -6,8 +6,8 @@ import (
 	"path"
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	portainer "github.com/opendocking/opendocking/api"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 )
 
 // ListRefsFunc lists all git refs for a repository.

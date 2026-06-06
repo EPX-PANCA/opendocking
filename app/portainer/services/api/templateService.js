@@ -1,7 +1,7 @@
 import { TemplateViewModel } from '@/react/portainer/templates/app-templates/view-model';
 import { DockerHubViewModel } from '@/portainer/models/dockerhub';
 
-angular.module('portainer.app').factory('TemplateService', TemplateServiceFactory);
+angular.module('opendocking.app').factory('TemplateService', TemplateServiceFactory);
 
 /* @ngInject */
 function TemplateServiceFactory($q, Templates, EndpointService) {

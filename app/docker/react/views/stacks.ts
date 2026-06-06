@@ -8,7 +8,7 @@ import { ItemView } from '@/react/docker/stacks/ItemView/ItemView';
 import { CreateView } from '@/react/docker/stacks/CreateView/CreateView';
 
 export const stacksModule = angular
-  .module('portainer.docker.stacks', [])
+  .module('opendocking.docker.stacks', [])
   .component(
     'stackItemView',
     r2a(withUIRouter(withReactQuery(withCurrentUser(ItemView))), [])

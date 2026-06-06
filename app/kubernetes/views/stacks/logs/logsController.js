@@ -120,4 +120,4 @@ class KubernetesStackLogsController {
 }
 
 export default KubernetesStackLogsController;
-angular.module('portainer.kubernetes').controller('KubernetesStackLogsController', KubernetesStackLogsController);
+angular.module('opendocking.kubernetes').controller('KubernetesStackLogsController', KubernetesStackLogsController);

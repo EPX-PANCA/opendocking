@@ -9,8 +9,8 @@ import (
 
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/api/types/image"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	"github.com/cbroglie/mustache"
 	"github.com/pkg/errors"

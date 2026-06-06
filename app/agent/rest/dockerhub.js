@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.agent').factory('AgentDockerhub', AgentDockerhub);
+angular.module('opendocking.agent').factory('AgentDockerhub', AgentDockerhub);
 
 function AgentDockerhub($resource, API_ENDPOINT_ENDPOINTS) {
   return $resource(

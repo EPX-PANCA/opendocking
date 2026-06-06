@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/security"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/security"
 
 	"github.com/segmentio/encoding/json"
 	"github.com/stretchr/testify/assert"

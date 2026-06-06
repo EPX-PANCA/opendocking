@@ -90,4 +90,4 @@ export function KubernetesIngressService($async, KubernetesIngresses) {
   }
 }
 
-angular.module('portainer.kubernetes').service('KubernetesIngressService', KubernetesIngressService);
+angular.module('opendocking.kubernetes').service('KubernetesIngressService', KubernetesIngressService);

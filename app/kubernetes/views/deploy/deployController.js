@@ -426,4 +426,4 @@ class KubernetesDeployController {
 }
 
 export default KubernetesDeployController;
-angular.module('portainer.kubernetes').controller('KubernetesDeployController', KubernetesDeployController);
+angular.module('opendocking.kubernetes').controller('KubernetesDeployController', KubernetesDeployController);

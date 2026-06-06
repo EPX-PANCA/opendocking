@@ -3,7 +3,7 @@ package sdk
 import (
 	"bytes"
 
-	"github.com/portainer/portainer/api/kubernetes"
+	"github.com/opendocking/opendocking/api/kubernetes"
 	"github.com/rs/zerolog/log"
 	"helm.sh/helm/v4/pkg/postrenderer"
 )

@@ -1,6 +1,6 @@
 import { rawResponse } from '@/kubernetes/rest/response/transform';
 
-angular.module('portainer.kubernetes').factory('KubernetesPersistentVolumeClaims', [
+angular.module('opendocking.kubernetes').factory('KubernetesPersistentVolumeClaims', [
   '$resource',
   'API_ENDPOINT_ENDPOINTS',
   'EndpointProvider',

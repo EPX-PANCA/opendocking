@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/pkg/errors"
 	"github.com/segmentio/encoding/json"

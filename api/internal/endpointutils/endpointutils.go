@@ -4,10 +4,10 @@ import (
 	"errors"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/kubernetes/cli"
-	"github.com/portainer/portainer/pkg/endpoints"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
+	"github.com/opendocking/opendocking/pkg/endpoints"
 
 	log "github.com/rs/zerolog/log"
 )

@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.app').factory('CustomTemplates', CustomTemplatesFactory);
+angular.module('opendocking.app').factory('CustomTemplates', CustomTemplatesFactory);
 
 function CustomTemplatesFactory($resource, API_ENDPOINT_CUSTOM_TEMPLATES) {
   return $resource(

@@ -1,3 +1,3 @@
 import angular from 'angular';
 
-angular.module('portainer.agent', []);
+angular.module('opendocking.agent', []);

@@ -3,7 +3,7 @@ package test
 import (
 	"os"
 
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 )
 
 // CreateValuesFile creates a temporary file with the given content for testing

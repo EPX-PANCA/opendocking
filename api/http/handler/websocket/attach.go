@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/api/ws"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/validate"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/api/ws"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/validate"
 	"github.com/rs/zerolog/log"
 
 	"github.com/gorilla/websocket"

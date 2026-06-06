@@ -25,4 +25,4 @@ class KubernetesStackService {
 }
 
 export default KubernetesStackService;
-angular.module('portainer.kubernetes').service('KubernetesStackService', KubernetesStackService);
+angular.module('opendocking.kubernetes').service('KubernetesStackService', KubernetesStackService);

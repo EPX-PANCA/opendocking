@@ -2,7 +2,7 @@ import { AccessControlFormData } from '../../../../portainer/components/accessCo
 import { VolumesNFSFormData } from '../../../components/volumesNFSForm/volumesNFSFormModel';
 import { VolumesCIFSFormData } from '../../../components/volumesCIFSForm/volumesCifsFormModel';
 
-angular.module('portainer.docker').controller('CreateVolumeController', [
+angular.module('opendocking.docker').controller('CreateVolumeController', [
   '$scope',
   '$state',
   'VolumeService',

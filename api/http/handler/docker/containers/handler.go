@@ -4,12 +4,12 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/docker"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/http/middlewares"
-	"github.com/portainer/portainer/api/http/security"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/docker"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/http/middlewares"
+	"github.com/opendocking/opendocking/api/http/security"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 )
 
 type Handler struct {

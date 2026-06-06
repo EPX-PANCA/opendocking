@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/endpointutils"
-	"github.com/portainer/portainer/api/kubernetes"
-	"github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
+	"github.com/opendocking/opendocking/api/kubernetes"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
 )
 
 func hasPermission(

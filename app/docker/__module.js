@@ -6,7 +6,7 @@ import { EnvironmentStatus } from '@/react/portainer/environments/types';
 
 import { reactModule } from './react';
 
-angular.module('portainer.docker', ['portainer.app', reactModule]).config([
+angular.module('opendocking.docker', ['opendocking.app', reactModule]).config([
   '$stateRegistryProvider',
   function ($stateRegistryProvider) {
     'use strict';
@@ -21,7 +21,7 @@ angular.module('portainer.docker', ['portainer.app', reactModule]).config([
           const dockerTypes = [PortainerEndpointTypes.DockerEnvironment, PortainerEndpointTypes.AgentOnDockerEnvironment, PortainerEndpointTypes.EdgeAgentOnDockerEnvironment];
 
           if (!dockerTypes.includes(endpoint.Type)) {
-            $state.go('portainer.home');
+            $state.go('opendocking.home');
             return;
           }
 
@@ -47,7 +47,7 @@ angular.module('portainer.docker', ['portainer.app', reactModule]).config([
               EndpointProvider.clean();
               Notifications.error('Failed loading environment', e);
             }
-            $state.go('portainer.home', params, { reload: true, inherit: false });
+            $state.go('opendocking.home', params, { reload: true, inherit: false });
             return false;
           }
 

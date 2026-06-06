@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('SwarmNodeDetailsPanelController', [
+angular.module('opendocking.docker').controller('SwarmNodeDetailsPanelController', [
   'NodeService',
   'LabelHelper',
   'Notifications',

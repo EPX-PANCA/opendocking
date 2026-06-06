@@ -3,7 +3,7 @@ package client
 import (
 	"errors"
 
-	"github.com/portainer/portainer/pkg/featureflags"
+	"github.com/opendocking/opendocking/pkg/featureflags"
 )
 
 var (

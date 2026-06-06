@@ -4,8 +4,8 @@ import (
 	"slices"
 
 	"github.com/fvbommel/sortorder"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/internal/endpointutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
 )
 
 type comp[T any] func(a, b T) int

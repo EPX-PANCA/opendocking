@@ -4,9 +4,9 @@ import (
 	"errors"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	dserrors "github.com/portainer/portainer/api/dataservices/errors"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	dserrors "github.com/opendocking/opendocking/api/dataservices/errors"
 )
 
 type ServiceTx struct {

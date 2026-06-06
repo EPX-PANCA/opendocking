@@ -2,7 +2,7 @@ import { ModalType } from '@@/modals';
 import { buildConfirmButton } from '@@/modals/utils';
 import { confirm, confirmChangePassword, confirmDelete } from '@@/modals/confirm';
 
-angular.module('portainer.app').controller('UserController', [
+angular.module('opendocking.app').controller('UserController', [
   '$q',
   '$scope',
   '$state',
@@ -77,7 +77,7 @@ angular.module('portainer.app').controller('UserController', [
           Notifications.success('Success', 'Password successfully updated');
 
           if (isCurrentUser) {
-            $state.go('portainer.logout');
+            $state.go('opendocking.logout');
           } else {
             $state.reload();
           }

@@ -112,4 +112,4 @@ class KubernetesDeploymentService {
 }
 
 export default KubernetesDeploymentService;
-angular.module('portainer.kubernetes').service('KubernetesDeploymentService', KubernetesDeploymentService);
+angular.module('opendocking.kubernetes').service('KubernetesDeploymentService', KubernetesDeploymentService);

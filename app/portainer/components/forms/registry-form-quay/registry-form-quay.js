@@ -15,7 +15,7 @@ class controller {
   }
 }
 
-angular.module('portainer.app').component('registryFormQuay', {
+angular.module('opendocking.app').component('registryFormQuay', {
   templateUrl: './registry-form-quay.html',
   bindings: {
     model: '=',

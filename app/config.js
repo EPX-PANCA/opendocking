@@ -15,7 +15,7 @@ export function configApp($urlRouterProvider, $httpProvider, localStorageService
     },
   }));
 
-  localStorageServiceProvider.setPrefix('portainer');
+  localStorageServiceProvider.setPrefix('opendocking');
 
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
   $httpProvider.defaults.headers.put['Content-Type'] = 'application/json';

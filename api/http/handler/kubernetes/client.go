@@ -3,10 +3,10 @@ package kubernetes
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/api/http/middlewares"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/kubernetes/cli"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/api/http/middlewares"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 	"github.com/rs/zerolog/log"
 )
 

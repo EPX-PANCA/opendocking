@@ -1,4 +1,4 @@
-angular.module('portainer.app').directive('rdTemplateWidget', function rdWidget() {
+angular.module('opendocking.app').directive('rdTemplateWidget', function rdWidget() {
   var directive = {
     scope: {
       ngModel: '=',

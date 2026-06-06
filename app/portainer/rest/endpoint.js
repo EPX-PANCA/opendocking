@@ -1,6 +1,6 @@
 import getEndpointsTotalCount from './transform/getEndpointsTotalCount';
 
-angular.module('portainer.app').factory('Endpoints', [
+angular.module('opendocking.app').factory('Endpoints', [
   '$resource',
   'API_ENDPOINT_ENDPOINTS',
   function EndpointsFactory($resource, API_ENDPOINT_ENDPOINTS) {

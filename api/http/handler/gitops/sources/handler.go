@@ -5,11 +5,11 @@ import (
 	"time"
 
 	gocache "github.com/patrickmn/go-cache"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/kubernetes/cli"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/gorilla/mux"
 )

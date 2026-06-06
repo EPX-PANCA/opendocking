@@ -4,10 +4,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/datastore"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/datastore"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

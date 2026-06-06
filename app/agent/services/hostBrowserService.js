@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.agent').factory('HostBrowserService', HostBrowserServiceFactory);
+angular.module('opendocking.agent').factory('HostBrowserService', HostBrowserServiceFactory);
 
 /* @ngInject */
 function HostBrowserServiceFactory(Browse, Upload, API_ENDPOINT_ENDPOINTS, StateManager) {

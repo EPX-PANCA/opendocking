@@ -61,7 +61,7 @@ type (
 		GitCommit      string
 	}
 
-	// DependenciesInfo contains information about the dependencies of Portainer
+	// DependenciesInfo contains information about the dependencies of OpenDocking
 	DependenciesInfo struct {
 		DockerVersion  string
 		HelmVersion    string

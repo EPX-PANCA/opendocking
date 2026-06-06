@@ -6,7 +6,7 @@ import { stripProtocol } from '@/react/common/string-utils';
 import { arrayToStr, endpointTypeName, getPairKey, getPairValue, humanize, ipAddress, isoDate, isoDateFromTimestamp, labelsToStr, truncate, truncateLeftRight } from './filters';
 
 angular
-  .module('portainer.app')
+  .module('opendocking.app')
   .filter('truncate', () => truncate)
   .filter('truncatelr', () => truncateLeftRight)
   .filter('capitalize', () => _.capitalize)

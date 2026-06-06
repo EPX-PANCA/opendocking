@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.agent').factory('VolumeBrowserService', VolumeBrowserServiceFactory);
+angular.module('opendocking.agent').factory('VolumeBrowserService', VolumeBrowserServiceFactory);
 
 /* @ngInject */
 function VolumeBrowserServiceFactory(StateManager, Browse, BrowseVersion1, API_ENDPOINT_ENDPOINTS, Upload) {

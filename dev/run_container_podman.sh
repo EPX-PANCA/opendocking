@@ -1,23 +1,23 @@
 #!/bin/bash
 set -euo pipefail
 
-PORTAINER_DATA=${PORTAINER_DATA:-/tmp/portainer}
-PORTAINER_PROJECT=${PORTAINER_PROJECT:-$(pwd)}
-PORTAINER_FLAGS=${PORTAINER_FLAGS:-}
+OPENDOCKING_DATA=${OPENDOCKING_DATA:-/tmp/opendocking}
+OPENDOCKING_PROJECT=${OPENDOCKING_PROJECT:-$(pwd)}
+OPENDOCKING_FLAGS=${OPENDOCKING_FLAGS:-}
 
-sudo podman rm -f portainer
+sudo podman rm -f opendocking || true
 
 # rootful podman (sudo required)
 sudo podman run -d \
   -p 8000:8000 \
   -p 9000:9000 \
   -p 9443:9443 \
-  -v "$PORTAINER_PROJECT/dist:/app" \
-  -v "$PORTAINER_DATA:/data" \
+  -v "$OPENDOCKING_PROJECT/dist:/app" \
+  -v "$OPENDOCKING_DATA:/data" \
   -v /run/podman/podman.sock:/var/run/docker.sock \
   -v /tmp:/tmp \
   -e CSP=false \
   --privileged \
-  --name portainer \
+  --name opendocking \
   portainer/base \
-  /app/portainer $PORTAINER_FLAGS
+  /app/opendocking $OPENDOCKING_FLAGS

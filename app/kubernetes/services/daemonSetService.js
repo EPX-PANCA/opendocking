@@ -112,4 +112,4 @@ class KubernetesDaemonSetService {
 }
 
 export default KubernetesDaemonSetService;
-angular.module('portainer.kubernetes').service('KubernetesDaemonSetService', KubernetesDaemonSetService);
+angular.module('opendocking.kubernetes').service('KubernetesDaemonSetService', KubernetesDaemonSetService);

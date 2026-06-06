@@ -1,6 +1,6 @@
 import { WebhookViewModel } from '../../models/webhook';
 
-angular.module('portainer.app').factory('WebhookService', [
+angular.module('opendocking.app').factory('WebhookService', [
   '$q',
   'Webhooks',
   function WebhookServiceFactory($q, Webhooks) {

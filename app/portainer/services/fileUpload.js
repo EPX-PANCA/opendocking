@@ -1,6 +1,6 @@
 import { PortainerEndpointCreationTypes } from '@/portainer/models/endpoint/models';
 
-angular.module('portainer.app').factory('FileUploadService', FileUploadFactory);
+angular.module('opendocking.app').factory('FileUploadService', FileUploadFactory);
 
 /* @ngInject */
 function FileUploadFactory($q, Upload) {

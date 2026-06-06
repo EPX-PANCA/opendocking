@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesConfigurationData', {
+angular.module('opendocking.kubernetes').component('kubernetesConfigurationData', {
   templateUrl: './kubernetesConfigurationData.html',
   controller: 'KubernetesConfigurationDataController',
   bindings: {

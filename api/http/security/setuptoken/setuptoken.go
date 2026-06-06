@@ -1,6 +1,6 @@
 // Package setuptoken provides a one-time setup token used to protect the
 // public initialization endpoints (admin account creation and backup restore)
-// on an uninitialized Portainer instance.
+// on an uninitialized OpenDocking instance.
 package setuptoken
 
 import (
@@ -10,7 +10,7 @@ import (
 	"errors"
 	"net/http"
 
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 )
 
 // HeaderName is the HTTP header that carries the setup token.

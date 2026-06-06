@@ -3,7 +3,7 @@ package sdk
 import (
 	"testing"
 
-	libhelmrelease "github.com/portainer/portainer/pkg/libhelm/release"
+	libhelmrelease "github.com/opendocking/opendocking/pkg/libhelm/release"
 	"github.com/stretchr/testify/assert"
 	chartv2 "helm.sh/helm/v4/pkg/chart/v2"
 	releasev1 "helm.sh/helm/v4/pkg/release/v1"

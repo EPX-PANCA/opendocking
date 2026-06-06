@@ -45,7 +45,7 @@ export function HomeView() {
       } else {
         clearStore();
         router.stateService.go(
-          'portainer.home',
+          'opendocking.home',
           {},
           { reload: true, inherit: false }
         );

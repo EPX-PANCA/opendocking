@@ -6,11 +6,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/release"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/release"
 
 	"github.com/segmentio/encoding/json"
 	"github.com/stretchr/testify/assert"

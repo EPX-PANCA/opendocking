@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/pkg/libcrypto"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/pkg/libcrypto"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"

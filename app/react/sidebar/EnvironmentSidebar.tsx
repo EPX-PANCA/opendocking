@@ -110,7 +110,7 @@ function useCurrentEnvironment() {
 
   function clearEnvironment() {
     if (params.endpointId || params.environmentId) {
-      router.stateService.go('portainer.home');
+      router.stateService.go('opendocking.home');
     }
 
     envStore.clear();

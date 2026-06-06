@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strings"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 	batchv1 "k8s.io/api/batch/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('EndpointGroups', [
+angular.module('opendocking.app').factory('EndpointGroups', [
   '$resource',
   'API_ENDPOINT_ENDPOINT_GROUPS',
   function EndpointGroupsFactory($resource, API_ENDPOINT_ENDPOINT_GROUPS) {

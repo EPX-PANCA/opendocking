@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/chisel"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/pkg/fips"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/chisel"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/pkg/fips"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/git"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/git"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/stretchr/testify/require"
 )

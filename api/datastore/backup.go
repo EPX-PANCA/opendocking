@@ -5,7 +5,7 @@ import (
 	"os"
 	"path"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 	"github.com/rs/zerolog/log"
 )
 
@@ -78,7 +78,7 @@ func (store *Store) RestoreFromFile(backupFilename string) error {
 	}
 
 	editionLabel := portainer.SoftwareEdition(version.Edition).GetEditionLabel()
-	log.Info().Msgf("Restored database version: Portainer %s %s", editionLabel, version.SchemaVersion)
+	log.Info().Msgf("Restored database version: OpenDocking %s %s", editionLabel, version.SchemaVersion)
 	return nil
 }
 

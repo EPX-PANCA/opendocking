@@ -1,4 +1,4 @@
-angular.module('portainer.docker').factory('SecretHelper', [
+angular.module('opendocking.docker').factory('SecretHelper', [
   function SecretHelperFactory() {
     'use strict';
     return {

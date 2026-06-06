@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('HostBrowserViewController', [
+angular.module('opendocking.docker').controller('HostBrowserViewController', [
   'SystemService',
   'Notifications',
   function HostBrowserViewController(SystemService, Notifications) {

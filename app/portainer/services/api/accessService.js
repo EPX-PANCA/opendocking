@@ -2,7 +2,7 @@ import _ from 'lodash-es';
 import { UserAccessViewModel } from '../../models/access';
 import { TeamAccessViewModel } from '../../models/access';
 
-angular.module('portainer.app').factory('AccessService', [
+angular.module('opendocking.app').factory('AccessService', [
   '$q',
   '$async',
   'UserService',

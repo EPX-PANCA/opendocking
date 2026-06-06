@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('NodeLabelsTableController', [
+angular.module('opendocking.docker').controller('NodeLabelsTableController', [
   function NodeLabelsTableController() {
     var ctrl = this;
     ctrl.removeLabel = removeLabel;

@@ -5,7 +5,7 @@ import (
 	"crypto/cipher"
 	"errors"
 
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/pkg/fips"
 )
 
 // Decrypt decrypts data using 256-bit AES-GCM.  This both hides the content of

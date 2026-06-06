@@ -3,14 +3,14 @@ package migrator
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/dataservices/customtemplate"
-	"github.com/portainer/portainer/api/dataservices/source"
-	"github.com/portainer/portainer/api/dataservices/stack"
-	"github.com/portainer/portainer/api/dataservices/workflow"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/dataservices/customtemplate"
+	"github.com/opendocking/opendocking/api/dataservices/source"
+	"github.com/opendocking/opendocking/api/dataservices/stack"
+	"github.com/opendocking/opendocking/api/dataservices/workflow"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/stretchr/testify/require"
 )

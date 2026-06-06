@@ -1,8 +1,8 @@
 package status
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/internal/endpointutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
 )
 
 // NodesCount returns the total node number of all environments

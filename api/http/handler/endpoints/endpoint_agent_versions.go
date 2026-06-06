@@ -3,10 +3,10 @@ package endpoints
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/set"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/set"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 // @id AgentVersions

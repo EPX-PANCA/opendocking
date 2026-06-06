@@ -9,10 +9,10 @@ import (
 	"os"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/http/security"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/http/security"
 
 	"github.com/gorilla/mux"
 	"github.com/segmentio/encoding/json"

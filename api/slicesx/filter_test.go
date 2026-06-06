@@ -3,7 +3,7 @@ package slicesx_test
 import (
 	"testing"
 
-	"github.com/portainer/portainer/api/slicesx"
+	"github.com/opendocking/opendocking/api/slicesx"
 
 	"github.com/stretchr/testify/require"
 )

@@ -1,7 +1,7 @@
 import angular from 'angular';
 import controller from './registryController';
 
-angular.module('portainer.app').component('editRegistry', {
+angular.module('opendocking.app').component('editRegistry', {
   templateUrl: './registry.html',
   controller,
   bindings: {

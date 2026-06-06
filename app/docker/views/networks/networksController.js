@@ -2,7 +2,7 @@ import _ from 'lodash-es';
 import DockerNetworkHelper from '@/docker/helpers/networkHelper';
 import { processItemsInBatches } from '@/react/common/processItemsInBatches';
 
-angular.module('portainer.docker').controller('NetworksController', [
+angular.module('opendocking.docker').controller('NetworksController', [
   '$q',
   '$scope',
   '$state',

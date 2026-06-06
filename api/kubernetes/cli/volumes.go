@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 	"github.com/rs/zerolog/log"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"

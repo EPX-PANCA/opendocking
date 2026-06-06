@@ -3,9 +3,9 @@ package update
 import (
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/pkg/validate"
+	portainer "github.com/opendocking/opendocking/api"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/pkg/validate"
 )
 
 func ValidateAutoUpdateSettings(autoUpdate *portainer.AutoUpdateSettings) error {

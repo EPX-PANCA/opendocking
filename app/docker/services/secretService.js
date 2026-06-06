@@ -5,7 +5,7 @@ import { createSecret } from '@/react/docker/proxy/queries/secrets/useCreateSecr
 
 import { SecretViewModel } from '../models/secret';
 
-angular.module('portainer.docker').factory('SecretService', SecretServiceFactory);
+angular.module('opendocking.docker').factory('SecretService', SecretServiceFactory);
 
 /* @ngInject */
 function SecretServiceFactory(AngularToReact) {

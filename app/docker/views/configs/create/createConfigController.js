@@ -155,4 +155,4 @@ class CreateConfigController {
 }
 
 export default CreateConfigController;
-angular.module('portainer.docker').controller('CreateConfigController', CreateConfigController);
+angular.module('opendocking.docker').controller('CreateConfigController', CreateConfigController);

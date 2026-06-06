@@ -3,12 +3,12 @@ package edgestacks
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/middlewares"
-	"github.com/portainer/portainer/api/http/security"
-	edgestackservice "github.com/portainer/portainer/api/internal/edge/edgestacks"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/middlewares"
+	"github.com/opendocking/opendocking/api/http/security"
+	edgestackservice "github.com/opendocking/opendocking/api/internal/edge/edgestacks"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/gorilla/mux"
 )

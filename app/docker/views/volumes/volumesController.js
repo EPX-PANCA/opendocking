@@ -1,6 +1,6 @@
 import { processItemsInBatches } from '@/react/common/processItemsInBatches';
 
-angular.module('portainer.docker').controller('VolumesController', [
+angular.module('opendocking.docker').controller('VolumesController', [
   '$q',
   '$scope',
   '$state',

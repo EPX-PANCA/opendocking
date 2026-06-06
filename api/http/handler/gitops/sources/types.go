@@ -3,9 +3,9 @@ package sources
 import (
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	"github.com/portainer/portainer/api/gitops/workflows"
+	portainer "github.com/opendocking/opendocking/api"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	"github.com/opendocking/opendocking/api/gitops/workflows"
 )
 
 // Source represents a unique git repository used as a GitOps source across one or more workflows.

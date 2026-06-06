@@ -4,8 +4,8 @@ import (
 	"context"
 	"path"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	composeloader "github.com/compose-spec/compose-go/v2/loader"
 	composetypes "github.com/compose-spec/compose-go/v2/types"

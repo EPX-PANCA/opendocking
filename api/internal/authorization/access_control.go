@@ -3,9 +3,9 @@ package authorization
 import (
 	"strconv"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/stacks/stackutils"
-	"github.com/portainer/portainer/pkg/authorization"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
+	"github.com/opendocking/opendocking/pkg/authorization"
 )
 
 var (

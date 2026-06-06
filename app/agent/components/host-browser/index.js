@@ -1,7 +1,7 @@
 import angular from 'angular';
 import { HostBrowserController } from './hostBrowserController';
 
-angular.module('portainer.agent').component('hostBrowser', {
+angular.module('opendocking.agent').component('hostBrowser', {
   controller: HostBrowserController,
   templateUrl: './hostBrowser.html',
   bindings: {

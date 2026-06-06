@@ -6,10 +6,10 @@ import (
 	"os"
 
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
-	k "github.com/portainer/portainer/api/kubernetes"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
+	k "github.com/opendocking/opendocking/api/kubernetes"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 	"github.com/rs/zerolog/log"
 )
 

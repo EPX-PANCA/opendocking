@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Users', [
+angular.module('opendocking.app').factory('Users', [
   '$resource',
   'API_ENDPOINT_USERS',
   function UsersFactory($resource, API_ENDPOINT_USERS) {

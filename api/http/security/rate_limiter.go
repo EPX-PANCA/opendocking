@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/portainer/portainer/api/http/errors"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/api/http/errors"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/g07cha/defender"
 )

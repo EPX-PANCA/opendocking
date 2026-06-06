@@ -3,11 +3,11 @@ package sources
 import (
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	ce "github.com/portainer/portainer/api/gitops/workflows"
-	"github.com/portainer/portainer/api/set"
-	"github.com/portainer/portainer/api/slicesx"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	ce "github.com/opendocking/opendocking/api/gitops/workflows"
+	"github.com/opendocking/opendocking/api/set"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 // FetchSourceWorkflows returns the workflows and stats for a single source.

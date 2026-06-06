@@ -3,8 +3,8 @@ package migrator
 import (
 	"github.com/rs/zerolog/log"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
 )
 
 func (m *Migrator) migrateDBVersionToDB90() error {

@@ -8,7 +8,7 @@ import { StateManager } from '@/portainer/services/types';
 import { reactModule } from './react';
 
 export const azureModule = angular
-  .module('portainer.azure', [reactModule])
+  .module('opendocking.azure', [reactModule])
   .config(config).name;
 
 /* @ngInject */
@@ -26,14 +26,14 @@ function config($stateRegistryProvider: StateRegistry) {
     ) {
       return $async(async () => {
         if (endpoint.Type !== 3) {
-          $state.go('portainer.home');
+          $state.go('opendocking.home');
           return;
         }
         try {
           await StateManager.updateEndpointState(endpoint);
         } catch (e) {
           notifyError('Failed loading environment', e as Error);
-          $state.go('portainer.home', {}, { reload: true });
+          $state.go('opendocking.home', {}, { reload: true });
         }
       });
     },

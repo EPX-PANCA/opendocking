@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	portainer "github.com/opendocking/opendocking/api"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"

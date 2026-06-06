@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"strconv"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/filesystem"
-	gittypes "github.com/portainer/portainer/api/git/types"
-	"github.com/portainer/portainer/api/gitops/workflows"
-	"github.com/portainer/portainer/api/scheduler"
-	"github.com/portainer/portainer/api/stacks/deployments"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/filesystem"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
+	"github.com/opendocking/opendocking/api/gitops/workflows"
+	"github.com/opendocking/opendocking/api/scheduler"
+	"github.com/opendocking/opendocking/api/stacks/deployments"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 )
 
 type GitMethodStackBuilder struct {

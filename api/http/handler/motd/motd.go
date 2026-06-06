@@ -3,8 +3,8 @@ package motd
 import (
 	"net/http"
 
-	_ "github.com/portainer/portainer/api/motd"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	_ "github.com/opendocking/opendocking/api/motd"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 	"github.com/rs/zerolog/log"
 )
 

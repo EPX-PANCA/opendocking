@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/proxy/factory/gitlab"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/gitlab"
 	"github.com/rs/zerolog/log"
 )
 

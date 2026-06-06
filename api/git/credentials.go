@@ -1,7 +1,7 @@
 package git
 
 import (
-	gittypes "github.com/portainer/portainer/api/git/types"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 )
 
 func GetCredentials(auth *gittypes.GitAuthentication) (string, string) {

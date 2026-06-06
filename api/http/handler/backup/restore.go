@@ -6,10 +6,10 @@ import (
 	"net/http"
 
 	"github.com/pkg/errors"
-	operations "github.com/portainer/portainer/api/backup"
-	"github.com/portainer/portainer/api/http/security/setuptoken"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	operations "github.com/opendocking/opendocking/api/backup"
+	"github.com/opendocking/opendocking/api/http/security/setuptoken"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 )
 
 type restorePayload struct {

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 // IsAdmin returns true if the logged-in user is an admin

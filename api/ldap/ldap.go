@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/crypto"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/crypto"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/api/logs"
 
 	ldap "github.com/go-ldap/ldap/v3"
 	"github.com/pkg/errors"

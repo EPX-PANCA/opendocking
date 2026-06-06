@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/scheduler"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/scheduler"
 )
 
 func StartStackSchedules(scheduler *scheduler.Scheduler, stackdeployer StackDeployer, datastore dataservices.DataStore, gitService portainer.GitService) error {

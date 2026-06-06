@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/portainer/portainer/api/http/proxy/factory/utils"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/utils"
 )
 
 // proxy for /subscriptions/*/providers/Microsoft.ContainerInstance/containerGroups

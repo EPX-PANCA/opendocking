@@ -115,4 +115,4 @@ class KubernetesHorizontalPodAutoScalerService {
 }
 
 export default KubernetesHorizontalPodAutoScalerService;
-angular.module('portainer.kubernetes').service('KubernetesHorizontalPodAutoScalerService', KubernetesHorizontalPodAutoScalerService);
+angular.module('opendocking.kubernetes').service('KubernetesHorizontalPodAutoScalerService', KubernetesHorizontalPodAutoScalerService);

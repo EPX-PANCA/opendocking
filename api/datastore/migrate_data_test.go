@@ -8,11 +8,11 @@ import (
 	"os"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/database/models"
-	"github.com/portainer/portainer/api/datastore/migrator"
-	"github.com/portainer/portainer/api/filesystem"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/database/models"
+	"github.com/opendocking/opendocking/api/datastore/migrator"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/google/go-cmp/cmp"

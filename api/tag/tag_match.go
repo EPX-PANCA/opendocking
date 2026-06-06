@@ -1,6 +1,6 @@
 package tag
 
-import portainer "github.com/portainer/portainer/api"
+import portainer "github.com/opendocking/opendocking/api"
 
 // FullMatch returns true if environment tags matches all edge group tags
 func FullMatch(edgeGroupTags []portainer.TagID, environmentTags tagSet) bool {

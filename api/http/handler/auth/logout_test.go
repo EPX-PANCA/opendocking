@@ -5,13 +5,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/http/proxy/factory/kubernetes"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/kubernetes"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
 
 	"github.com/stretchr/testify/require"
 )

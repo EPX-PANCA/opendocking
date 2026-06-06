@@ -17,7 +17,7 @@ import { ImageViewModel } from '../models/image';
 import { ImageDetailsViewModel } from '../models/imageDetails';
 import { ImageLayerViewModel } from '../models/imageLayer';
 
-angular.module('portainer.docker').factory('ImageService', ImageServiceFactory);
+angular.module('opendocking.docker').factory('ImageService', ImageServiceFactory);
 
 /* @ngInject */
 function ImageServiceFactory(AngularToReact) {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"regexp"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 
 	"github.com/segmentio/encoding/json"
 )

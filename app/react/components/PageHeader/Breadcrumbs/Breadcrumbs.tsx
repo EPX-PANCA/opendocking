@@ -20,7 +20,7 @@ export function Breadcrumbs({ breadcrumbs }: Props) {
   return (
     <div className="flex items-center gap-2 text-sm font-medium text-gray-8 th-highcontrast:text-white th-dark:text-gray-5">
       <Link
-        to="portainer.home"
+        to="opendocking.home"
         className="text-gray-8 hover:text-blue-11 th-highcontrast:text-white th-dark:text-gray-5 th-dark:hover:text-blue-9"
         data-cy="breadcrumb-home"
       >

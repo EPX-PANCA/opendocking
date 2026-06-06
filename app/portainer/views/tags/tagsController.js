@@ -1,7 +1,7 @@
 import angular from 'angular';
 import _ from 'lodash-es';
 
-angular.module('portainer.app').controller('TagsController', TagsController);
+angular.module('opendocking.app').controller('TagsController', TagsController);
 
 function TagsController($scope, $state, $async, TagService, Notifications) {
   $scope.state = {

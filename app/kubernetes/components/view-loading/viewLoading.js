@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesViewLoading', {
+angular.module('opendocking.kubernetes').component('kubernetesViewLoading', {
   templateUrl: './viewLoading.html',
   bindings: {
     viewReady: '<',

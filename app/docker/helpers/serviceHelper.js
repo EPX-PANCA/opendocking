@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-angular.module('portainer.docker').factory('ServiceHelper', [
+angular.module('opendocking.docker').factory('ServiceHelper', [
   function ServiceHelperFactory() {
     'use strict';
 

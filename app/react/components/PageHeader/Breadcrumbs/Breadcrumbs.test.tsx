@@ -47,7 +47,7 @@ describe('Breadcrumbs', () => {
 
   it('should render linked breadcrumbs with data-cy', () => {
     renderBreadcrumbs([
-      { label: 'Settings', link: 'portainer.settings' },
+      { label: 'Settings', link: 'opendocking.settings' },
       { label: 'Groups' },
     ]);
 

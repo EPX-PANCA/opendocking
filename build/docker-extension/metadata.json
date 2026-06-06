@@ -1,12 +1,12 @@
 {
-  "icon": "portainer.svg",
+  "icon": "opendocking.svg",
   "vm": {
     "composefile": "docker-compose.yml",
     "exposes": { "socket": "docker.sock" }
   },
   "ui": {
     "dashboard-tab": {
-      "title": "Portainer",
+      "title": "OpenDocking",
       "root": "/public",
       "src": "http://localhost:49000"
     }

@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('TeamMemberships', [
+angular.module('opendocking.app').factory('TeamMemberships', [
   '$resource',
   'API_ENDPOINT_TEAM_MEMBERSHIPS',
   function TeamMembershipsFactory($resource, API_ENDPOINT_TEAM_MEMBERSHIPS) {

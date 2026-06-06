@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	gittypes "github.com/portainer/portainer/api/git/types"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/go-git/go-billy/v5"
 	"github.com/go-git/go-billy/v5/osfs"

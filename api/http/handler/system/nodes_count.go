@@ -3,11 +3,11 @@ package system
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	statusutil "github.com/portainer/portainer/api/internal/nodes"
-	"github.com/portainer/portainer/api/internal/snapshot"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	statusutil "github.com/opendocking/opendocking/api/internal/nodes"
+	"github.com/opendocking/opendocking/api/internal/snapshot"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 type nodesCountResponse struct {

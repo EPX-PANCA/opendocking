@@ -9,8 +9,8 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/filters"
-	portainer "github.com/portainer/portainer/api"
-	consts "github.com/portainer/portainer/api/docker/consts"
+	portainer "github.com/opendocking/opendocking/api"
+	consts "github.com/opendocking/opendocking/api/docker/consts"
 
 	"github.com/opencontainers/go-digest"
 	"github.com/patrickmn/go-cache"

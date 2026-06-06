@@ -124,4 +124,4 @@ class KubernetesStatefulSetService {
 }
 
 export default KubernetesStatefulSetService;
-angular.module('portainer.kubernetes').service('KubernetesStatefulSetService', KubernetesStatefulSetService);
+angular.module('opendocking.kubernetes').service('KubernetesStatefulSetService', KubernetesStatefulSetService);

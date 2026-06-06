@@ -3,7 +3,7 @@ package middlewares
 import (
 	"net/http"
 
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 	"github.com/rs/zerolog/log"
 )
 

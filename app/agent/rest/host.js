@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.agent').factory('Host', HostFactory);
+angular.module('opendocking.agent').factory('Host', HostFactory);
 
 function HostFactory($resource, API_ENDPOINT_ENDPOINTS, StateManager) {
   return $resource(

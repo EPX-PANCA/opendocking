@@ -2,7 +2,7 @@ import _ from 'lodash-es';
 import { ExternalStackViewModel } from '@/react/docker/stacks/view-models/external-stack';
 import { validateYAML } from '@/react/docker/stacks/common/stackYamlValidation';
 
-angular.module('portainer.app').factory('StackHelper', [
+angular.module('opendocking.app').factory('StackHelper', [
   function StackHelperFactory() {
     'use strict';
     var helper = {};

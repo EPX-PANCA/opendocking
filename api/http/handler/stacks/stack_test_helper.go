@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/authorization"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/authorization"
 )
 
 func mockCreateUser(store *datastore.Store) (*portainer.User, error) {

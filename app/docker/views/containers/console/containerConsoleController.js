@@ -2,7 +2,7 @@ import { baseHref } from '@/portainer/helpers/pathHelper';
 import { commandStringToArray } from '@/docker/helpers/containers';
 import { isLinuxTerminalCommand, LINUX_SHELL_INIT_COMMANDS } from '@@/Terminal/Terminal';
 
-angular.module('portainer.docker').controller('ContainerConsoleController', [
+angular.module('opendocking.docker').controller('ContainerConsoleController', [
   '$scope',
   '$state',
   '$transition$',

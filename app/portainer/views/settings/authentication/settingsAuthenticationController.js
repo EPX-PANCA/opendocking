@@ -6,7 +6,7 @@ import { SERVER_TYPES } from '@/react/portainer/settings/AuthenticationView/ldap
 import { AuthenticationMethod } from '@/react/portainer/settings/types';
 import { getDefaultValue as getDefaultSessionValue } from '@/react/portainer/settings/AuthenticationView/SessionLifetimeSelect';
 
-angular.module('portainer.app').controller('SettingsAuthenticationController', SettingsAuthenticationController);
+angular.module('opendocking.app').controller('SettingsAuthenticationController', SettingsAuthenticationController);
 
 function SettingsAuthenticationController($q, $scope, $state, Notifications, SettingsService, FileUploadService, TeamService, LDAPService) {
   $scope.authMethod = 1;

@@ -72,4 +72,4 @@ class KubernetesNodeService {
 }
 
 export default KubernetesNodeService;
-angular.module('portainer.kubernetes').service('KubernetesNodeService', KubernetesNodeService);
+angular.module('opendocking.kubernetes').service('KubernetesNodeService', KubernetesNodeService);

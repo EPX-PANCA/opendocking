@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/docker/cli/cli/command"
 	configtypes "github.com/docker/cli/cli/config/types"

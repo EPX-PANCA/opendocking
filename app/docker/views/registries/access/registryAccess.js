@@ -1,4 +1,4 @@
-angular.module('portainer.docker').component('dockerRegistryAccessView', {
+angular.module('opendocking.docker').component('dockerRegistryAccessView', {
   templateUrl: './registryAccess.html',
   controller: 'DockerRegistryAccessController',
   bindings: {

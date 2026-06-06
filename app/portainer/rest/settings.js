@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Settings', [
+angular.module('opendocking.app').factory('Settings', [
   '$resource',
   'API_ENDPOINT_SETTINGS',
   function SettingsFactory($resource, API_ENDPOINT_SETTINGS) {

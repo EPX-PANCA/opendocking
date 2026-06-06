@@ -778,7 +778,7 @@ metadata:
 }
 
 // Test_ExtractDocuments_MalformedYAML is a regression test for the infinite loop
-// described in https://github.com/portainer/portainer/issues/13051.
+// described in https://github.com/opendocking/opendocking/issues/13051.
 // Previously, a malformed YAML document (bad indentation) caused Decode() to
 // return both err != nil and m == nil. The pre-fix implementation checked
 // m == nil first and continued, skipping the EOF check and looping forever.

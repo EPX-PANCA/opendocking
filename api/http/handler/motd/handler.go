@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/portainer/portainer/api/http/security"
-	motdservice "github.com/portainer/portainer/api/motd"
+	"github.com/opendocking/opendocking/api/http/security"
+	motdservice "github.com/opendocking/opendocking/api/motd"
 )
 
 // Handler is the HTTP handler used to handle MOTD operations.

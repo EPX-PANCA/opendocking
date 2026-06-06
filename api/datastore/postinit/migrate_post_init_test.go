@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/pendingactions/actions"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/pendingactions/actions"
 
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/client"

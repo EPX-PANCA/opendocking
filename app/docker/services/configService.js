@@ -5,7 +5,7 @@ import { deleteConfig } from '@/react/docker/configs/queries/useDeleteConfigMuta
 import { createConfig } from '@/react/docker/configs/queries/useCreateConfigMutation';
 import { ConfigViewModel } from '@/react/docker/configs/model';
 
-angular.module('portainer.docker').factory('ConfigService', ConfigServiceFactory);
+angular.module('opendocking.docker').factory('ConfigService', ConfigServiceFactory);
 
 /* @ngInspect */
 function ConfigServiceFactory(AngularToReact) {

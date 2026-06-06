@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').factory('KubernetesPortainerNamespaces', KubernetesPortainerNamespacesFactory);
+angular.module('opendocking.kubernetes').factory('KubernetesPortainerNamespaces', KubernetesPortainerNamespacesFactory);
 
 function KubernetesPortainerNamespacesFactory($resource) {
   const url = '/api/kubernetes/:endpointId/namespaces/:namespaceName/:action';

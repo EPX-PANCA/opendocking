@@ -7,7 +7,7 @@ import (
 
 	"github.com/segmentio/encoding/json"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 // ConfigFingerprint is the generic primitive: FNV-1a over serialized policy

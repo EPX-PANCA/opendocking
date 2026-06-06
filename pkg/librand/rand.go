@@ -6,7 +6,7 @@ import (
 	"math/big"
 	mrand "math/rand/v2"
 
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/pkg/fips"
 )
 
 func Intn(max int) int {

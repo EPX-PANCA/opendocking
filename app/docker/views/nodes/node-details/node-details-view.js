@@ -1,4 +1,4 @@
-angular.module('portainer.docker').component('nodeDetailsView', {
+angular.module('opendocking.docker').component('nodeDetailsView', {
   templateUrl: './node-details-view.html',
   controller: 'NodeDetailsViewController',
   bindings: {

@@ -113,4 +113,4 @@ class KubernetesConfigurationService {
 }
 
 export default KubernetesConfigurationService;
-angular.module('portainer.kubernetes').service('KubernetesConfigurationService', KubernetesConfigurationService);
+angular.module('opendocking.kubernetes').service('KubernetesConfigurationService', KubernetesConfigurationService);

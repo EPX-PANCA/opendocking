@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  portainer:
+  opendocking:
     image: ${DESKTOP_PLUGIN_IMAGE}
     command: ['--admin-password', '$$$$2y$$$$05$$$$bsb.XmF.r2DU6/9oVUaDxu3.Lxhmg1R8M0NMLK6JJKUiqUcaNjvdu']
     restart: always
@@ -11,9 +11,9 @@ services:
       - no-new-privileges:true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - portainer_data:/data
+      - opendocking_data:/data
     ports:
       - 127.0.0.1:49000:9000
       - 127.0.0.1:49443:9443
 volumes:
-  portainer_data:
+  opendocking_data:

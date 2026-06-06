@@ -3,7 +3,7 @@ package slicesx_test
 import (
 	"testing"
 
-	"github.com/portainer/portainer/api/slicesx"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 func partition[T any](input []T, predicate func(T) bool) [2][]T {

@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/internal/testhelpers"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
 
 	"github.com/segmentio/encoding/json"
 	"github.com/stretchr/testify/require"

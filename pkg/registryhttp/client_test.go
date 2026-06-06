@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/pkg/fips"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/pkg/fips"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"oras.land/oras-go/v2/registry/remote/retry"

@@ -5,8 +5,8 @@ import (
 	"testing/synctest"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	i "github.com/portainer/portainer/api/internal/testhelpers"
+	portainer "github.com/opendocking/opendocking/api"
+	i "github.com/opendocking/opendocking/api/internal/testhelpers"
 	"github.com/stretchr/testify/assert"
 )
 

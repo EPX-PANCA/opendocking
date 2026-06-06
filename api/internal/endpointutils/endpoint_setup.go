@@ -4,24 +4,23 @@ import (
 	"context"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/client"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/client"
 
 	"github.com/rs/zerolog/log"
 )
 
 // InitEndpoint controls the workflow to initialize the primary endpoint.
-// When installing Portainer in a Docker Cluster using the yaml file provided in the official
-// documentation (https://docs.portainer.io/start/install/server/swarm/linux), the "primary"
-// endpoint is initialized before the admin user is created. This triggers the creation of a
-// snapshot of the environment in the background, which includes the agent saving the signature
-// from the first request made by the server. However, if a user restores Portainer from a backup
-// instead of creating a new admin user, the server will not be able to connect to the agent because
-// the saved signature will not match. To solve this issue, this solution proposes to wait for
-// the admin user to be created before initializing the primary endpoint. This way, the agent
-// will save the signature from the first request after the admin user is created, ensuring that
-// it matches in the event of a backup restoration.
+// When installing in a Docker Cluster, the "primary" endpoint is initialized before the admin
+// user is created. This triggers the creation of a snapshot of the environment in the background,
+// which includes the agent saving the signature from the first request made by the server.
+// However, if a user restores from a backup instead of creating a new admin user, the server
+// will not be able to connect to the agent because the saved signature will not match.
+// To solve this issue, this solution proposes to wait for the admin user to be created before
+// initializing the primary endpoint. This way, the agent will save the signature from the first
+// request after the admin user is created, ensuring that it matches in the event of a backup
+// restoration.
 func InitEndpoint(shutdownCtx context.Context, adminCreationDone <-chan struct{}, flags *portainer.CLIFlags, dataStore dataservices.DataStore, snapshotService portainer.SnapshotService) {
 	select {
 	case <-shutdownCtx.Done():

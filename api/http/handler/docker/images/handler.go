@@ -3,10 +3,10 @@ package images
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/http/middlewares"
-	"github.com/portainer/portainer/api/http/security"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/http/middlewares"
+	"github.com/opendocking/opendocking/api/http/security"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/gorilla/mux"
 )

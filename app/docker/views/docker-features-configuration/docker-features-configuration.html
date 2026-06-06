@@ -10,9 +10,11 @@
             <span class="col-sm-12 text-muted small vertical-center">
               <pr-icon icon="'info'" mode="'primary'" class-name="'space-right'"></pr-icon>
               <span class="text-muted"
-                >The environment must be <a href="https://docs.portainer.io/start/agent">running the Portainer Agent</a> to use this functionality, and the root of the host must be
-                bind-mounted to <b>/host</b> in the agent deployment. Check
-                <a href="https://docs.portainer.io/user/docker/host/setup#enable-host-management-features">our documentation</a> for more information.</span
+                >The environment must be <a href="https://opendocking.io/docs/agent">running the OpenDocking Agent</a> to use this functionality, and the root of the host must be
+            </span>
+            <span class="col-sm-12 text-muted small">
+                See
+                <a href="https://opendocking.io/docs/host/setup">our documentation</a> for more information.</span
               >
             </span>
           </div>
@@ -35,7 +37,7 @@
                 checked="$ctrl.formValues.allowVolumeBrowserForRegularUsers"
                 name="'allowVolumeBrowserForRegularUsers'"
                 label="'Enable volume management for non-administrators'"
-                tooltip="'When enabled, regular users will be able to use Portainer volume management features.'"
+                tooltip="'When enabled, regular users will be able to use OpenDocking volume management features.'"
                 label-class="'col-sm-7 col-lg-4'"
                 on-change="($ctrl.onChangeAllowVolumeBrowserForRegularUsers)"
                 disabled="!$ctrl.isAgent"
@@ -174,7 +176,7 @@
             <div class="col-sm-12">
               <por-switch-field
                 label="'Show GPU in the UI'"
-                tooltip="'This allows managing of GPUs for container/stack hardware acceleration via the Portainer UI.'"
+                tooltip="'This allows managing of GPUs for container/stack hardware acceleration via the OpenDocking UI.'"
                 checked="$ctrl.state.enableGPUManagement"
                 name="'enableGPUManagement'"
                 on-change="($ctrl.onToggleGPUManagement)"

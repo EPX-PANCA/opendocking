@@ -86,4 +86,4 @@ export function KubernetesResourceQuotaService($async, KubernetesResourceQuotas)
   }
 }
 
-angular.module('portainer.kubernetes').service('KubernetesResourceQuotaService', KubernetesResourceQuotaService);
+angular.module('opendocking.kubernetes').service('KubernetesResourceQuotaService', KubernetesResourceQuotaService);

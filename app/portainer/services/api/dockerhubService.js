@@ -1,7 +1,7 @@
 import { PortainerEndpointTypes } from '@/portainer/models/endpoint/models';
 import { isLocalEnvironment } from '@/react/portainer/environments/utils';
 
-angular.module('portainer.app').factory('DockerHubService', DockerHubService);
+angular.module('opendocking.app').factory('DockerHubService', DockerHubService);
 
 /* @ngInject */
 function DockerHubService(Endpoints, AgentDockerhub) {

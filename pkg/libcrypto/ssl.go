@@ -12,7 +12,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 )
 
 // GenerateCertsForHost generates a self-signed certificate for host and saves them at certPath and keyPath

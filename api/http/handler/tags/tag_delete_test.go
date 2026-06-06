@@ -7,12 +7,12 @@ import (
 	"sync"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	portainerDsErrors "github.com/portainer/portainer/api/dataservices/errors"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/api/roar"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	portainerDsErrors "github.com/opendocking/opendocking/api/dataservices/errors"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/api/roar"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

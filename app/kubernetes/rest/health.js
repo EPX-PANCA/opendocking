@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').factory('KubernetesHealth', [
+angular.module('opendocking.kubernetes').factory('KubernetesHealth', [
   '$resource',
   'API_ENDPOINT_ENDPOINTS',
   function KubernetesHealthFactory($resource, API_ENDPOINT_ENDPOINTS) {

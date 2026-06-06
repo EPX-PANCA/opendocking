@@ -3,9 +3,9 @@ package registryhttp
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/pkg/fips"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/pkg/fips"
 )
 
 // BuildTransportAndSchemeFromTLSConfig returns a base HTTP transport configured

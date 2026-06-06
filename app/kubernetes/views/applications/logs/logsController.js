@@ -93,4 +93,4 @@ class KubernetesApplicationLogsController {
 }
 
 export default KubernetesApplicationLogsController;
-angular.module('portainer.kubernetes').controller('KubernetesApplicationLogsController', KubernetesApplicationLogsController);
+angular.module('opendocking.kubernetes').controller('KubernetesApplicationLogsController', KubernetesApplicationLogsController);

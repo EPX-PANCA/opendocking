@@ -2,7 +2,7 @@ package uac
 
 import (
 	"github.com/docker/docker/api/types/container"
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 func ContainerResourceControlGetter[

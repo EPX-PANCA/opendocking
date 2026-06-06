@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.agent').factory('AgentPing', AgentPingFactory);
+angular.module('opendocking.agent').factory('AgentPing', AgentPingFactory);
 
 function AgentPingFactory($resource, API_ENDPOINT_ENDPOINTS, $q) {
   return $resource(

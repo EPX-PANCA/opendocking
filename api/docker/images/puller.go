@@ -4,8 +4,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/docker/docker/api/types/image"
 	"github.com/docker/docker/client"

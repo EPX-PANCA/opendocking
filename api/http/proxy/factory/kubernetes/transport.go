@@ -10,10 +10,10 @@ import (
 	"strconv"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"

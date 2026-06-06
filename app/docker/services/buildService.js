@@ -7,7 +7,7 @@ import {
 
 import { ImageBuildModel } from '../models/build';
 
-angular.module('portainer.docker').factory('BuildService', BuildServiceFactory);
+angular.module('opendocking.docker').factory('BuildService', BuildServiceFactory);
 
 /* @ngInject */
 function BuildServiceFactory(AngularToReact) {

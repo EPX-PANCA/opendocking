@@ -3,7 +3,7 @@ package kubernetes
 import (
 	"sync"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 // TokenCacheManager represents a service used to manage multiple tokenCache objects.

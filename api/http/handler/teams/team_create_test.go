@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/portainer/portainer/api/datastore"
+	"github.com/opendocking/opendocking/api/datastore"
 
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"

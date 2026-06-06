@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.edge').factory('EdgeStackService', function EdgeStackServiceFactory(EdgeStacks, FileUploadService) {
+angular.module('opendocking.edge').factory('EdgeStackService', function EdgeStackServiceFactory(EdgeStacks, FileUploadService) {
   var service = {};
 
   service.stack = function stack(id) {

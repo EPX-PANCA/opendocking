@@ -5,12 +5,12 @@ import (
 	"os"
 	"runtime/debug"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/cli"
-	"github.com/portainer/portainer/api/database/models"
-	dserrors "github.com/portainer/portainer/api/dataservices/errors"
-	"github.com/portainer/portainer/api/datastore/migrator"
-	"github.com/portainer/portainer/api/internal/authorization"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/cli"
+	"github.com/opendocking/opendocking/api/database/models"
+	dserrors "github.com/opendocking/opendocking/api/dataservices/errors"
+	"github.com/opendocking/opendocking/api/datastore/migrator"
+	"github.com/opendocking/opendocking/api/internal/authorization"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"

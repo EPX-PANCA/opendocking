@@ -1,6 +1,6 @@
 import controller from './code-editor.controller';
 
-angular.module('portainer.app').component('codeEditor', {
+angular.module('opendocking.app').component('codeEditor', {
   templateUrl: './code-editor.html',
   controller,
   bindings: {

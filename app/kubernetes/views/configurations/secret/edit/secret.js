@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesSecretView', {
+angular.module('opendocking.kubernetes').component('kubernetesSecretView', {
   templateUrl: './secret.html',
   controller: 'KubernetesSecretController',
   controllerAs: 'ctrl',

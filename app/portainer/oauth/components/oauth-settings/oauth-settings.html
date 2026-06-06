@@ -32,7 +32,7 @@
   <auto-user-provision-toggle
     value="$ctrl.settings.OAuthAutoCreateUsers"
     on-change="($ctrl.onAutoUserProvisionChange)"
-    description="'With automatic user provisioning enabled, Portainer will create user(s) automatically with the standard user role. If disabled, users must be created beforehand in Portainer in order to login.'"
+    description="'With automatic user provisioning enabled, OpenDocking will create user(s) automatically with the standard user role. If disabled, users must be created beforehand in OpenDocking in order to login.'"
   ></auto-user-provision-toggle>
 
   <div ng-if="$ctrl.settings.OAuthAutoCreateUsers">
@@ -276,7 +276,7 @@
       <label for="oauth_redirect_uri" class="col-sm-3 col-lg-2 control-label text-left">
         Redirect URL
         <portainer-tooltip
-          message="'URL used by the OAuth provider to redirect the user after successful authentication. Should be set to your Portainer instance URL'"
+          message="'URL used by the OAuth provider to redirect the user after successful authentication. Should be set to your OpenDocking instance URL'"
         ></portainer-tooltip>
       </label>
       <div class="col-sm-9 col-lg-10">

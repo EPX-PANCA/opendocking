@@ -1,4 +1,4 @@
-angular.module('portainer.app').component('porEndpointSecurity', {
+angular.module('opendocking.app').component('porEndpointSecurity', {
   templateUrl: './porEndpointSecurity.html',
   controller: 'porEndpointSecurityController',
   bindings: {

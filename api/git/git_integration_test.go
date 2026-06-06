@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/api/filesystem"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	"github.com/opendocking/opendocking/api/filesystem"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

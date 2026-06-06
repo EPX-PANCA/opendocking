@@ -1,0 +1,17 @@
+[Unit]
+Description=OpenDocking container management ui
+After=docker.service
+Wants=docker.service
+Wants=docker-latest.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+Environment=ASSETS=/usr/share/opendocking
+Environment=DBFILES=/var/lib/opendocking
+EnvironmentFile=-/etc/sysconfig/%p
+ExecStart=/usr/sbin/opendocking -a $ASSETS -d $DBFILES
+
+[Install]
+WantedBy=multi-user.target

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 	zerolog "github.com/rs/zerolog/log"
 	"github.com/stretchr/testify/require"
 )

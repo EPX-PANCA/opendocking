@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/portainer/portainer/api/http/handler/file"
+	"github.com/opendocking/opendocking/api/http/handler/file"
 	"github.com/stretchr/testify/require"
 )
 

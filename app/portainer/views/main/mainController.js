@@ -1,4 +1,4 @@
-angular.module('portainer.app').controller('MainController', MainController);
+angular.module('opendocking.app').controller('MainController', MainController);
 
 /* @ngInject */
 function MainController($scope, StateManager, ThemeManager, SidebarService) {

@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	operations "github.com/portainer/portainer/api/backup"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	operations "github.com/opendocking/opendocking/api/backup"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 	"github.com/rs/zerolog/log"
 )
 

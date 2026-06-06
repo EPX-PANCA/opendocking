@@ -1,13 +1,8 @@
 import { ChevronsLeft, ChevronsRight } from 'lucide-react';
 import clsx from 'clsx';
 
-import { isBE } from '@/react/portainer/feature-flags/feature-flags.service';
-
 import { Link } from '@@/Link';
 
-import fullLogoBE from './portainer_logo-BE.svg';
-import fullLogoCE from './portainer_logo-CE.svg';
-import portainerIcon from './portainer-p-icon-white.svg';
 import { useSidebarState } from './useSidebarState';
 import styles from './Header.module.css';
 
@@ -26,13 +21,13 @@ export function Header({ logo: customLogo }: Props) {
         })}
       >
         <Link
-          to="portainer.home"
-          data-cy="portainerSidebar-homeImage"
+          to="opendocking.home"
+          data-cy="opendockingSidebar-homeImage"
           className="text-2xl text-white no-underline hover:text-white hover:no-underline focus:text-white focus:no-underline focus:outline-none"
         >
           <Logo customLogo={customLogo} isOpen={isOpen} />
         </Link>
-        {isOpen && customLogo && (
+        {isOpen && (
           <div
             className={clsx(
               'space-x-1 pt-3 text-[9.4px] uppercase tracking-[.28em]',
@@ -40,23 +35,7 @@ export function Header({ logo: customLogo }: Props) {
               'th-dark:text-gray-warm-6'
             )}
           >
-            <span className="font-medium">Powered by</span>
-            <span className="font-semibold">
-              {isBE ? (
-                'portainer business'
-              ) : (
-                <a
-                  href="https://www.portainer.io/install-BE-now"
-                  className={clsx(
-                    'hover:underline',
-                    'text-blue-6 hover:text-blue-8',
-                    'th-dark:text-blue-7 th-dark:hover:text-blue-9'
-                  )}
-                >
-                  portainer community
-                </a>
-              )}
-            </span>
+            <span className="font-medium">OpenDocking</span>
           </div>
         )}
       </div>
@@ -82,16 +61,12 @@ export function Header({ logo: customLogo }: Props) {
   );
 }
 
-function getLogo(isOpen: boolean, customLogo?: string) {
+function getLogo(customLogo?: string) {
   if (customLogo) {
     return customLogo;
   }
 
-  if (!isOpen) {
-    return portainerIcon;
-  }
-
-  return isBE ? fullLogoBE : fullLogoCE;
+  return '';
 }
 
 function Logo({
@@ -101,7 +76,15 @@ function Logo({
   customLogo?: string;
   isOpen: boolean;
 }) {
-  const logo = getLogo(isOpen, customLogo);
+  const logo = getLogo(customLogo);
+
+  if (!logo) {
+    return (
+      <span className="font-bold text-white">
+        {isOpen ? 'OpenDocking' : 'OD'}
+      </span>
+    );
+  }
 
   return (
     <img

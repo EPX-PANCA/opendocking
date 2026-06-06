@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { selectRegistry } from '@/react/docker/images/ItemView/RegistrySelectPrompt';
 
-angular.module('portainer.app').factory('RegistryModalService', RegistryModalService);
+angular.module('opendocking.app').factory('RegistryModalService', RegistryModalService);
 
 function RegistryModalService(RegistryService) {
   const service = {};

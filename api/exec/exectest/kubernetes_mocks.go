@@ -3,7 +3,7 @@ package exectest
 import (
 	"context"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 type kubernetesMockDeployer struct {

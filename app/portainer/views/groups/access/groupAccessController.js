@@ -1,6 +1,6 @@
 import { FeatureId } from '@/react/portainer/feature-flags/enums';
 
-angular.module('portainer.app').controller('GroupAccessController', [
+angular.module('opendocking.app').controller('GroupAccessController', [
   '$scope',
   '$state',
   '$transition$',

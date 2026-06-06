@@ -18,10 +18,10 @@ async function initAuthentication(Authentication) {
 }
 
 angular
-  .module('portainer.app', [
-    'portainer.oauth',
-    'portainer.rbac',
-    'portainer.registrymanagement',
+  .module('opendocking.app', [
+    'opendocking.oauth',
+    'opendocking.rbac',
+    'opendocking.registrymanagement',
     componentsModule,
     settingsModule,
     featureFlagModule,
@@ -48,7 +48,7 @@ angular
               const loggedIn = await initAuthentication(Authentication);
               await StateManager.initialize();
               if (!loggedIn && isTransitionRequiresAuthentication($state.transition)) {
-                $state.go('portainer.logout');
+                $state.go('opendocking.logout');
                 return Promise.reject('Unauthenticated');
               }
             } catch (err) {
@@ -89,7 +89,7 @@ angular
                 return endpoint;
               } catch (e) {
                 Notifications.error('Failed loading environment', e);
-                $state.go('portainer.home', {}, { reload: true });
+                $state.go('opendocking.home', {}, { reload: true });
                 return;
               }
             });
@@ -138,7 +138,7 @@ angular
       };
 
       var authentication = {
-        name: 'portainer.auth',
+        name: 'opendocking.auth',
         url: '/auth',
         params: {
           reload: false,
@@ -157,7 +157,7 @@ angular
       };
 
       const logout = {
-        name: 'portainer.logout',
+        name: 'opendocking.logout',
         url: '/logout',
         params: {
           error: '',
@@ -280,7 +280,7 @@ angular
       };
 
       var home = {
-        name: 'portainer.home',
+        name: 'opendocking.home',
         url: '/home?redirect&environmentId&environmentName&route&groupBy&groupFilter&search&order',
         params: {
           ...paginationParams(),
@@ -368,7 +368,7 @@ angular
       };
 
       var initAdmin = {
-        name: 'portainer.init.admin',
+        name: 'opendocking.init.admin',
         url: '/admin',
         views: {
           'content@': {
@@ -379,7 +379,7 @@ angular
       };
 
       var settings = {
-        name: 'portainer.settings',
+        name: 'opendocking.settings',
         url: '/settings',
         views: {
           'content@': {
@@ -493,7 +493,7 @@ angular
   .run(run);
 
 function isTransitionRequiresAuthentication(transition) {
-  const UNAUTHENTICATED_ROUTES = ['portainer.logout', 'portainer.auth'];
+  const UNAUTHENTICATED_ROUTES = ['opendocking.logout', 'opendocking.auth'];
   if (!transition) {
     return true;
   }

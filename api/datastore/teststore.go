@@ -3,10 +3,10 @@ package datastore
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database"
-	"github.com/portainer/portainer/api/database/models"
-	"github.com/portainer/portainer/api/filesystem"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database"
+	"github.com/opendocking/opendocking/api/database/models"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	"github.com/rs/zerolog/log"
 )
@@ -65,7 +65,7 @@ func NewTestStore(t testing.TB, init, secure bool) (bool, *Store, func(), error)
 		// From MigrateData
 		v := models.Version{
 			SchemaVersion: portainer.APIVersion,
-			Edition:       int(portainer.PortainerCE),
+			Edition:       int(portainer.OpenDocking),
 		}
 		if err := store.VersionService.UpdateVersion(&v); err != nil {
 			return newStore, nil, nil, err

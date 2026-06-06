@@ -1,7 +1,7 @@
 import _ from 'lodash-es';
 
 angular
-  .module('portainer.kubernetes')
+  .module('opendocking.kubernetes')
   .filter('kubernetesNodeStatusColor', function () {
     'use strict';
     return function (text) {

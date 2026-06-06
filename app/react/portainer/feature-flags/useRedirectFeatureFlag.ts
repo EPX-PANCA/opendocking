@@ -4,7 +4,7 @@ import { FeatureFlag, useFeatureFlag } from './useFeatureFlag';
 
 export function useRedirectFeatureFlag(
   flag: FeatureFlag,
-  to = 'portainer.home'
+  to = 'opendocking.home'
 ) {
   const router = useRouter();
 

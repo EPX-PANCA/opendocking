@@ -4,9 +4,9 @@
 local: clean build install
 remote: clean build-remote install
 
-ORG=portainer
+ORG=opendocking
 VERSION=0.0.0
-IMAGE_NAME=$(ORG)/portainer-docker-extension
+IMAGE_NAME=$(ORG)/opendocking-docker-extension
 TAGGED_IMAGE_NAME=$(IMAGE_NAME):$(VERSION)
 
 clean:
@@ -14,10 +14,10 @@ clean:
 	-docker rmi $(IMAGE_NAME):$(VERSION)
 
 build:
-	docker buildx build -f build/linux/Dockerfile --load --build-arg TAG=$(VERSION) --build-arg PORTAINER_IMAGE_NAME=$(IMAGE_NAME) --tag=$(TAGGED_IMAGE_NAME) .
+	docker buildx build -f build/linux/Dockerfile --load --build-arg TAG=$(VERSION) --build-arg OPENDOCKING_IMAGE_NAME=$(IMAGE_NAME) --tag=$(TAGGED_IMAGE_NAME) .
 
 build-remote:
-	docker buildx build -f build/linux/Dockerfile --push --builder=buildx-multi-arch --platform=windows/amd64,linux/amd64,linux/arm64 --build-arg TAG=$(VERSION) --build-arg PORTAINER_IMAGE_NAME=$(IMAGE_NAME) --tag=$(TAGGED_IMAGE_NAME) .
+	docker buildx build -f build/linux/Dockerfile --push --builder=buildx-multi-arch --platform=windows/amd64,linux/amd64,linux/arm64 --build-arg TAG=$(VERSION) --build-arg OPENDOCKING_IMAGE_NAME=$(IMAGE_NAME) --tag=$(TAGGED_IMAGE_NAME) .
 
 install:
 	docker extension install $(TAGGED_IMAGE_NAME) --force
@@ -28,5 +28,5 @@ dev:
 multiarch:
 	docker buildx create --name=buildx-multi-arch --driver=docker-container --driver-opt=network=host
 
-portainer:
+opendocking:
 	pnpm run build

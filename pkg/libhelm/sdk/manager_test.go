@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/pkg/libhelm/types"
+	"github.com/opendocking/opendocking/pkg/libhelm/types"
 
 	"github.com/stretchr/testify/assert"
 )

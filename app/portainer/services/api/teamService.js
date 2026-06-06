@@ -1,7 +1,7 @@
 import { TeamViewModel } from '../../models/team';
 import { TeamMembershipModel } from '../../models/teamMembership';
 
-angular.module('portainer.app').factory('TeamService', [
+angular.module('opendocking.app').factory('TeamService', [
   '$q',
   'Teams',
   function TeamServiceFactory($q, Teams) {

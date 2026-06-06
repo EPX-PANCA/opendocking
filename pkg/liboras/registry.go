@@ -3,8 +3,8 @@ package liboras
 import (
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/pkg/registryhttp"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/pkg/registryhttp"
 
 	"github.com/rs/zerolog/log"
 	"oras.land/oras-go/v2/registry/remote"

@@ -5,7 +5,7 @@ import { MacvlanNodesSelector } from '@/react/docker/networks/CreateView/Macvlan
 import { withUIRouter } from '@/react-tools/withUIRouter';
 
 export const networksModule = angular
-  .module('portainer.docker.react.components.networks', [])
+  .module('opendocking.docker.react.components.networks', [])
   .component(
     'macvlanNodesSelector',
     r2a(withUIRouter(MacvlanNodesSelector), [

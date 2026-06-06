@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/fips"
-	helmregistrycache "github.com/portainer/portainer/pkg/libhelm/cache"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/fips"
+	helmregistrycache "github.com/opendocking/opendocking/pkg/libhelm/cache"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

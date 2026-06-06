@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 	"github.com/rs/zerolog/log"
 	netv1 "k8s.io/api/networking/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

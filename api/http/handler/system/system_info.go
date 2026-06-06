@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/api/internal/endpointutils"
-	plf "github.com/portainer/portainer/api/platform"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
+	plf "github.com/opendocking/opendocking/api/platform"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 type systemInfoResponse struct {

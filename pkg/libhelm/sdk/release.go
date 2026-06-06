@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
 	"helm.sh/helm/v4/pkg/action"
 	"helm.sh/helm/v4/pkg/release/common"
 	releasev1 "helm.sh/helm/v4/pkg/release/v1"

@@ -15,7 +15,7 @@ class controller {
   }
 }
 
-angular.module('portainer.app').component('registryFormCustom', {
+angular.module('opendocking.app').component('registryFormCustom', {
   templateUrl: './registry-form-custom.html',
   bindings: {
     model: '=',

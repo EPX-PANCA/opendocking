@@ -1,6 +1,6 @@
 import { PortainerEndpointCreationTypes } from '@/portainer/models/endpoint/models';
 
-angular.module('portainer.app').factory('EndpointService', [
+angular.module('opendocking.app').factory('EndpointService', [
   '$q',
   'Endpoints',
   'FileUploadService',

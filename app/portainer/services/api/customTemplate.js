@@ -1,7 +1,7 @@
 import angular from 'angular';
 import PortainerError from '@/portainer/error';
 
-angular.module('portainer.app').factory('CustomTemplateService', CustomTemplateServiceFactory);
+angular.module('opendocking.app').factory('CustomTemplateService', CustomTemplateServiceFactory);
 
 /* @ngInject */
 function CustomTemplateServiceFactory($sanitize, CustomTemplates, FileUploadService) {

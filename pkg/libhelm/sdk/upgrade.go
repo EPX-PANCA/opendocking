@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/pkg/libhelm/cache"
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/release"
+	"github.com/opendocking/opendocking/pkg/libhelm/cache"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/release"
 	"github.com/rs/zerolog/log"
 	"helm.sh/helm/v4/pkg/action"
 	"helm.sh/helm/v4/pkg/kube"

@@ -119,4 +119,4 @@ class KubernetesPodService {
 }
 
 export default KubernetesPodService;
-angular.module('portainer.kubernetes').service('KubernetesPodService', KubernetesPodService);
+angular.module('opendocking.kubernetes').service('KubernetesPodService', KubernetesPodService);

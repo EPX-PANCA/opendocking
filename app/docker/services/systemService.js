@@ -2,7 +2,7 @@ import { ping } from '@/react/docker/proxy/queries/usePing';
 import { getInfo } from '@/react/docker/proxy/queries/useInfo';
 import { getVersion } from '@/react/docker/proxy/queries/useVersion';
 
-angular.module('portainer.docker').factory('SystemService', SystemServiceFactory);
+angular.module('opendocking.docker').factory('SystemService', SystemServiceFactory);
 
 /* @ngInject */
 function SystemServiceFactory(AngularToReact) {

@@ -4,39 +4,39 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/portainer/portainer/api/http/handler/auth"
-	"github.com/portainer/portainer/api/http/handler/backup"
-	"github.com/portainer/portainer/api/http/handler/customtemplates"
-	"github.com/portainer/portainer/api/http/handler/docker"
-	"github.com/portainer/portainer/api/http/handler/edgegroups"
-	"github.com/portainer/portainer/api/http/handler/edgejobs"
-	"github.com/portainer/portainer/api/http/handler/edgestacks"
-	"github.com/portainer/portainer/api/http/handler/endpointedge"
-	"github.com/portainer/portainer/api/http/handler/endpointgroups"
-	"github.com/portainer/portainer/api/http/handler/endpointproxy"
-	"github.com/portainer/portainer/api/http/handler/endpoints"
-	"github.com/portainer/portainer/api/http/handler/file"
-	"github.com/portainer/portainer/api/http/handler/gitops"
-	"github.com/portainer/portainer/api/http/handler/helm"
-	"github.com/portainer/portainer/api/http/handler/kubernetes"
-	"github.com/portainer/portainer/api/http/handler/ldap"
-	"github.com/portainer/portainer/api/http/handler/motd"
-	"github.com/portainer/portainer/api/http/handler/registries"
-	"github.com/portainer/portainer/api/http/handler/resourcecontrols"
-	"github.com/portainer/portainer/api/http/handler/roles"
-	"github.com/portainer/portainer/api/http/handler/settings"
-	"github.com/portainer/portainer/api/http/handler/ssl"
-	"github.com/portainer/portainer/api/http/handler/stacks"
-	"github.com/portainer/portainer/api/http/handler/storybook"
-	"github.com/portainer/portainer/api/http/handler/system"
-	"github.com/portainer/portainer/api/http/handler/tags"
-	"github.com/portainer/portainer/api/http/handler/teammemberships"
-	"github.com/portainer/portainer/api/http/handler/teams"
-	"github.com/portainer/portainer/api/http/handler/templates"
-	"github.com/portainer/portainer/api/http/handler/upload"
-	"github.com/portainer/portainer/api/http/handler/users"
-	"github.com/portainer/portainer/api/http/handler/webhooks"
-	"github.com/portainer/portainer/api/http/handler/websocket"
+	"github.com/opendocking/opendocking/api/http/handler/auth"
+	"github.com/opendocking/opendocking/api/http/handler/backup"
+	"github.com/opendocking/opendocking/api/http/handler/customtemplates"
+	"github.com/opendocking/opendocking/api/http/handler/docker"
+	"github.com/opendocking/opendocking/api/http/handler/edgegroups"
+	"github.com/opendocking/opendocking/api/http/handler/edgejobs"
+	"github.com/opendocking/opendocking/api/http/handler/edgestacks"
+	"github.com/opendocking/opendocking/api/http/handler/endpointedge"
+	"github.com/opendocking/opendocking/api/http/handler/endpointgroups"
+	"github.com/opendocking/opendocking/api/http/handler/endpointproxy"
+	"github.com/opendocking/opendocking/api/http/handler/endpoints"
+	"github.com/opendocking/opendocking/api/http/handler/file"
+	"github.com/opendocking/opendocking/api/http/handler/gitops"
+	"github.com/opendocking/opendocking/api/http/handler/helm"
+	"github.com/opendocking/opendocking/api/http/handler/kubernetes"
+	"github.com/opendocking/opendocking/api/http/handler/ldap"
+	"github.com/opendocking/opendocking/api/http/handler/motd"
+	"github.com/opendocking/opendocking/api/http/handler/registries"
+	"github.com/opendocking/opendocking/api/http/handler/resourcecontrols"
+	"github.com/opendocking/opendocking/api/http/handler/roles"
+	"github.com/opendocking/opendocking/api/http/handler/settings"
+	"github.com/opendocking/opendocking/api/http/handler/ssl"
+	"github.com/opendocking/opendocking/api/http/handler/stacks"
+	"github.com/opendocking/opendocking/api/http/handler/storybook"
+	"github.com/opendocking/opendocking/api/http/handler/system"
+	"github.com/opendocking/opendocking/api/http/handler/tags"
+	"github.com/opendocking/opendocking/api/http/handler/teammemberships"
+	"github.com/opendocking/opendocking/api/http/handler/teams"
+	"github.com/opendocking/opendocking/api/http/handler/templates"
+	"github.com/opendocking/opendocking/api/http/handler/upload"
+	"github.com/opendocking/opendocking/api/http/handler/users"
+	"github.com/opendocking/opendocking/api/http/handler/webhooks"
+	"github.com/opendocking/opendocking/api/http/handler/websocket"
 )
 
 // Handler is a collection of all the service handlers.
@@ -78,16 +78,16 @@ type Handler struct {
 	UserHelmHandler        *helm.Handler
 }
 
-// @title PortainerCE API
+// @title OpenDocking API
 // @version 2.43.0
 // @description.markdown
 // @x-tagGroups [{"name":"Access Control","tags":["auth","roles","team_memberships","teams","users"]},{"name":"Administration","tags":["backup","ldap","motd","settings","status","system","ssl","upload"]},{"name":"Docker","tags":["templates","custom_templates","docker","registries","resource_controls","stacks","webhooks","websocket"]},{"name":"Edge Compute","tags":["edge_agent","edge_groups","edge_jobs","edge","edge_stacks"]},{"name":"Environment Management","tags":["endpoint_groups","endpoints","tags"]},{"name":"GitOps","tags":["gitops"]},{"name":"Kubernetes","tags":["helm","kubernetes"]}]
 // @termsOfService
 
-// @contact.email info@portainer.io
+// @contact.email info@opendocking.io
 
 // @license.name zlib
-// @license.url https://github.com/portainer/portainer/blob/develop/LICENSE
+// @license.url https://github.com/opendocking/opendocking/blob/develop/LICENSE
 
 // @host
 // @BasePath /api
@@ -102,7 +102,7 @@ type Handler struct {
 // @name Authorization
 
 // @tag.name auth
-// @tag.description Authenticate against Portainer HTTP API
+// @tag.description Authenticate against OpenDocking HTTP API
 // @tag.x-displayName Authentication
 // @tag.name backup
 // @tag.description Manage backups
@@ -162,8 +162,8 @@ type Handler struct {
 // @tag.description Manage roles
 // @tag.x-displayName Roles
 // @tag.name settings
-// @tag.description Manage Portainer settings
-// @tag.x-displayName Portainer settings
+// @tag.description Manage OpenDocking settings
+// @tag.x-displayName OpenDocking settings
 // @tag.name ssl
 // @tag.description Manage ssl settings
 // @tag.x-displayName SSL
@@ -171,11 +171,11 @@ type Handler struct {
 // @tag.description Manage stacks
 // @tag.x-displayName Stacks
 // @tag.name status
-// @tag.description Information about the Portainer instance
-// @tag.x-displayName Portainer status
+// @tag.description Information about the OpenDocking instance
+// @tag.x-displayName OpenDocking status
 // @tag.name system
-// @tag.description Manage Portainer system
-// @tag.x-displayName Portainer system
+// @tag.description Manage OpenDocking system
+// @tag.x-displayName OpenDocking system
 // @tag.name tags
 // @tag.description Manage tags
 // @tag.x-displayName Tags

@@ -3,7 +3,7 @@ package oauth
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 func Test_getUsername(t *testing.T) {

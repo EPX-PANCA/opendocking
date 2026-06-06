@@ -282,7 +282,7 @@ export function buildLinuxKubernetesCommand(
   const edgeIdVar = !edgeIdGenerator && edgeId ? edgeId : '$PORTAINER_EDGE_ID';
   const selfSigned = allowSelfSignedCertificates ? '1' : '0';
 
-  return `${idEnvVar}curl https://downloads.portainer.io/ee${agentShortVersion}/portainer-edge-agent-setup.sh | bash -s -- "${edgeIdVar}" "${edgeKey}" "${selfSigned}" "${agentSecret}" "${allEnvVars}"`;
+  return `${idEnvVar}curl https://downloads.opendocking.io/ee${agentShortVersion}/opendocking-edge-agent-setup.sh | bash -s -- "${edgeIdVar}" "${edgeKey}" "${selfSigned}" "${agentSecret}" "${allEnvVars}"`;
 }
 
 function buildDockerEnvVars(

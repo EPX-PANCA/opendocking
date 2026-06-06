@@ -3,7 +3,7 @@ package boltdb
 import (
 	"time"
 
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 	"github.com/rs/zerolog/log"
 	"github.com/segmentio/encoding/json"
 	bolt "go.etcd.io/bbolt"

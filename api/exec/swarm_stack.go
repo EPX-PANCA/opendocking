@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/proxy"
-	"github.com/portainer/portainer/api/stacks/stackutils"
-	"github.com/portainer/portainer/pkg/libstack/swarm"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/proxy"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
+	"github.com/opendocking/opendocking/pkg/libstack/swarm"
 )
 
 // SwarmStackManager represents a service for managing stacks.

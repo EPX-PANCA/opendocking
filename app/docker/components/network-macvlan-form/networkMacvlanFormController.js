@@ -1,6 +1,6 @@
 import { getOptions } from '@/react/docker/networks/CreateView/macvlanOptions';
 
-angular.module('portainer.docker').controller('NetworkMacvlanFormController', [
+angular.module('opendocking.docker').controller('NetworkMacvlanFormController', [
   '$q',
   'NodeService',
   'NetworkService',

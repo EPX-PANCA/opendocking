@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.edge').factory('EdgeGroupService', function EdgeGroupServiceFactory(EdgeGroups) {
+angular.module('opendocking.edge').factory('EdgeGroupService', function EdgeGroupServiceFactory(EdgeGroups) {
   var service = {};
 
   service.groups = function groups() {

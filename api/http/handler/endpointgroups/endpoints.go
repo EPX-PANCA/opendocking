@@ -1,9 +1,9 @@
 package endpointgroups
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/internal/edge"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/internal/edge"
 )
 
 func (handler *Handler) updateEndpointRelations(tx dataservices.DataStoreTx, endpoint *portainer.Endpoint, endpointGroup *portainer.EndpointGroup) error {

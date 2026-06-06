@@ -3,7 +3,7 @@ package stackutils
 import (
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 // PrepareStackStatusForDeployment transitions a stack into the deploying state before a deployment begins.

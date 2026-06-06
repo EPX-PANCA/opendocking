@@ -1,6 +1,6 @@
 import { ResourceControlType } from '@/react/portainer/access-control/types';
 
-angular.module('portainer.docker').controller('SecretController', SecretController);
+angular.module('opendocking.docker').controller('SecretController', SecretController);
 
 /* @ngInject */
 function SecretController($scope, $transition$, $state, SecretService, Notifications, endpoint) {

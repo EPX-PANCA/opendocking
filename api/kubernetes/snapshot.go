@@ -1,9 +1,9 @@
 package kubernetes
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/kubernetes/cli"
-	"github.com/portainer/portainer/pkg/snapshot"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
+	"github.com/opendocking/opendocking/pkg/snapshot"
 )
 
 type Snapshotter struct {

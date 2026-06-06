@@ -1,4 +1,4 @@
-angular.module('portainer.app').component('porAccessControlForm', {
+angular.module('opendocking.app').component('porAccessControlForm', {
   templateUrl: './porAccessControlForm.html',
   controller: 'porAccessControlFormController',
   bindings: {

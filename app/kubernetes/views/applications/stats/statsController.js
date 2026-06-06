@@ -171,4 +171,4 @@ class KubernetesApplicationStatsController {
 }
 
 export default KubernetesApplicationStatsController;
-angular.module('portainer.kubernetes').controller('KubernetesApplicationStatsController', KubernetesApplicationStatsController);
+angular.module('opendocking.kubernetes').controller('KubernetesApplicationStatsController', KubernetesApplicationStatsController);

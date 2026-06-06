@@ -1,7 +1,7 @@
 import { getSystemStatus } from '@/react/portainer/system/useSystemStatus';
 import { StatusViewModel } from '../../models/status';
 
-angular.module('portainer.app').factory('StatusService', StatusServiceFactory);
+angular.module('opendocking.app').factory('StatusService', StatusServiceFactory);
 
 /* @ngInject */
 function StatusServiceFactory($q) {

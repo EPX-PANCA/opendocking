@@ -5,9 +5,9 @@ import (
 	"io"
 	"net/http"
 
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 )
 
 // @id UpdateKubernetesNamespaceDeprecated

@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	dockerclient "github.com/docker/docker/client"
-	portainer "github.com/portainer/portainer/api"
-	prclient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/http/middlewares"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	portainer "github.com/opendocking/opendocking/api"
+	prclient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/http/middlewares"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 )
 
 // GetClient returns a Docker client based on the request context

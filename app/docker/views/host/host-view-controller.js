@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('HostViewController', [
+angular.module('opendocking.docker').controller('HostViewController', [
   '$q',
   'SystemService',
   'Notifications',

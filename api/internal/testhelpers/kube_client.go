@@ -3,8 +3,8 @@ package testhelpers
 import (
 	"context"
 
-	portainer "github.com/portainer/portainer/api"
-	models "github.com/portainer/portainer/api/http/models/kubernetes"
+	portainer "github.com/opendocking/opendocking/api"
+	models "github.com/opendocking/opendocking/api/http/models/kubernetes"
 )
 
 type testKubeClient struct {

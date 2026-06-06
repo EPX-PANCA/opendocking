@@ -2,7 +2,7 @@ import { confirmChangePassword } from '@@/modals/confirm';
 import { openDialog } from '@@/modals/Dialog';
 import { buildConfirmButton } from '@@/modals/utils';
 
-angular.module('portainer.app').controller('AccountController', [
+angular.module('opendocking.app').controller('AccountController', [
   '$scope',
   '$state',
   'Authentication',
@@ -25,7 +25,7 @@ angular.module('portainer.app').controller('AccountController', [
           Notifications.success('Success', 'Password successfully updated');
           StateManager.resetPasswordChangeSkips($scope.userID.toString());
           $scope.forceChangePassword = false;
-          $state.go('portainer.logout');
+          $state.go('opendocking.logout');
         } catch (err) {
           Notifications.error('Failure', err, err.msg);
         }
@@ -37,7 +37,7 @@ angular.module('portainer.app').controller('AccountController', [
         if ($scope.userCanSkip()) {
           StateManager.setPasswordChangeSkipped($scope.userID.toString());
           $scope.forceChangePassword = false;
-          $state.go('portainer.home');
+          $state.go('opendocking.home');
         }
       } catch (err) {
         Notifications.error('Failure', err, err.msg);
@@ -53,7 +53,7 @@ angular.module('portainer.app').controller('AccountController', [
         if ($scope.userRole === 1 && newTransition.to().name === 'portainer.settings.authentication') {
           return true;
         }
-        if (newTransition.to().name === 'portainer.logout') {
+        if (newTransition.to().name === 'opendocking.logout') {
           return true;
         }
       }

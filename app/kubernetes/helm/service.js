@@ -1,7 +1,7 @@
 import angular from 'angular';
 import PortainerError from '@/portainer/error';
 
-angular.module('portainer.kubernetes').factory('HelmService', HelmService);
+angular.module('opendocking.kubernetes').factory('HelmService', HelmService);
 
 /* @ngInject */
 export function HelmService(HelmFactory) {

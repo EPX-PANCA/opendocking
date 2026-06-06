@@ -1,7 +1,7 @@
 import angular from 'angular';
 import moment from 'moment';
 import filesizeParser from 'filesize-parser';
-import { PORTAINER_FADEOUT } from '@/constants';
+import { OPENDOCKING_FADEOUT } from '@/constants';
 import { getMetricsForNode } from '@/react/kubernetes/metrics/queries/useNodeMetricsQuery';
 import { parseCPU } from '@/react/kubernetes/utils';
 
@@ -27,7 +27,7 @@ class KubernetesNodeStatsController {
     this.stopRepeater();
     this.setUpdateRepeater(cpuChart, memoryChart);
     $('#refreshRateChange').show();
-    $('#refreshRateChange').fadeOut(PORTAINER_FADEOUT);
+    $('#refreshRateChange').fadeOut(OPENDOCKING_FADEOUT);
   }
 
   updateCPUChart() {
@@ -144,4 +144,4 @@ class KubernetesNodeStatsController {
 }
 
 export default KubernetesNodeStatsController;
-angular.module('portainer.kubernetes').controller('KubernetesNodeStatsController', KubernetesNodeStatsController);
+angular.module('opendocking.kubernetes').controller('KubernetesNodeStatsController', KubernetesNodeStatsController);

@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/release"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/release"
 	"helm.sh/helm/v4/pkg/cli"
 	repo "helm.sh/helm/v4/pkg/repo/v1"
 )

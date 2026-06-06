@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.agent').factory('AgentVersion1', AgentFactory);
+angular.module('opendocking.agent').factory('AgentVersion1', AgentFactory);
 
 function AgentFactory($resource, API_ENDPOINT_ENDPOINTS) {
   return $resource(

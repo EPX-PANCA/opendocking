@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 )
 
 func TxResponse(w http.ResponseWriter, r any, err error) *httperror.HandlerError {

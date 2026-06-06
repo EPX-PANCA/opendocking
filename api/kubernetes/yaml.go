@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 	"go.yaml.in/yaml/v3"
 )
 

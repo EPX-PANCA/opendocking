@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/docker/consts"
-	"github.com/portainer/portainer/api/http/proxy/factory/utils"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/authorization"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/docker/consts"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/utils"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/authorization"
 
 	"github.com/docker/docker/client"
 	"github.com/segmentio/encoding/json"

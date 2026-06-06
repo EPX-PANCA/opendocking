@@ -7,8 +7,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/pkg/libstack"
 
 	"github.com/compose-spec/compose-go/v2/types"
 	"github.com/docker/cli/cli/command"

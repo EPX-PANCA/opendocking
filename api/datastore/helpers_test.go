@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/rs/zerolog/log"
 )

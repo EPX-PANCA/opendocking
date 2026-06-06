@@ -23,7 +23,7 @@ import { ContainerDetailsViewModel } from '../models/containerDetails';
 import { ContainerStatsViewModel } from '../models/containerStats';
 import { formatLogs } from '../helpers/logHelper';
 
-angular.module('portainer.docker').factory('ContainerService', ContainerServiceFactory);
+angular.module('opendocking.docker').factory('ContainerService', ContainerServiceFactory);
 
 /* @ngInject */
 function ContainerServiceFactory(AngularToReact) {

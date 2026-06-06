@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	"github.com/portainer/portainer/api/stacks/stackutils"
-	"github.com/portainer/portainer/pkg/edge"
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
+	"github.com/opendocking/opendocking/pkg/edge"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 
 	"github.com/pkg/errors"
 )

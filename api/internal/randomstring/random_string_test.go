@@ -3,7 +3,7 @@ package randomstring
 import (
 	"testing"
 
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/pkg/fips"
 	"github.com/stretchr/testify/require"
 )
 

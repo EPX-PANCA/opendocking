@@ -3,8 +3,8 @@ package workflows
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	portainer "github.com/opendocking/opendocking/api"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

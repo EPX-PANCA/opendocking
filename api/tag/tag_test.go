@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 func TestIntersectionCount(t *testing.T) {

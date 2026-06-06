@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.app').service('SSLService', SSLServiceFactory);
+angular.module('opendocking.app').service('SSLService', SSLServiceFactory);
 
 /* @ngInject */
 function SSLServiceFactory(SSL) {

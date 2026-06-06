@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/adminmonitor"
-	"github.com/portainer/portainer/api/http/offlinegate"
-	"github.com/portainer/portainer/api/http/security/setuptoken"
-	"github.com/portainer/portainer/api/internal/testhelpers"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/adminmonitor"
+	"github.com/opendocking/opendocking/api/http/offlinegate"
+	"github.com/opendocking/opendocking/api/http/security/setuptoken"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

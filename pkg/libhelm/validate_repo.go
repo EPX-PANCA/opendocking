@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/portainer/portainer/pkg/libhelm/sdk"
+	"github.com/opendocking/opendocking/pkg/libhelm/sdk"
 	"helm.sh/helm/v4/pkg/cli"
 	"helm.sh/helm/v4/pkg/getter"
 	repo "helm.sh/helm/v4/pkg/repo/v1"

@@ -1,6 +1,6 @@
 import { AccessHeaders } from '../authorization-guard';
 
-angular.module('portainer.registrymanagement', []).config(config);
+angular.module('opendocking.registrymanagement', []).config(config);
 
 /* @ngInject */
 function config($stateRegistryProvider) {

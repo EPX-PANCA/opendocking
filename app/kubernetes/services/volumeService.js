@@ -56,4 +56,4 @@ class KubernetesVolumeService {
 }
 
 export default KubernetesVolumeService;
-angular.module('portainer.kubernetes').service('KubernetesVolumeService', KubernetesVolumeService);
+angular.module('opendocking.kubernetes').service('KubernetesVolumeService', KubernetesVolumeService);

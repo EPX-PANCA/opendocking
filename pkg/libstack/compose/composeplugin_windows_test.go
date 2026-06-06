@@ -7,7 +7,7 @@ import (
 
 	"github.com/compose-spec/compose-go/v2/types"
 	"github.com/google/go-cmp/cmp"
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/pkg/libstack"
 )
 
 func Test_createProject_win(t *testing.T) {

@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('TaskController', [
+angular.module('opendocking.docker').controller('TaskController', [
   '$scope',
   '$transition$',
   'TaskService',

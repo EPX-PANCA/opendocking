@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.kubernetes').factory('HelmFactory', HelmFactory);
+angular.module('opendocking.kubernetes').factory('HelmFactory', HelmFactory);
 
 /* @ngInject */
 function HelmFactory($resource, API_ENDPOINT_ENDPOINTS, API_ENDPOINT_USERS) {

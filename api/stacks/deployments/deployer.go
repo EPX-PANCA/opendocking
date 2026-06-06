@@ -5,10 +5,10 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	k "github.com/portainer/portainer/api/kubernetes"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	k "github.com/opendocking/opendocking/api/kubernetes"
 )
 
 type BaseStackDeployer interface {

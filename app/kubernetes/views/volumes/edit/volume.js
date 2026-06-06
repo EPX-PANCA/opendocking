@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesVolumeView', {
+angular.module('opendocking.kubernetes').component('kubernetesVolumeView', {
   templateUrl: './volume.html',
   controller: 'KubernetesVolumeController',
   controllerAs: 'ctrl',

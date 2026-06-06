@@ -12,12 +12,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/api/adminmonitor"
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/http/offlinegate"
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/api/adminmonitor"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/http/offlinegate"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/pkg/fips"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

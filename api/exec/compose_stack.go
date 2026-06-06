@@ -7,11 +7,11 @@ import (
 	"os"
 	"path"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/proxy"
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/api/stacks/stackutils"
-	"github.com/portainer/portainer/pkg/libstack"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/proxy"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
+	"github.com/opendocking/opendocking/pkg/libstack"
 )
 
 // ComposeStackManager is a wrapper for docker-compose binary

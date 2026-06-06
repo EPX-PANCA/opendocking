@@ -1,4 +1,4 @@
-angular.module('portainer.docker').factory('ConfigHelper', [
+angular.module('opendocking.docker').factory('ConfigHelper', [
   function ConfigHelperFactory() {
     'use strict';
     return {

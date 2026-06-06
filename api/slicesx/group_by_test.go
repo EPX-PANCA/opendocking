@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/portainer/portainer/api/slicesx"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 func TestGroupBy(t *testing.T) {

@@ -2,7 +2,7 @@ package sdk
 
 import (
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
 	"github.com/rs/zerolog/log"
 	slogzerolog "github.com/samber/slog-zerolog/v2"
 	"helm.sh/helm/v4/pkg/action"

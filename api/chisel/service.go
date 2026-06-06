@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/proxy"
-	"github.com/portainer/portainer/pkg/schedule"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/proxy"
+	"github.com/opendocking/opendocking/pkg/schedule"
 
 	chserver "github.com/jpillora/chisel/server"
 	"github.com/jpillora/chisel/share/ccrypto"

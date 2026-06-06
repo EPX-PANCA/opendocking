@@ -27,4 +27,4 @@ class KubernetesHealthService {
 }
 
 export default KubernetesHealthService;
-angular.module('portainer.kubernetes').service('KubernetesHealthService', KubernetesHealthService);
+angular.module('opendocking.kubernetes').service('KubernetesHealthService', KubernetesHealthService);

@@ -145,7 +145,7 @@ export const WithLinks: Story = {
     items: [
       <MenuButtonLink
         key="external"
-        to="portainer.home"
+        to="opendocking.home"
         label="External link"
         data-cy="menu-button-link-external"
         className="flex items-center gap-2"

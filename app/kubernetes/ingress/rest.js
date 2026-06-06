@@ -1,6 +1,6 @@
 import { rawResponse } from '@/kubernetes/rest/response/transform';
 
-angular.module('portainer.kubernetes').factory('KubernetesIngresses', factory);
+angular.module('opendocking.kubernetes').factory('KubernetesIngresses', factory);
 
 function factory($resource, API_ENDPOINT_ENDPOINTS, EndpointProvider) {
   'use strict';

@@ -67,7 +67,7 @@ interface HubSpotCreateFormOptions {
 
 interface Window {
   /**
-   * will be true if portainer is run as a Docker Desktop Extension
+   * will be true if OpenDocking is run as a Docker Desktop Extension
    */
   ddExtension?: boolean;
   hbspt?: {

@@ -4,7 +4,7 @@ import { RegistryTypes } from '@/portainer/models/registryTypes';
 import { RegistryCreateRequest, RegistryViewModel } from '@/portainer/models/registry';
 import { DockerHubViewModel } from '@/portainer/models/dockerhub';
 
-angular.module('portainer.app').factory('RegistryService', [
+angular.module('opendocking.app').factory('RegistryService', [
   '$q',
   '$async',
   'EndpointService',

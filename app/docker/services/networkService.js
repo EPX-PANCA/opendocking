@@ -6,7 +6,7 @@ import { connectContainer } from '@/react/docker/networks/queries/useConnectCont
 
 import { NetworkViewModel } from '../models/network';
 
-angular.module('portainer.docker').factory('NetworkService', NetworkServiceFactory);
+angular.module('opendocking.docker').factory('NetworkService', NetworkServiceFactory);
 
 /* @ngInject */
 function NetworkServiceFactory(AngularToReact) {

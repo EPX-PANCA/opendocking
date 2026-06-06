@@ -24,7 +24,7 @@ function hashToHexColor(hash) {
 }
 
 angular
-  .module('portainer.docker')
+  .module('opendocking.docker')
   .filter('visualizerTask', function () {
     'use strict';
     return function (text) {

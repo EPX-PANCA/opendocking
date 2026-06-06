@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('PaginationService', [
+angular.module('opendocking.app').factory('PaginationService', [
   'LocalStorage',
   'PAGINATION_MAX_ITEMS',
   function PaginationServiceFactory(LocalStorage, PAGINATION_MAX_ITEMS) {

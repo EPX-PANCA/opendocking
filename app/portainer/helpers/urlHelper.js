@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('URLHelper', [
+angular.module('opendocking.app').factory('URLHelper', [
   '$window',
   function URLHelperFactory($window) {
     'use strict';

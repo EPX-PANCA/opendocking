@@ -3,9 +3,9 @@ package apikeyrepository
 import (
 	"errors"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	dserrors "github.com/portainer/portainer/api/dataservices/errors"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	dserrors "github.com/opendocking/opendocking/api/dataservices/errors"
 )
 
 // BucketName represents the name of the bucket where this service stores data.

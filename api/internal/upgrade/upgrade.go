@@ -3,12 +3,12 @@ package upgrade
 import (
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	kubecli "github.com/portainer/portainer/api/kubernetes/cli"
-	plf "github.com/portainer/portainer/api/platform"
-	"github.com/portainer/portainer/api/stacks/deployments"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	kubecli "github.com/opendocking/opendocking/api/kubernetes/cli"
+	plf "github.com/opendocking/opendocking/api/platform"
+	"github.com/opendocking/opendocking/api/stacks/deployments"
 	"github.com/rs/zerolog/log"
 )
 

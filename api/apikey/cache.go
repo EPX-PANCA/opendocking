@@ -1,7 +1,7 @@
 package apikey
 
 import (
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	lru "github.com/hashicorp/golang-lru"
 )

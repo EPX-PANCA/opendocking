@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/portainer/portainer/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/pkg/featureflags"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/pkg/featureflags"
 
 	"github.com/klauspost/compress/gzhttp"
 )

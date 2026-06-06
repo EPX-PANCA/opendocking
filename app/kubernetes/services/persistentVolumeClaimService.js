@@ -111,4 +111,4 @@ class KubernetesPersistentVolumeClaimService {
 }
 
 export default KubernetesPersistentVolumeClaimService;
-angular.module('portainer.kubernetes').service('KubernetesPersistentVolumeClaimService', KubernetesPersistentVolumeClaimService);
+angular.module('opendocking.kubernetes').service('KubernetesPersistentVolumeClaimService', KubernetesPersistentVolumeClaimService);

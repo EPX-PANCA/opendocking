@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/url"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/url"
 
 	"github.com/rs/zerolog/log"
 )

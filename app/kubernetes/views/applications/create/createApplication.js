@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesCreateApplicationView', {
+angular.module('opendocking.kubernetes').component('kubernetesCreateApplicationView', {
   templateUrl: './createApplication.html',
   controller: 'KubernetesCreateApplicationController',
   controllerAs: 'ctrl',

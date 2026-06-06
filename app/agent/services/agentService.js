@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import { AgentViewModel } from '../models/agent';
 
-angular.module('portainer.agent').factory('AgentService', AgentServiceFactory);
+angular.module('opendocking.agent').factory('AgentService', AgentServiceFactory);
 
 function AgentServiceFactory(Agent, AgentVersion1, HttpRequestHelper, Host, StateManager) {
   return {

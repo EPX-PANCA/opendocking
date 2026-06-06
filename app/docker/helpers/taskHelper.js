@@ -1,4 +1,4 @@
-angular.module('portainer.docker').factory('TaskHelper', [
+angular.module('opendocking.docker').factory('TaskHelper', [
   function TaskHelperFactory() {
     'use strict';
 

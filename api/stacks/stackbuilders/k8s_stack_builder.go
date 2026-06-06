@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/http/client"
-	k "github.com/portainer/portainer/api/kubernetes"
-	"github.com/portainer/portainer/api/stacks/deployments"
-	"github.com/portainer/portainer/api/stacks/stackutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/http/client"
+	k "github.com/opendocking/opendocking/api/kubernetes"
+	"github.com/opendocking/opendocking/api/stacks/deployments"
+	"github.com/opendocking/opendocking/api/stacks/stackutils"
 )
 
 type KubernetesStackBuilder struct {

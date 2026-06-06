@@ -1,4 +1,4 @@
-angular.module('portainer.docker').component('porImageRegistry', {
+angular.module('opendocking.docker').component('porImageRegistry', {
   templateUrl: './por-image-registry.html',
   controller: 'porImageRegistryController',
   bindings: {

@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 
 	"github.com/segmentio/encoding/json"
 	"github.com/stretchr/testify/assert"

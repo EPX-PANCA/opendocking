@@ -240,4 +240,4 @@ class KubernetesConfigurationDataController {
 }
 
 export default KubernetesConfigurationDataController;
-angular.module('portainer.kubernetes').controller('KubernetesConfigurationDataController', KubernetesConfigurationDataController);
+angular.module('opendocking.kubernetes').controller('KubernetesConfigurationDataController', KubernetesConfigurationDataController);

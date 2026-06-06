@@ -3,7 +3,7 @@ package filters
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
 )
 
 type QueryParams struct {

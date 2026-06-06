@@ -1,6 +1,6 @@
 package options
 
-import portainer "github.com/portainer/portainer/api"
+import portainer "github.com/opendocking/opendocking/api"
 
 // ShowOutputFormat is the format of the output of `helm show`
 type ShowOutputFormat string

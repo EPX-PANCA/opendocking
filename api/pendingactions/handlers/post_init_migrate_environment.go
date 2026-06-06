@@ -3,12 +3,12 @@ package handlers
 import (
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/datastore/postinit"
-	dockerClient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/internal/authorization"
-	kubecli "github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/datastore/postinit"
+	dockerClient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	kubecli "github.com/opendocking/opendocking/api/kubernetes/cli"
 	"github.com/rs/zerolog/log"
 )
 

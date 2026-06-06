@@ -15,7 +15,7 @@ class controller {
   }
 }
 
-angular.module('portainer.app').component('registryFormEcr', {
+angular.module('opendocking.app').component('registryFormEcr', {
   templateUrl: './registry-form-ecr.html',
   bindings: {
     model: '=',

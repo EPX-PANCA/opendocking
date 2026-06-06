@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 const (

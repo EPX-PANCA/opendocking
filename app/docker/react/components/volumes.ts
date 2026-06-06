@@ -6,7 +6,7 @@ import { VolumesDatatable } from '@/react/docker/volumes/ListView/VolumesDatatab
 import { withCurrentUser } from '@/react-tools/withCurrentUser';
 
 export const volumesModule = angular
-  .module('portainer.docker.react.components.volumes', [])
+  .module('opendocking.docker.react.components.volumes', [])
   .component(
     'volumesDatatable',
     r2a(withUIRouter(withCurrentUser(VolumesDatatable)), [

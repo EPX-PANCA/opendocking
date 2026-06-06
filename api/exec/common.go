@@ -5,10 +5,10 @@ import (
 	"regexp"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/proxy"
-	"github.com/portainer/portainer/api/http/proxy/factory"
-	"github.com/portainer/portainer/api/internal/registryutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/proxy"
+	"github.com/opendocking/opendocking/api/http/proxy/factory"
+	"github.com/opendocking/opendocking/api/internal/registryutils"
 
 	"github.com/docker/cli/cli/config/types"
 	"github.com/rs/zerolog/log"

@@ -6,7 +6,7 @@ import { RoleService } from './services/role.service';
 import { RolesFactory } from './services/role.rest';
 
 angular
-  .module('portainer.rbac', ['ngResource'])
+  .module('opendocking.rbac', ['ngResource'])
   .constant('API_ENDPOINT_ROLES', 'api/roles')
   .component('accessViewer', accessViewer)
   .component('rolesView', rolesView)

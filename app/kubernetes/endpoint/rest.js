@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').factory('KubernetesEndpoints', [
+angular.module('opendocking.kubernetes').factory('KubernetesEndpoints', [
   '$resource',
   'API_ENDPOINT_ENDPOINTS',
   'EndpointProvider',

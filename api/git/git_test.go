@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/api/archive"
-	"github.com/portainer/portainer/api/filesystem"
-	gittypes "github.com/portainer/portainer/api/git/types"
+	"github.com/opendocking/opendocking/api/archive"
+	"github.com/opendocking/opendocking/api/filesystem"
+	gittypes "github.com/opendocking/opendocking/api/git/types"
 
 	"github.com/go-git/go-billy/v5/osfs"
 	"github.com/go-git/go-git/v5"

@@ -38,18 +38,18 @@ if [ "${SKIP_GO_GET:-false}" = false ]; then
 fi
 
 
-ldflags="-s -X 'github.com/portainer/liblicense.LicenseServerBaseURL=https://api.portainer.io' \
--X 'github.com/portainer/portainer/pkg/build.BuildNumber=${BUILDNUMBER}' \
--X 'github.com/portainer/portainer/pkg/build.ImageTag=${CONTAINER_IMAGE_TAG}' \
--X 'github.com/portainer/portainer/pkg/build.NodejsVersion=${NODE_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.PnpmVersion=${PNPM_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.WebpackVersion=${WEBPACK_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.GitCommit=${GIT_COMMIT_HASH}' \
--X 'github.com/portainer/portainer/pkg/build.GoVersion=${GO_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.DepComposeVersion=${COMPOSE_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.DepDockerVersion=${DOCKER_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.DepKubectlVersion=${KUBECTL_VERSION}' \
--X 'github.com/portainer/portainer/pkg/build.DepHelmVersion=${HELM_VERSION}'"
+ldflags="-s \
+-X 'github.com/opendocking/opendocking/pkg/build.BuildNumber=${BUILDNUMBER}' \
+-X 'github.com/opendocking/opendocking/pkg/build.ImageTag=${CONTAINER_IMAGE_TAG}' \
+-X 'github.com/opendocking/opendocking/pkg/build.NodejsVersion=${NODE_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.PnpmVersion=${PNPM_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.WebpackVersion=${WEBPACK_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.GitCommit=${GIT_COMMIT_HASH}' \
+-X 'github.com/opendocking/opendocking/pkg/build.GoVersion=${GO_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.DepComposeVersion=${COMPOSE_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.DepDockerVersion=${DOCKER_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.DepKubectlVersion=${KUBECTL_VERSION}' \
+-X 'github.com/opendocking/opendocking/pkg/build.DepHelmVersion=${HELM_VERSION}'"
 
 echo "$ldflags"
 
@@ -63,9 +63,9 @@ if [ "$PLATFORM" = "darwin" ]; then
   PLATFORM="linux"
 fi
 
-BINARY_NAME="portainer"
+BINARY_NAME="opendocking"
 if [ "$PLATFORM" = "windows" ]; then
-  BINARY_NAME="portainer.exe"
+  BINARY_NAME="opendocking.exe"
 fi
 
 GOOS=${PLATFORM} GOARCH=${ARCH} CGO_ENABLED=0 go build \

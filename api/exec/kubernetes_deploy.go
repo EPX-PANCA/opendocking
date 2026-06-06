@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/http/proxy"
-	"github.com/portainer/portainer/api/http/proxy/factory"
-	"github.com/portainer/portainer/api/http/proxy/factory/kubernetes"
-	"github.com/portainer/portainer/api/kubernetes/cli"
-	"github.com/portainer/portainer/pkg/libkubectl"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/http/proxy"
+	"github.com/opendocking/opendocking/api/http/proxy/factory"
+	"github.com/opendocking/opendocking/api/http/proxy/factory/kubernetes"
+	"github.com/opendocking/opendocking/api/kubernetes/cli"
+	"github.com/opendocking/opendocking/pkg/libkubectl"
 
 	"github.com/pkg/errors"
 )

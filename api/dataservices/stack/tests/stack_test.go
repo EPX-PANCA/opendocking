@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/filesystem"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"

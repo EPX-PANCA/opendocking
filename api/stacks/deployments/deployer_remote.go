@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/gitops/workflows"
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/pkg/librand"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/gitops/workflows"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/pkg/librand"
 
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"

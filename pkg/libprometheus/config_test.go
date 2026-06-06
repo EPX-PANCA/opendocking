@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	libprom "github.com/portainer/portainer/pkg/libprometheus"
+	libprom "github.com/opendocking/opendocking/pkg/libprometheus"
 	prometheusreg "github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/assert"

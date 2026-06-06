@@ -3,9 +3,9 @@ package edge
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/roar"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/roar"
 
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"

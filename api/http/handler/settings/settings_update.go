@@ -6,26 +6,26 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/internal/edge"
-	"github.com/portainer/portainer/pkg/libhelm"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
-	"github.com/portainer/portainer/pkg/validate"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/internal/edge"
+	"github.com/opendocking/opendocking/pkg/libhelm"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
+	"github.com/opendocking/opendocking/pkg/validate"
 
 	"github.com/pkg/errors"
 	"golang.org/x/oauth2"
 )
 
 type settingsUpdatePayload struct {
-	// URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default Portainer logo when value is empty string
+	// URL to a logo that will be displayed on the login page as well as on top of the sidebar. Will use default OpenDocking logo when value is empty string
 	LogoURL *string `example:"https://mycompany.mydomain.tld/logo.png"`
 	// A list of label name & value that will be used to hide containers when querying containers
 	BlackListedLabels []portainer.Pair
-	// Active authentication method for the Portainer instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth
+	// Active authentication method for the OpenDocking instance. Valid values are: 1 for internal, 2 for LDAP, or 3 for oauth
 	AuthenticationMethod *int `example:"1"`
 	InternalAuthSettings *portainer.InternalAuthSettings
 	LDAPSettings         *portainer.LDAPSettings
@@ -47,9 +47,9 @@ type settingsUpdatePayload struct {
 	HelmRepositoryURL *string `example:"https://charts.bitnami.com/bitnami"`
 	// Kubectl Shell Image
 	KubectlShellImage *string `example:"portainer/kubectl-shell:latest"`
-	// TrustOnFirstConnect makes Portainer accepting edge agent connection by default
-	TrustOnFirstConnect *bool `example:"false"`
-	// EnforceEdgeID makes Portainer store the Edge ID instead of accepting anyone
+	// TrustOnFirstConnect makes OpenDocking accept edge agent connection by default
+	TrustOnFirstConnect *bool `json:"TrustOnFirstConnect"`
+	// EnforceEdgeID makes OpenDocking store the Edge ID instead of accepting any
 	EnforceEdgeID *bool `example:"false"`
 	// EdgePortainerURL is the URL that is exposed to edge agents
 	EdgePortainerURL *string `json:"EdgePortainerURL"`
@@ -102,8 +102,8 @@ func (payload *settingsUpdatePayload) Validate(r *http.Request) error {
 }
 
 // @id SettingsUpdate
-// @summary Update Portainer settings
-// @description Update Portainer settings.
+// @summary Update OpenDocking settings
+// @description Update OpenDocking settings.
 // @description **Access policy**: administrator
 // @tags settings
 // @security ApiKeyAuth

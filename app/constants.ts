@@ -24,5 +24,5 @@ export const PAGINATION_MAX_ITEMS = 10;
 export const APPLICATION_CACHE_VALIDITY = 3600;
 export const CONSOLE_COMMANDS_LABEL_PREFIX = 'io.portainer.commands.';
 export const PREDEFINED_NETWORKS = ['host', 'bridge', 'ingress', 'nat', 'none'];
-export const PORTAINER_FADEOUT = 1500;
+export const OPENDOCKING_FADEOUT = 1500;
 export const STACK_NAME_VALIDATION_REGEX = '^[-_a-z0-9]+$';

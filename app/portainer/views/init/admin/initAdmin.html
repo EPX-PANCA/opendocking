@@ -6,8 +6,8 @@
       <div class="row">
         <img ng-if="logo" ng-src="{{ logo }}" class="simple-box-logo" />
         <div ng-if="!ctrl.logo">
-          <img src="~@/assets/images/logo_alt.svg" class="simple-box-logo hidden th-highcontrast:!block th-dark:!block" alt="Portainer" />
-          <img src="~@/assets/images/logo_alt_black.svg" class="simple-box-logo block th-highcontrast:hidden th-dark:hidden" alt="Portainer" />
+          <img src="~@/assets/images/logo_alt.svg" class="simple-box-logo hidden th-highcontrast:!block th-dark:!block" alt="OpenDocking" />
+          <img src="~@/assets/images/logo_alt_black.svg" class="simple-box-logo block th-highcontrast:hidden th-dark:hidden" alt="OpenDocking" />
         </div>
       </div>
       <!-- !simple box logo -->
@@ -21,7 +21,7 @@
                 <pr-icon icon="'chevron-down'" ng-if="state.showInitPassword" size="'lg'" class-name="'icon-primary'"></pr-icon>
                 <pr-icon icon="'chevron-right'" ng-if="!state.showInitPassword" size="'lg'" class-name="'icon-primary'"></pr-icon>
               </span>
-              <span class="form-section-title">New Portainer installation</span>
+              <span class="form-section-title">New OpenDocking installation</span>
             </a>
           </div>
           <!-- !toggle -->
@@ -69,7 +69,7 @@
             <div class="form-group" ng-if="requiresSetupToken">
               <label for="setup_token" class="col-sm-4 control-label text-left">
                 Setup token
-                <portainer-tooltip message="'Find this token in the Portainer server logs'"></portainer-tooltip>
+                <portainer-tooltip message="'Find this token in the OpenDocking server logs'"></portainer-tooltip>
               </label>
               <div class="col-sm-8">
                 <input type="text" class="form-control" ng-model="formValues.SetupToken" id="setup_token" data-cy="init-adminSetupToken" />
@@ -130,7 +130,7 @@
             <div class="form-group">
               <div class="col-sm-9">
                 <span class="small text-muted">
-                  This will restore the Portainer metadata which contains information about the environments, stacks and applications, as well as the configured users.
+                  This will restore the OpenDocking metadata which contains information about the environments, stacks and applications, as well as the configured users.
                 </span>
               </div>
             </div>
@@ -284,7 +284,7 @@
                 <span class="small text-muted"> You are about to restore Portainer from this backup. </span>
               </div>
               <div class="col-sm-12">
-                <span class="small text-muted"> After restoring has completed, please log in as a user that was known by the Portainer that was restored. </span>
+                <span class="small text-muted"> After restoring has completed, please log in as a user that was known by the OpenDocking that was restored. </span>
               </div>
             </div>
             <!-- !note -->
@@ -292,7 +292,7 @@
             <div class="form-group" ng-if="requiresSetupToken">
               <label for="restore_setup_token" class="col-sm-3 control-label text-left">
                 Setup token
-                <portainer-tooltip message="'Find this token in the Portainer server logs (docker logs &lt;container&gt;).'"></portainer-tooltip>
+                <portainer-tooltip message="'Find this token in the OpenDocking server logs (docker logs &lt;container&gt;).'"></portainer-tooltip>
               </label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" ng-model="formValues.SetupToken" id="restore_setup_token" data-cy="init-restoreSetupToken" />

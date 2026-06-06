@@ -1,10 +1,10 @@
 package docker
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	dockerclient "github.com/portainer/portainer/api/docker/client"
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/pkg/snapshot"
+	portainer "github.com/opendocking/opendocking/api"
+	dockerclient "github.com/opendocking/opendocking/api/docker/client"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/pkg/snapshot"
 )
 
 // Snapshotter represents a service used to create environment(endpoint) snapshots

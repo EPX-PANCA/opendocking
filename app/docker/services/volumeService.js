@@ -5,7 +5,7 @@ import { createVolume } from '@/react/docker/volumes/queries/useCreateVolumeMuta
 
 import { VolumeViewModel } from '../models/volume';
 
-angular.module('portainer.docker').factory('VolumeService', VolumeServiceFactory);
+angular.module('opendocking.docker').factory('VolumeService', VolumeServiceFactory);
 
 /* @ngInject */
 function VolumeServiceFactory(AngularToReact) {

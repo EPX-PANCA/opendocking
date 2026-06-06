@@ -13,7 +13,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/pkg/fips"
 
 	// Not allowed in FIPS mode
 	"golang.org/x/crypto/argon2" //nolint:depguard

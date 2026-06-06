@@ -34,7 +34,7 @@ import { BROWSER_OS_PLATFORM } from './react/constants';
 // - if needed across modules, declare like in `./constants` and use es6 import for that
 
 export const constantsModule = angular
-  .module('portainer.app.constants', [])
+  .module('opendocking.app.constants', [])
   .constant('API_ENDPOINT_AUTH', API_ENDPOINT_AUTH)
   .constant('API_ENDPOINT_BACKUP', API_ENDPOINT_BACKUP)
   .constant('API_ENDPOINT_CUSTOM_TEMPLATES', API_ENDPOINT_CUSTOM_TEMPLATES)

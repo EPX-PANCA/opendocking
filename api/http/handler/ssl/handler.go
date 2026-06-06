@@ -3,9 +3,9 @@ package ssl
 import (
 	"net/http"
 
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/ssl"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/ssl"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/gorilla/mux"
 )

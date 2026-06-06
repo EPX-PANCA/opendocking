@@ -1,4 +1,4 @@
-angular.module('portainer.docker').component('volumesNfsForm', {
+angular.module('opendocking.docker').component('volumesNfsForm', {
   templateUrl: './volumesnfsForm.html',
   bindings: {
     data: '=',

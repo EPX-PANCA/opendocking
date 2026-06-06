@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('ResourceControlService', [
+angular.module('opendocking.app').factory('ResourceControlService', [
   '$q',
   'ResourceControl',
   'UserService',

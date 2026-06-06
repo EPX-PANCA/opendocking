@@ -1,7 +1,7 @@
 import Chart from 'chart.js';
 import { filesize } from 'filesize';
 
-angular.module('portainer.app').factory('ChartService', [
+angular.module('opendocking.app').factory('ChartService', [
   function ChartService() {
     'use strict';
 

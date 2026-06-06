@@ -3,7 +3,7 @@ import { restoreOptions } from '@/react/portainer/init/InitAdminView/restore-opt
 
 const REDIRECT_REASON_TIMEOUT = 'AdminInitTimeout';
 
-angular.module('portainer.app').controller('InitAdminController', [
+angular.module('opendocking.app').controller('InitAdminController', [
   '$scope',
   '$state',
   'Notifications',
@@ -68,7 +68,7 @@ angular.module('portainer.app').controller('InitAdminController', [
           if (data.value.length === 0) {
             $state.go('portainer.wizard');
           } else {
-            $state.go('portainer.home');
+            $state.go('opendocking.home');
           }
         })
         .catch(function error(err) {
@@ -143,7 +143,7 @@ angular.module('portainer.app').controller('InitAdminController', [
       try {
         await waitPortainerRestart();
         Notifications.success('Success', 'The backup has successfully been restored');
-        $state.go('portainer.auth');
+        $state.go('opendocking.auth');
       } catch (err) {
         handleError(err);
         Notifications.error('Failure', err, 'Unable to check for status');

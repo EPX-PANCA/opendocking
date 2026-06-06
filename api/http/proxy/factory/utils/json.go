@@ -7,7 +7,7 @@ import (
 	"io"
 	"mime"
 
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 	"github.com/segmentio/encoding/json"
 	"go.yaml.in/yaml/v3"
 )

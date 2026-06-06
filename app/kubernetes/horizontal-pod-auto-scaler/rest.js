@@ -1,6 +1,6 @@
 import { rawResponse } from '@/kubernetes/rest/response/transform';
 
-angular.module('portainer.kubernetes').factory('KubernetesHorizontalPodAutoScalers', [
+angular.module('opendocking.kubernetes').factory('KubernetesHorizontalPodAutoScalers', [
   '$resource',
   'API_ENDPOINT_ENDPOINTS',
   'EndpointProvider',

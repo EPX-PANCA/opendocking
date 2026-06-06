@@ -1,7 +1,7 @@
 package tag
 
 import (
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 )
 
 type tagSet map[portainer.TagID]struct{}

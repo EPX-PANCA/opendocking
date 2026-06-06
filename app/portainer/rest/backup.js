@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Backup', [
+angular.module('opendocking.app').factory('Backup', [
   '$resource',
   'API_ENDPOINT_BACKUP',
   function BackupFactory($resource, API_ENDPOINT_BACKUP) {

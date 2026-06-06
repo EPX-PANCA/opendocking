@@ -5,10 +5,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/internal/testhelpers"
-	"github.com/portainer/portainer/pkg/libhelm/options"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Script used to init the Portainer development environment inside the dev-toolkit image
+# Script used to init the OpenDocking development environment inside the dev-toolkit image
 
 ### COLOR OUTPUT ###
 
@@ -43,7 +43,7 @@ errorAndExit() {
 SETUP_FILE=/setup-done
 
 display_configuration() {
-  info "Portainer dev-toolkit container configuration"
+  info "OpenDocking dev-toolkit container configuration"
   info "Go version"
   /usr/local/go/bin/go version
   info "Node version"
@@ -61,7 +61,7 @@ main() {
     [[ -z $DOCKERGID ]] && errorAndExit "Unable to find DOCKERGID environment variable. Please ensure DOCKERGID is set before running this script."
 
     if [[ -f "${SETUP_FILE}" ]]; then
-        info "Portainer dev-toolkit container already configured."
+        info "OpenDocking dev-toolkit container already configured."
         display_configuration
     else
         info "Creating user group..."
@@ -89,7 +89,7 @@ main() {
         chown -R $PUSER:$PUSER /home/$PUSER/.ssh
 
         touch "${SETUP_FILE}"
-        success "Portainer dev-toolkit container successfully configured."
+        success "OpenDocking dev-toolkit container successfully configured."
 
         display_configuration
     fi

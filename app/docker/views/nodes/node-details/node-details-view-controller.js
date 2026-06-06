@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('NodeDetailsViewController', [
+angular.module('opendocking.docker').controller('NodeDetailsViewController', [
   '$q',
   '$stateParams',
   'NodeService',

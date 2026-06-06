@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/require"

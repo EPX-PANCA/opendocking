@@ -1,8 +1,8 @@
 package dataservices
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database/models"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database/models"
 )
 
 type (

@@ -3,8 +3,8 @@ package sdk
 import (
 	"os"
 
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/release"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/release"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"

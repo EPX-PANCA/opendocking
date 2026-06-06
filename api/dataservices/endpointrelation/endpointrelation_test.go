@@ -3,11 +3,11 @@ package endpointrelation
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/dataservices/edgestack"
-	"github.com/portainer/portainer/api/internal/edge/cache"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/dataservices/edgestack"
+	"github.com/opendocking/opendocking/api/internal/edge/cache"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/stretchr/testify/require"
 )

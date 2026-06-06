@@ -59,7 +59,7 @@ function createPortRange(portRangeText, port) {
   }
 }
 
-angular.module('portainer.docker').factory('ContainerHelper', [
+angular.module('opendocking.docker').factory('ContainerHelper', [
   function ContainerHelperFactory() {
     'use strict';
     var helper = {};

@@ -12,7 +12,7 @@ import { InspectView } from '@/react/docker/containers/InspectView/InspectView';
 import { ItemView } from '@/react/docker/containers/ItemView/ItemView';
 
 export const containersModule = angular
-  .module('portainer.docker.react.views.containers', [])
+  .module('opendocking.docker.react.views.containers', [])
   .component(
     'createContainerView',
     r2a(withUIRouter(withCurrentUser(CreateView)), [])

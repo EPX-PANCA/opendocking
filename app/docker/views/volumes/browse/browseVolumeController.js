@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('BrowseVolumeController', BrowseVolumeController);
+angular.module('opendocking.docker').controller('BrowseVolumeController', BrowseVolumeController);
 
 /* @ngInject */
 function BrowseVolumeController($scope, $transition$, StateManager, endpoint) {

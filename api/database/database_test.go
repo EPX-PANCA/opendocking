@@ -3,8 +3,8 @@ package database
 import (
 	"testing"
 
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/filesystem"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	"github.com/stretchr/testify/require"
 )

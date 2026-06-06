@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/chisel"
-	"github.com/portainer/portainer/api/crypto"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/chisel"
+	"github.com/opendocking/opendocking/api/crypto"
 
 	"github.com/dchest/uniuri"
 	"github.com/pkg/errors"

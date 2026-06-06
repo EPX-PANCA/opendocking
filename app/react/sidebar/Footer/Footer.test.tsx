@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { vi } from 'vitest';
 
-import * as featureFlags from '@/react/portainer/feature-flags/feature-flags.service';
 import { withTestQueryProvider } from '@/react/test-utils/withTestQuery';
 import { withUserProvider } from '@/react/test-utils/withUserProvider';
 
@@ -28,70 +27,28 @@ describe('Footer', () => {
     vi.restoreAllMocks();
   });
 
-  describe('CE Footer', () => {
-    beforeEach(() => {
-      vi.spyOn(featureFlags, 'isBE', 'get').mockReturnValue(false);
-    });
+  test('should render footer with copyright symbol', () => {
+    renderComponent();
 
-    test('should render CE footer with copyright symbol', () => {
-      renderComponent();
-
-      expect(screen.getByText('©')).toBeInTheDocument();
-    });
-
-    test('should render Portainer Community Edition text', () => {
-      renderComponent();
-
-      expect(
-        screen.getByText('Portainer Community Edition')
-      ).toBeInTheDocument();
-    });
-
-    test('should render UpdateNotification component', () => {
-      renderComponent();
-
-      expect(screen.getByTestId('update-notification')).toBeInTheDocument();
-    });
-
-    test('should render BuildInfoModalButton component', () => {
-      renderComponent();
-
-      expect(screen.getByTestId('build-info-modal-button')).toBeInTheDocument();
-    });
+    expect(screen.getByText('©')).toBeInTheDocument();
   });
 
-  describe('BE Footer', () => {
-    beforeEach(() => {
-      vi.spyOn(featureFlags, 'isBE', 'get').mockReturnValue(true);
-    });
+  test('should render OpenDocking text', () => {
+    renderComponent();
 
-    test('should render BE footer with copyright symbol', () => {
-      renderComponent();
+    expect(screen.getByText('OpenDocking')).toBeInTheDocument();
+  });
 
-      expect(screen.getByText('©')).toBeInTheDocument();
-    });
+  test('should render UpdateNotification component', () => {
+    renderComponent();
 
-    test('should render Portainer Business Edition text', () => {
-      renderComponent();
+    expect(screen.getByTestId('update-notification')).toBeInTheDocument();
+  });
 
-      expect(
-        screen.getByText('Portainer Business Edition')
-      ).toBeInTheDocument();
-    });
+  test('should render BuildInfoModalButton component', () => {
+    renderComponent();
 
-    test('should NOT render UpdateNotification component in BE', () => {
-      renderComponent();
-
-      expect(
-        screen.queryByTestId('update-notification')
-      ).not.toBeInTheDocument();
-    });
-
-    test('should render BuildInfoModalButton component', () => {
-      renderComponent();
-
-      expect(screen.getByTestId('build-info-modal-button')).toBeInTheDocument();
-    });
+    expect(screen.getByTestId('build-info-modal-button')).toBeInTheDocument();
   });
 
   describe('FooterContent', () => {
@@ -99,9 +56,7 @@ describe('Footer', () => {
       renderComponent();
 
       const copyrightSymbol = screen.getByText('©');
-      const editionText = screen.getByText(
-        /Portainer (Community|Business) Edition/
-      );
+      const editionText = screen.getByText('OpenDocking');
       const buildInfoButton = screen.getByTestId('build-info-modal-button');
 
       expect(copyrightSymbol).toBeInTheDocument();
@@ -112,10 +67,9 @@ describe('Footer', () => {
 });
 
 function renderComponent() {
-  const Wrapper = withTestQueryProvider(withUserProvider(Footer));
-  return render(
-    <SidebarProvider>
-      <Wrapper />
-    </SidebarProvider>
+  const Wrapped = withTestQueryProvider(
+    withUserProvider(SidebarProvider(Footer))
   );
+
+  return render(<Wrapped />);
 }

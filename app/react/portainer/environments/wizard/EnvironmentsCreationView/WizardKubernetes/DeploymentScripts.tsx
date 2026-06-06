@@ -81,13 +81,13 @@ export function DeploymentScripts({
 function kubeNodePortCommand(agentVersion: string) {
   const agentShortVersion = getAgentShortVersion(agentVersion);
 
-  return `kubectl apply -f https://downloads.portainer.io/ce${agentShortVersion}/portainer-agent-k8s-nodeport.yaml`;
+  return `kubectl apply -f https://downloads.opendocking.io/ce${agentShortVersion}/opendocking-agent-k8s-nodeport.yaml`;
 }
 
 function kubeLoadBalancerCommand(agentVersion: string) {
   const agentShortVersion = getAgentShortVersion(agentVersion);
 
-  return `kubectl apply -f https://downloads.portainer.io/ce${agentShortVersion}/portainer-agent-k8s-lb.yaml`;
+  return `kubectl apply -f https://downloads.opendocking.io/ce${agentShortVersion}/opendocking-agent-k8s-lb.yaml`;
 }
 
 interface LoadBalancerProps {

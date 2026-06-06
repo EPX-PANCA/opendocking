@@ -27,7 +27,7 @@ import { volumesModule } from './volumes';
 import { templatesModule } from './templates';
 
 const ngModule = angular
-  .module('portainer.docker.react.components', [
+  .module('opendocking.docker.react.components', [
     containersModule,
     servicesModule,
     networksModule,

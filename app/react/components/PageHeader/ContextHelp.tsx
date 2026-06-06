@@ -39,7 +39,7 @@ export function useDocsUrl(doc?: string): string {
     return '';
   }
 
-  let url = 'https://docs.portainer.io/';
+  let url = 'https://opendocking.io/docs/';
 
   // Add LTS or STS version if we have it
   if (versionQuery.data?.VersionSupport) {

@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/libstack/compose"
-	"github.com/portainer/portainer/pkg/testhelpers"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/libstack/compose"
+	"github.com/opendocking/opendocking/pkg/testhelpers"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rs/zerolog/log"

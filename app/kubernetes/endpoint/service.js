@@ -30,4 +30,4 @@ class KubernetesEndpointService {
 }
 
 export default KubernetesEndpointService;
-angular.module('portainer.kubernetes').service('KubernetesEndpointService', KubernetesEndpointService);
+angular.module('opendocking.kubernetes').service('KubernetesEndpointService', KubernetesEndpointService);

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import headerStyles from './HeaderTitle.module.css';
 
-const docsUrl = 'https://www.portainer.io/ask-the-ai';
+const docsUrl = 'https://opendocking.io/ai';
 
 export function AskAILink() {
   return (

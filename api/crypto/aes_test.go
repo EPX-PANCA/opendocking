@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/logs"
-	"github.com/portainer/portainer/pkg/fips"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/logs"
+	"github.com/opendocking/opendocking/pkg/fips"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

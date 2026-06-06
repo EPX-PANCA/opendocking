@@ -1,4 +1,4 @@
-angular.module('portainer.app').component('productList', {
+angular.module('opendocking.app').component('productList', {
   templateUrl: './productList.html',
   bindings: {
     titleText: '@',

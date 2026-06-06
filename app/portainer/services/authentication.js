@@ -5,7 +5,7 @@ import { clear as clearSessionStorage } from './session-storage';
 const DEFAULT_USER = 'admin';
 const DEFAULT_PASSWORD = 'K7yJPP5qNK4hf1QsRnfV';
 
-angular.module('portainer.app').factory('Authentication', [
+angular.module('opendocking.app').factory('Authentication', [
   '$async',
   '$state',
   'Auth',
@@ -170,7 +170,7 @@ angular.module('portainer.app').factory('Authentication', [
     function redirectIfUnauthorized(authorizations) {
       const authorized = hasAuthorizations(authorizations);
       if (!authorized) {
-        $state.go('portainer.home');
+        $state.go('opendocking.home');
       }
     }
   },

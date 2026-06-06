@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('LocalStorage', [
+angular.module('opendocking.app').factory('LocalStorage', [
   'localStorageService',
   function LocalStorageFactory(localStorageService) {
     return {

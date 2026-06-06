@@ -109,4 +109,4 @@ class KubernetesConfigurationsController {
 }
 
 export default KubernetesConfigurationsController;
-angular.module('portainer.kubernetes').controller('KubernetesConfigurationsController', KubernetesConfigurationsController);
+angular.module('opendocking.kubernetes').controller('KubernetesConfigurationsController', KubernetesConfigurationsController);

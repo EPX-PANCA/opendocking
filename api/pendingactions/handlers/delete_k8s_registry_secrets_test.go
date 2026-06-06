@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	kubecli "github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	kubecli "github.com/opendocking/opendocking/api/kubernetes/cli"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	kfake "k8s.io/client-go/kubernetes/fake"

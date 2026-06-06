@@ -1,4 +1,4 @@
-angular.module('portainer.app').component('slider', {
+angular.module('opendocking.app').component('slider', {
   templateUrl: './slider.html',
   controller: 'SliderController',
   bindings: {

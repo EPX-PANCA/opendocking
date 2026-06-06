@@ -3,8 +3,8 @@ package authorization
 import (
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/slicesx"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 // NewAdministratorsOnlyResourceControl will create a new administrators only resource control associated to the resource specified by the
@@ -43,7 +43,7 @@ func NewPrivateResourceControl(resourceIdentifier string, resourceType portainer
 }
 
 // NewSystemResourceControl creates a new public resource control with the System flag set to true.
-// These resource controls are not persisted and are created on the fly by the Portainer API.
+// These resource controls are not persisted and are created on the fly by the OpenDocking API.
 func NewSystemResourceControl(resourceIdentifier string, resourceType portainer.ResourceControlType) *portainer.ResourceControl {
 	return &portainer.ResourceControl{
 		Type:               resourceType,

@@ -3,12 +3,12 @@ package migrator
 import (
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/dataservices/endpoint"
-	"github.com/portainer/portainer/api/dataservices/pendingactions"
-	"github.com/portainer/portainer/api/dataservices/registry"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/dataservices/endpoint"
+	"github.com/opendocking/opendocking/api/dataservices/pendingactions"
+	"github.com/opendocking/opendocking/api/dataservices/registry"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

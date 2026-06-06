@@ -5,8 +5,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/internal/testhelpers"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
 )
 
 func TestEmptyGlobalKey(t *testing.T) {

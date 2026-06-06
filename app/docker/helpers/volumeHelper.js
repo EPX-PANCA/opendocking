@@ -1,4 +1,4 @@
-angular.module('portainer.docker').factory('VolumeHelper', [
+angular.module('opendocking.docker').factory('VolumeHelper', [
   function VolumeHelperFactory() {
     'use strict';
     var helper = {};

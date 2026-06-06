@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/api/filesystem"
-	libprom "github.com/portainer/portainer/pkg/libprometheus"
-	pkgmetrics "github.com/portainer/portainer/pkg/metrics"
+	"github.com/opendocking/opendocking/api/filesystem"
+	libprom "github.com/opendocking/opendocking/pkg/libprometheus"
+	pkgmetrics "github.com/opendocking/opendocking/pkg/metrics"
 	prometheusreg "github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/prometheus/rules"
 	"github.com/stretchr/testify/assert"

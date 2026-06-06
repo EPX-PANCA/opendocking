@@ -1,4 +1,4 @@
-angular.module('portainer.docker').component('logViewer', {
+angular.module('opendocking.docker').component('logViewer', {
   templateUrl: './logViewer.html',
   controller: 'LogViewerController',
   bindings: {

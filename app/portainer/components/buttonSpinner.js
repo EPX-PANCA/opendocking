@@ -1,4 +1,4 @@
-angular.module('portainer.app').directive('buttonSpinner', function buttonSpinner() {
+angular.module('opendocking.app').directive('buttonSpinner', function buttonSpinner() {
   var directive = {
     restrict: 'A',
     scope: {

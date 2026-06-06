@@ -1,5 +1,5 @@
 /*
-	 Package featureflags implements feature flags for Portainer projects
+	 Package featureflags implements feature flags for OpenDocking projects
 
 	 Feature flags are used to turn on features that are not production ready.
 	 Use the Parse function to enable feature flags and also the pass a list of
@@ -69,15 +69,19 @@ func initSupportedFeatures(supportedFeatures []Feature) {
 
 // Parse turns on feature flags
 // It accepts a list of feature flags as strings and a list of supported features.
-// It will also check for feature flags in the PORTAINER_FEATURE_FLAGS environment variable.
-// Multiple feature flags can be specified with the PORTAINER_FEATURE_FLAGS environment.
-// variable using a comma separated list. e.g. "PORTAINER_FEATURE_FLAGS=feature1,feature2".
+// It will also check for feature flags in the OPENDOCKING_FEATURE_FLAGS environment variable.
+// Multiple feature flags can be specified with the OPENDOCKING_FEATURE_FLAGS environment.
+// variable using a comma separated list. e.g. "OPENDOCKING_FEATURE_FLAGS=feature1,feature2".
 // If a feature flag is not supported, it will be logged and ignored.
 // If a feature flag is supported, it will be logged and enabled.
 func Parse(features []string, supportedFeatures []Feature) {
 	initSupportedFeatures(supportedFeatures)
 
-	env := os.Getenv("PORTAINER_FEATURE_FLAGS")
+	env := os.Getenv("OPENDOCKING_FEATURE_FLAGS")
+	if env == "" {
+		// fallback to old env var for backward compatibility
+		env = os.Getenv("PORTAINER_FEATURE_FLAGS")
+	}
 	envFeatures := []string{}
 	if env != "" {
 		envFeatures = strings.Split(env, ",")

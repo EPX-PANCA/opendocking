@@ -10,12 +10,12 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/api/archive"
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/api/database/boltdb"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/http/offlinegate"
+	"github.com/opendocking/opendocking/api/archive"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/api/database/boltdb"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/http/offlinegate"
 
 	"github.com/rs/zerolog/log"
 )

@@ -63,7 +63,7 @@ function InnerSidebar() {
         >
           <ul className={clsx('space-y-5', { 'w-[32px]': !isOpen })}>
             <SidebarItem
-              to="portainer.home"
+              to="opendocking.home"
               icon={Home}
               label="Home"
               data-cy="portainerSidebar-home"

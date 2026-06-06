@@ -1181,4 +1181,4 @@ class KubernetesCreateApplicationController {
 }
 
 export default KubernetesCreateApplicationController;
-angular.module('portainer.kubernetes').controller('KubernetesCreateApplicationController', KubernetesCreateApplicationController);
+angular.module('opendocking.kubernetes').controller('KubernetesCreateApplicationController', KubernetesCreateApplicationController);

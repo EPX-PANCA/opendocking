@@ -9,30 +9,13 @@ import '@reach/dialog/styles.css';
 import styles from './Footer.module.css';
 
 export function Footer() {
-  return isBE ? <BEFooter /> : <CEFooter />;
-}
-
-function CEFooter() {
   return (
     <div className={clsx(styles.root, 'text-center')}>
       <UpdateNotification />
 
       <FooterContent>
         <span>&copy;</span>
-        <span>Portainer Community Edition</span>
-
-        <BuildInfoModalButton />
-      </FooterContent>
-    </div>
-  );
-}
-
-function BEFooter() {
-  return (
-    <div className={clsx(styles.root, 'text-center')}>
-      <FooterContent>
-        <span>&copy;</span>
-        <span>Portainer Business Edition</span>
+        <span>OpenDocking</span>
 
         <BuildInfoModalButton />
       </FooterContent>

@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-angular.module('portainer.app').factory('StateManager', StateManagerFactory);
+angular.module('opendocking.app').factory('StateManager', StateManagerFactory);
 
 /* @ngInject */
 function StateManagerFactory($async, $q, SystemService, InfoHelper, LocalStorage, SettingsService, StatusService, APPLICATION_CACHE_VALIDITY, AgentPingService, EndpointProvider) {

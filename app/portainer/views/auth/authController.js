@@ -124,7 +124,7 @@ class AuthenticationController {
       if (endpoints.value.length === 0 && isAdmin) {
         return this.$state.go('portainer.wizard');
       } else {
-        return this.$state.go('portainer.home');
+        return this.$state.go('opendocking.home');
       }
     } catch (err) {
       this.error(err, 'Unable to retrieve environments');
@@ -201,7 +201,7 @@ class AuthenticationController {
     try {
       const exists = await this.UserService.administratorExists();
       if (!exists) {
-        this.$state.go('portainer.init.admin');
+        this.$state.go('opendocking.init.admin');
       }
     } catch (err) {
       this.error(err, 'Unable to verify administrator account existence');
@@ -267,4 +267,4 @@ class AuthenticationController {
 }
 
 export default AuthenticationController;
-angular.module('portainer.app').controller('AuthenticationController', AuthenticationController);
+angular.module('opendocking.app').controller('AuthenticationController', AuthenticationController);

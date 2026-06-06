@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('SupportService', [
+angular.module('opendocking.app').factory('SupportService', [
   '$q',
   'Support',
   function SupportServiceFactory($q, Support) {

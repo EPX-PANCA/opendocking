@@ -1,8 +1,8 @@
 package security
 
 import (
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/slicesx"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 // FilterUserTeams filters teams based on user role.

@@ -5,12 +5,12 @@ import (
 	"errors"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/agent"
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/pendingactions"
-	endpointsutils "github.com/portainer/portainer/pkg/endpoints"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/agent"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/pendingactions"
+	endpointsutils "github.com/opendocking/opendocking/pkg/endpoints"
 
 	"github.com/rs/zerolog/log"
 )

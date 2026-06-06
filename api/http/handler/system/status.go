@@ -3,9 +3,9 @@ package system
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 
 	"github.com/rs/zerolog/log"
 )
@@ -40,7 +40,7 @@ func (handler *Handler) systemStatus(w http.ResponseWriter, r *http.Request) *ht
 // @success 200 {object} status "Success"
 // @router /status [get]
 func (handler *Handler) statusInspectDeprecated(w http.ResponseWriter, r *http.Request) *httperror.HandlerError {
-	log.Warn().Msg("The /status endpoint is deprecated and will be removed in a future version of Portainer. Please use the /system/status endpoint instead.")
+	log.Warn().Msg("The /status endpoint is deprecated and will be removed in a future version of OpenDocking. Please use the /system/status endpoint instead.")
 
 	return handler.systemStatus(w, r)
 }

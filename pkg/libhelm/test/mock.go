@@ -4,9 +4,9 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/release"
-	"github.com/portainer/portainer/pkg/libhelm/types"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/release"
+	"github.com/opendocking/opendocking/pkg/libhelm/types"
 
 	"github.com/pkg/errors"
 	"github.com/segmentio/encoding/json"
@@ -153,7 +153,7 @@ entries:
     description: Helm chart used to deploy the Portainer for Kubernetes
     digest: f0e13dd3e7a05d17cb35c7879ffa623fd43b2c10ca968203e302b7a6c2764ddb
     home: https://www.portainer.io
-    icon: https://github.com/portainer/portainer/raw/develop/app/assets/ico/apple-touch-icon.png
+    icon: https://github.com/opendocking/opendocking/raw/develop/app/assets/ico/apple-touch-icon.png
     maintainers:
     - email: davidy@funkypenguin.co.nz
       name: funkypenguin

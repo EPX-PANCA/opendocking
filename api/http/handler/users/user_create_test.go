@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/apikey"
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/jwt"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/apikey"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/jwt"
 
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"

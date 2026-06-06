@@ -72,7 +72,7 @@ describe('checkAuthorizations', () => {
     const result = await checkAuthorizations(transition);
 
     expect(result).toBeDefined();
-    expect($state.target).toHaveBeenCalledWith('portainer.logout');
+    expect($state.target).toHaveBeenCalledWith('opendocking.logout');
   });
 
   it('should return undefined if user is an admin and access is "admin"', async () => {
@@ -113,6 +113,6 @@ describe('checkAuthorizations', () => {
     const result = await checkAuthorizations(transition);
 
     expect(result).toBeDefined();
-    expect($state.target).toHaveBeenCalledWith('portainer.home');
+    expect($state.target).toHaveBeenCalledWith('opendocking.home');
   });
 });

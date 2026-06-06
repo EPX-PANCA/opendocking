@@ -28,7 +28,7 @@ import { buildConfirmButton } from '@@/modals/utils';
 import { convertServiceToConfig } from '@/react/docker/services/common/convertServiceToConfig';
 import { portsMappingUtils } from '@/react/docker/services/ItemView/PortMappingField';
 
-angular.module('portainer.docker').controller('ServiceController', [
+angular.module('opendocking.docker').controller('ServiceController', [
   '$q',
   '$scope',
   '$transition$',

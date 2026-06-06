@@ -2,9 +2,9 @@ package migrator
 
 import (
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
-	perrors "github.com/portainer/portainer/api/dataservices/errors"
-	"github.com/portainer/portainer/api/internal/endpointutils"
+	portainer "github.com/opendocking/opendocking/api"
+	perrors "github.com/opendocking/opendocking/api/dataservices/errors"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
 )
 
 func (m *Migrator) addEndpointRelationForEdgeAgents_2_32_0() error {

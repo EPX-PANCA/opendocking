@@ -1,6 +1,6 @@
 import { applyTheme } from '@/react/portainer/services/applyTheme';
 
-angular.module('portainer.app').service('ThemeManager', ThemeManager);
+angular.module('opendocking.app').service('ThemeManager', ThemeManager);
 
 // @deprecated use applyTheme instead
 export function ThemeManager() {

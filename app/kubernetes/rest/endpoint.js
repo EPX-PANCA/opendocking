@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').factory('KubernetesEndpoints', function KubernetesEndpointsFactory($resource, API_ENDPOINT_ENDPOINTS, EndpointProvider) {
+angular.module('opendocking.kubernetes').factory('KubernetesEndpoints', function KubernetesEndpointsFactory($resource, API_ENDPOINT_ENDPOINTS, EndpointProvider) {
   'use strict';
   return function (namespace) {
     const url = API_ENDPOINT_ENDPOINTS + '/:endpointId/kubernetes/api/v1' + (namespace ? '/namespaces/:namespace' : '') + '/endpoints/:id';

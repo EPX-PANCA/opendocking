@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('SwarmVisualizerController', [
+angular.module('opendocking.docker').controller('SwarmVisualizerController', [
   '$q',
   '$scope',
   '$document',

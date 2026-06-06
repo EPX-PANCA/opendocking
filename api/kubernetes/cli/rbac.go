@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/portainer/portainer/api/internal/randomstring"
+	"github.com/opendocking/opendocking/api/internal/randomstring"
 	"github.com/rs/zerolog/log"
 	authv1 "k8s.io/api/authorization/v1"
 	corev1 "k8s.io/api/core/v1"

@@ -209,4 +209,4 @@ class KubernetesCreateSecretController {
 }
 
 export default KubernetesCreateSecretController;
-angular.module('portainer.kubernetes').controller('KubernetesCreateSecretController', KubernetesCreateSecretController);
+angular.module('opendocking.kubernetes').controller('KubernetesCreateSecretController', KubernetesCreateSecretController);

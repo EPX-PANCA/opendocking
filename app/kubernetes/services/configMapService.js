@@ -158,4 +158,4 @@ class KubernetesConfigMapService {
 }
 
 export default KubernetesConfigMapService;
-angular.module('portainer.kubernetes').service('KubernetesConfigMapService', KubernetesConfigMapService);
+angular.module('opendocking.kubernetes').service('KubernetesConfigMapService', KubernetesConfigMapService);

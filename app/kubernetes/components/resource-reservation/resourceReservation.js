@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').component('kubernetesResourceReservation', {
+angular.module('opendocking.kubernetes').component('kubernetesResourceReservation', {
   templateUrl: './resourceReservation.html',
   controller: 'KubernetesResourceReservationController',
   bindings: {

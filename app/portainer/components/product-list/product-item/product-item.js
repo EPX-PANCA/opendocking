@@ -1,4 +1,4 @@
-angular.module('portainer.app').component('productItem', {
+angular.module('opendocking.app').component('productItem', {
   templateUrl: './productItem.html',
   bindings: {
     model: '<',

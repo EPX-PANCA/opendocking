@@ -27,5 +27,5 @@ class GroupFormController {
   }
 }
 
-angular.module('portainer.app').controller('GroupFormController', GroupFormController);
+angular.module('opendocking.app').controller('GroupFormController', GroupFormController);
 export default GroupFormController;

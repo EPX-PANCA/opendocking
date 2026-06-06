@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('portainer.kubernetes').factory('KubernetesNodesLimits', KubernetesNodesLimitsFactory);
+angular.module('opendocking.kubernetes').factory('KubernetesNodesLimits', KubernetesNodesLimitsFactory);
 
 /* @ngInject */
 function KubernetesNodesLimitsFactory($resource, API_ENDPOINT_KUBERNETES, EndpointProvider) {

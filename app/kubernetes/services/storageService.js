@@ -55,4 +55,4 @@ class KubernetesStorageService {
 }
 
 export default KubernetesStorageService;
-angular.module('portainer.kubernetes').service('KubernetesStorageService', KubernetesStorageService);
+angular.module('opendocking.kubernetes').service('KubernetesStorageService', KubernetesStorageService);

@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/api/apikey"
-	"github.com/portainer/portainer/api/datastore"
-	"github.com/portainer/portainer/api/http/security"
-	"github.com/portainer/portainer/api/http/security/setuptoken"
-	"github.com/portainer/portainer/api/internal/testhelpers"
+	"github.com/opendocking/opendocking/api/apikey"
+	"github.com/opendocking/opendocking/api/datastore"
+	"github.com/opendocking/opendocking/api/http/security"
+	"github.com/opendocking/opendocking/api/http/security/setuptoken"
+	"github.com/opendocking/opendocking/api/internal/testhelpers"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

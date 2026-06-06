@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Registries', [
+angular.module('opendocking.app').factory('Registries', [
   '$resource',
   'API_ENDPOINT_REGISTRIES',
   function RegistriesFactory($resource, API_ENDPOINT_REGISTRIES) {

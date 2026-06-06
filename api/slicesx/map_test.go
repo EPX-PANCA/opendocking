@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/portainer/portainer/api/slicesx"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 func Test_Map(t *testing.T) {

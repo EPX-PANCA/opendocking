@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import { browseGetResponse } from './response/browse';
 
-angular.module('portainer.agent').factory('Browse', BrowseFactory);
+angular.module('opendocking.agent').factory('Browse', BrowseFactory);
 
 function BrowseFactory($resource, API_ENDPOINT_ENDPOINTS, StateManager) {
   return $resource(

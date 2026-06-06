@@ -1,4 +1,4 @@
-angular.module('portainer.kubernetes').filter('kubernetesUsageLevelInfo', function () {
+angular.module('opendocking.kubernetes').filter('kubernetesUsageLevelInfo', function () {
   return function (usage) {
     if (usage >= 80) {
       return 'danger';

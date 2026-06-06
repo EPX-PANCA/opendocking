@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
 	"github.com/rs/zerolog/log"
 
 	"github.com/patrickmn/go-cache"
@@ -305,7 +305,7 @@ func (factory *ClientFactory) buildAgentConfig(endpoint *portainer.Endpoint) (*r
 func (factory *ClientFactory) buildEdgeConfig(endpoint *portainer.Endpoint) (*rest.Config, error) {
 	tunnelAddr, err := factory.reverseTunnelService.TunnelAddr(endpoint)
 	if err != nil {
-		return nil, pkgerrors.Wrap(err, "failed to activate the chisel reverse tunnel. check if the tunnel port is open at the portainer instance")
+		return nil, pkgerrors.Wrap(err, "failed to activate the chisel reverse tunnel. check if the tunnel port is open at the opendocking instance")
 	}
 	endpointURL := fmt.Sprintf("http://%s/kubernetes", tunnelAddr)
 

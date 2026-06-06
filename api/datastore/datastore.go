@@ -8,9 +8,9 @@ import (
 	"path"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	portainerErrors "github.com/portainer/portainer/api/dataservices/errors"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	portainerErrors "github.com/opendocking/opendocking/api/dataservices/errors"
 
 	"github.com/rs/zerolog/log"
 )
@@ -94,9 +94,14 @@ func (store *Store) BackupTo(w io.Writer) error {
 	return store.connection.BackupTo(w)
 }
 
-// CheckCurrentEdition checks if current edition is community edition
+// CheckCurrentEdition checks if the edition is compatible with OpenDocking
+// OpenDocking accepts databases from OpenDocking, BE, and EE editions
 func (store *Store) CheckCurrentEdition() error {
-	if store.edition() != portainer.Edition {
+	edition := store.edition()
+	if edition != portainer.OpenDocking &&
+		edition != portainer.PortainerCE &&
+		edition != portainer.PortainerBE &&
+		edition != portainer.PortainerEE {
 		return portainerErrors.ErrWrongDBEdition
 	}
 
@@ -106,7 +111,7 @@ func (store *Store) CheckCurrentEdition() error {
 func (store *Store) edition() portainer.SoftwareEdition {
 	edition, err := store.VersionService.Edition()
 	if store.IsErrObjectNotFound(err) {
-		edition = portainer.PortainerCE
+		edition = portainer.OpenDocking
 	}
 
 	return edition

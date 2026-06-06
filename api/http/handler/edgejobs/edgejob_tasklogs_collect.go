@@ -4,13 +4,13 @@ import (
 	"net/http"
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/internal/edge"
-	"github.com/portainer/portainer/api/internal/edge/cache"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/request"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/internal/edge"
+	"github.com/opendocking/opendocking/api/internal/edge/cache"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/request"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 // @id EdgeJobTasksCollect
@@ -76,7 +76,7 @@ func (handler *Handler) edgeJobTasksCollect(w http.ResponseWriter, r *http.Reque
 		cache.Del(endpointID)
 
 		if endpoint.Edge.AsyncMode {
-			return httperror.BadRequest("Async Edge Endpoints are not supported in Portainer CE", nil)
+			return httperror.BadRequest("Async Edge Endpoints are not supported in OpenDocking", nil)
 		}
 
 		return nil

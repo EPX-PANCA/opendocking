@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/scheduler"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/scheduler"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/rs/zerolog/log"
 )

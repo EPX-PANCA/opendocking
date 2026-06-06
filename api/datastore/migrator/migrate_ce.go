@@ -5,7 +5,7 @@ import (
 	"runtime"
 
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/rs/zerolog/log"
@@ -93,9 +93,12 @@ func (m *Migrator) NeedsMigration() bool {
 	// If the version matches, then it's all down to the number of migration funcs we have for the current version
 	// i.e. the MigratorCount
 
-	// In this particular instance we should log a fatal error
-	if m.CurrentDBEdition() != portainer.PortainerCE {
-		log.Fatal().Msg("the Portainer database is set for Portainer Business Edition, please follow the instructions in our documentation to downgrade it: https://docs.portainer.io/faqs/upgrading/can-i-downgrade-from-portainer-business-to-portainer-ce")
+	// OpenDocking accepts all editions (CE, BE, EE)
+	if m.CurrentDBEdition() != portainer.OpenDocking &&
+		m.CurrentDBEdition() != portainer.PortainerCE &&
+		m.CurrentDBEdition() != portainer.PortainerBE &&
+		m.CurrentDBEdition() != portainer.PortainerEE {
+		log.Fatal().Msg("the database edition is not recognized")
 
 		return false
 	}

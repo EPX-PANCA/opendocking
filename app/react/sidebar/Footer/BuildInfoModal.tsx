@@ -39,7 +39,7 @@ export function BuildInfoModalButton() {
         data-cy="portainerSidebar-versionNumber"
         className="btn-none hover:underline"
         onClick={() => setIsBuildInfoVisible(true)}
-        title="About Portainer"
+        title="About OpenDocking"
       >
         {`${Version} ${VersionSupport}`}
       </button>
@@ -71,7 +71,7 @@ function BuildInfoModal({ closeModal }: { closeModal: () => void }) {
 
   return (
     <Modal onDismiss={closeModal} aria-label="build-info-modal">
-      <Modal.Header title={`Portainer ${Edition}`} />
+      <Modal.Header title={`OpenDocking ${Edition}`} />
       <Modal.Body>
         <div className={styles.versionInfo}>
           <table>

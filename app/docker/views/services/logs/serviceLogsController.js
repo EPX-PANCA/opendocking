@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-angular.module('portainer.docker').controller('ServiceLogsController', [
+angular.module('opendocking.docker').controller('ServiceLogsController', [
   '$scope',
   '$transition$',
   '$interval',

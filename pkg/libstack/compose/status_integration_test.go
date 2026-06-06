@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/pkg/libstack"
 )
 
 /*

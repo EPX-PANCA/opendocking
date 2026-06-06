@@ -5,10 +5,10 @@ import (
 	"reflect"
 	"sync"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/internal/endpointutils"
-	kubecli "github.com/portainer/portainer/api/kubernetes/cli"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/internal/endpointutils"
+	kubecli "github.com/opendocking/opendocking/api/kubernetes/cli"
 
 	"github.com/rs/zerolog/log"
 )

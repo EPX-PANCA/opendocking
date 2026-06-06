@@ -134,4 +134,4 @@ class porImageRegistryController {
 }
 
 export default porImageRegistryController;
-angular.module('portainer.docker').controller('porImageRegistryController', porImageRegistryController);
+angular.module('opendocking.docker').controller('porImageRegistryController', porImageRegistryController);

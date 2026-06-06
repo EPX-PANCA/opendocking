@@ -22,4 +22,4 @@ class KubernetesNodesLimitsService {
 }
 
 export default KubernetesNodesLimitsService;
-angular.module('portainer.kubernetes').service('KubernetesNodesLimitsService', KubernetesNodesLimitsService);
+angular.module('opendocking.kubernetes').service('KubernetesNodesLimitsService', KubernetesNodesLimitsService);

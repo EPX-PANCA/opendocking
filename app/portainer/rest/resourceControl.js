@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('ResourceControl', [
+angular.module('opendocking.app').factory('ResourceControl', [
   '$resource',
   'API_ENDPOINT_RESOURCE_CONTROLS',
   function ResourceControlFactory($resource, API_ENDPOINT_RESOURCE_CONTROLS) {

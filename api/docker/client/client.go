@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/crypto"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/crypto"
 	"github.com/rs/zerolog/log"
 
 	"github.com/docker/docker/api/types/image"

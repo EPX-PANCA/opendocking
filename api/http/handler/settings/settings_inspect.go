@@ -3,13 +3,13 @@ package settings
 import (
 	"net/http"
 
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
-	"github.com/portainer/portainer/pkg/libhttp/response"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
+	"github.com/opendocking/opendocking/pkg/libhttp/response"
 )
 
 // @id SettingsInspect
-// @summary Retrieve Portainer settings
-// @description Retrieve Portainer settings.
+// @summary Retrieve OpenDocking settings
+// @description Retrieve OpenDocking settings.
 // @description **Access policy**: administrator
 // @tags settings
 // @security ApiKeyAuth

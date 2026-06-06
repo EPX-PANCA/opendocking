@@ -126,4 +126,4 @@ class KubernetesNamespaceService {
 }
 
 export default KubernetesNamespaceService;
-angular.module('portainer.kubernetes').service('KubernetesNamespaceService', KubernetesNamespaceService);
+angular.module('opendocking.kubernetes').service('KubernetesNamespaceService', KubernetesNamespaceService);

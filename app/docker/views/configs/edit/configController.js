@@ -1,7 +1,7 @@
 import { ResourceControlType } from '@/react/portainer/access-control/types';
 import { confirmDelete } from '@@/modals/confirm';
 
-angular.module('portainer.docker').controller('ConfigController', [
+angular.module('opendocking.docker').controller('ConfigController', [
   '$scope',
   '$transition$',
   '$state',

@@ -3,7 +3,7 @@ package registryhttp
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/rs/zerolog/log"
 	"oras.land/oras-go/v2/registry/remote/retry"

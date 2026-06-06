@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/stretchr/testify/require"
 )

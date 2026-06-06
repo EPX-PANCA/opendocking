@@ -1,6 +1,6 @@
 import { processItemsInBatches } from '@/react/common/processItemsInBatches';
 
-angular.module('portainer.app').controller('StacksController', StacksController);
+angular.module('opendocking.app').controller('StacksController', StacksController);
 
 /* @ngInject */
 function StacksController($scope, $state, Notifications, StackService, Authentication, endpoint) {

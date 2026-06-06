@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/api/logs"
 )
 
 // TarGzDir creates a tar.gz archive and returns it's path.

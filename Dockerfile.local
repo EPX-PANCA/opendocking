@@ -1,0 +1,19 @@
+FROM alpine:latest
+
+LABEL org.opencontainers.image.title="OpenDocking" \
+  org.opencontainers.image.description="Universal container management platform." \
+  org.opencontainers.image.vendor="OpenDocking"
+
+COPY dist/opendocking /opendocking
+COPY dist/mustache-templates /mustache-templates/
+COPY dist/public /public/
+
+VOLUME /data
+WORKDIR /
+
+EXPOSE 9000
+EXPOSE 9443
+EXPOSE 8000
+
+ENTRYPOINT ["/opendocking"]
+CMD ["--data", "/data", "--assets", "/", "--bind", "0.0.0.0:9000", "--bind-https", "0.0.0.0:9443", "--http-enabled", "--no-setup-token", "-H", "unix:///var/run/docker.sock"]

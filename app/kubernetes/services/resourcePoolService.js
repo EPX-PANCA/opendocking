@@ -140,4 +140,4 @@ export function KubernetesResourcePoolService(
   }
 }
 
-angular.module('portainer.kubernetes').service('KubernetesResourcePoolService', KubernetesResourcePoolService);
+angular.module('opendocking.kubernetes').service('KubernetesResourcePoolService', KubernetesResourcePoolService);

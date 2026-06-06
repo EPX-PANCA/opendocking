@@ -1,6 +1,6 @@
 import { resizeTTY } from '@/react/docker/proxy/queries/useExecResizeTTYMutation';
 
-angular.module('portainer.docker').factory('ExecService', ExecServiceFactory);
+angular.module('opendocking.docker').factory('ExecService', ExecServiceFactory);
 
 /* @ngInject */
 function ExecServiceFactory(AngularToReact) {

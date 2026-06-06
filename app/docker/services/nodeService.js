@@ -4,7 +4,7 @@ import { updateNode } from '@/react/docker/proxy/queries/nodes/useUpdateNodeMuta
 
 import { NodeViewModel } from '../models/node';
 
-angular.module('portainer.docker').factory('NodeService', NodeServiceFactory);
+angular.module('opendocking.docker').factory('NodeService', NodeServiceFactory);
 
 /* @ngInject */
 function NodeServiceFactory(AngularToReact) {

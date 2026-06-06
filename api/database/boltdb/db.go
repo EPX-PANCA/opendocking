@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	dserrors "github.com/portainer/portainer/api/dataservices/errors"
+	portainer "github.com/opendocking/opendocking/api"
+	dserrors "github.com/opendocking/opendocking/api/dataservices/errors"
 
 	"github.com/rs/zerolog/log"
 	bolt "go.etcd.io/bbolt"
@@ -29,7 +29,7 @@ const (
 )
 
 var (
-	ErrHaveEncryptedAndUnencrypted = errors.New("Portainer has detected both an encrypted and un-encrypted database and cannot start.  Only one database should exist")
+	ErrHaveEncryptedAndUnencrypted = errors.New("OpenDocking has detected both an encrypted and un-encrypted database and cannot start. Only one database should exist")
 	ErrHaveEncryptedWithNoKey      = errors.New("The portainer database is encrypted, but no secret was loaded")
 )
 
@@ -160,7 +160,7 @@ func (connection *DbConnection) NeedsEncryptionMigration() (bool, error) {
 
 // Open opens and initializes the BoltDB database.
 func (connection *DbConnection) Open() error {
-	log.Info().Str("filename", connection.GetDatabaseFileName()).Msg("loading PortainerDB")
+	log.Info().Str("filename", connection.GetDatabaseFileName()).Msg("loading OpenDockingDB")
 
 	databasePath := connection.GetDatabaseFilePath()
 	db, err := bolt.Open(databasePath, 0600, connection.boltOptions(connection.Compact))
@@ -196,7 +196,7 @@ func (connection *DbConnection) Open() error {
 // Close closes the BoltDB database.
 // Safe to being called multiple times.
 func (connection *DbConnection) Close() error {
-	log.Info().Msg("closing PortainerDB")
+	log.Info().Msg("closing OpenDockingDB")
 
 	if connection.DB != nil {
 		return connection.DB.Close()

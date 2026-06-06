@@ -7,8 +7,8 @@ import (
 	"mime"
 	"net/http"
 
-	"github.com/portainer/portainer/api/archive"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/archive"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/rs/zerolog/log"
 	"github.com/segmentio/encoding/json"

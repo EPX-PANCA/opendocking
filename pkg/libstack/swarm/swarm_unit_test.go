@@ -9,8 +9,8 @@ import (
 	configtypes "github.com/docker/cli/cli/config/types"
 	"github.com/docker/docker/api/types/swarm"
 	dockerregistry "github.com/docker/docker/registry"
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/libstack"
 	"github.com/stretchr/testify/require"
 )
 

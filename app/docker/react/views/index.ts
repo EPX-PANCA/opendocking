@@ -13,7 +13,7 @@ import { imagesModule } from './images';
 import { stacksModule } from './stacks';
 
 export const viewsModule = angular
-  .module('portainer.docker.react.views', [
+  .module('opendocking.docker.react.views', [
     containersModule,
     configsModule,
     imagesModule,

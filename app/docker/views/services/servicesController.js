@@ -1,4 +1,4 @@
-angular.module('portainer.docker').controller('ServicesController', [
+angular.module('opendocking.docker').controller('ServicesController', [
   '$q',
   '$scope',
   'ServiceService',

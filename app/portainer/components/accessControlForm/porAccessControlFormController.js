@@ -1,7 +1,7 @@
 import _ from 'lodash-es';
 import { ResourceControlOwnership as RCO } from '@/react/portainer/access-control/types';
 
-angular.module('portainer.app').controller('porAccessControlFormController', [
+angular.module('opendocking.app').controller('porAccessControlFormController', [
   '$q',
   '$scope',
   '$state',

@@ -3,7 +3,7 @@ import { PorImageRegistryModel } from '@/docker/models/porImageRegistry';
 import { confirmImageExport } from '@/react/docker/images/common/ConfirmExportModal';
 import { confirmDelete } from '@@/modals/confirm';
 
-angular.module('portainer.docker').controller('ImageController', [
+angular.module('opendocking.docker').controller('ImageController', [
   '$async',
   '$q',
   '$scope',

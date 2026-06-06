@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('BackupService', [
+angular.module('opendocking.app').factory('BackupService', [
   '$q',
   '$async',
   'Backup',

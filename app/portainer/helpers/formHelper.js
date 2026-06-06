@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('FormHelper', [
+angular.module('opendocking.app').factory('FormHelper', [
   function FormHelperFactory() {
     'use strict';
     var helper = {};

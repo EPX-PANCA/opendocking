@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 	"oras.land/oras-go/v2/registry/remote"
 )
 

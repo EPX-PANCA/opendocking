@@ -3,9 +3,9 @@ package templates
 import (
 	"net/http"
 
-	portainer "github.com/portainer/portainer/api"
-	libclient "github.com/portainer/portainer/pkg/libhttp/client"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	portainer "github.com/opendocking/opendocking/api"
+	libclient "github.com/opendocking/opendocking/pkg/libhttp/client"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 	"github.com/rs/zerolog/log"
 	"github.com/segmentio/encoding/json"
 )

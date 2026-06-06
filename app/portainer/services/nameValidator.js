@@ -1,7 +1,7 @@
 import angular from 'angular';
 import { getEnvironments } from '@/react/portainer/environments/environment.service';
 
-angular.module('portainer.app').factory('NameValidator', NameValidatorFactory);
+angular.module('opendocking.app').factory('NameValidator', NameValidatorFactory);
 /* @ngInject */
 function NameValidatorFactory(Notifications) {
   return {

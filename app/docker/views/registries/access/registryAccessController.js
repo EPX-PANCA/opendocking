@@ -67,4 +67,4 @@ class DockerRegistryAccessController {
 }
 
 export default DockerRegistryAccessController;
-angular.module('portainer.docker').controller('DockerRegistryAccessController', DockerRegistryAccessController);
+angular.module('opendocking.docker').controller('DockerRegistryAccessController', DockerRegistryAccessController);

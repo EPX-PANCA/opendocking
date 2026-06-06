@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/portainer/portainer/pkg/schedule"
+	"github.com/opendocking/opendocking/pkg/schedule"
 
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"

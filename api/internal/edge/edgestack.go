@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	"github.com/portainer/portainer/api/slicesx"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 var ErrEdgeGroupNotFound = errors.New("edge group was not found")

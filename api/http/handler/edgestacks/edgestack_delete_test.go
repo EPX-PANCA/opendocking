@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/segmentio/encoding/json"
 	"github.com/stretchr/testify/assert"

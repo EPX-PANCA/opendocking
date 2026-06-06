@@ -7,9 +7,9 @@ import (
 	"sort"
 
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/concurrent"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/concurrent"
+	"github.com/opendocking/opendocking/api/logs"
 	"github.com/segmentio/encoding/json"
 	"golang.org/x/mod/semver"
 	"oras.land/oras-go/v2/registry"

@@ -27,7 +27,7 @@ export default defineConfig({
     bail: 2,
     include: ['./app/**/*.test.ts', './app/**/*.test.tsx'],
     env: {
-      PORTAINER_EDITION: 'CE',
+      PORTAINER_EDITION: 'BE',
     },
     server: {
       deps: {

@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/pkg/errors"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/logs"
 )
 
 // WriteToFile creates a file in the filesystem storage

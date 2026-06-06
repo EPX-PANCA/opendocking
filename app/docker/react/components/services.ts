@@ -14,7 +14,7 @@ import {
 import { withFormValidation } from '@/react-tools/withFormValidation';
 
 const ngModule = angular
-  .module('portainer.docker.react.components.services', [])
+  .module('opendocking.docker.react.components.services', [])
   .component(
     'dockerServiceTasksDatatable',
     r2a(withUIRouter(withCurrentUser(TasksDatatable)), [

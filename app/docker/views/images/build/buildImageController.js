@@ -1,7 +1,7 @@
 import { confirmWebEditorDiscard } from '@@/modals/confirm';
 import { editor, upload, url } from '@@/BoxSelector/common-options/build-methods';
 
-angular.module('portainer.docker').controller('BuildImageController', BuildImageController);
+angular.module('opendocking.docker').controller('BuildImageController', BuildImageController);
 
 /* @ngInject */
 function BuildImageController($scope, $async, $window, BuildService, Notifications, HttpRequestHelper, endpoint) {

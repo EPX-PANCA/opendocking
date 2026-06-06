@@ -3,9 +3,9 @@ package uac
 import (
 	"fmt"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/internal/authorization"
-	"github.com/portainer/portainer/api/slicesx"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/internal/authorization"
+	"github.com/opendocking/opendocking/api/slicesx"
 )
 
 // FilterByResourceControl filters a list of items based on the user's role and the resource control associated to the item.

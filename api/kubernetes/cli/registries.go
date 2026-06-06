@@ -4,8 +4,8 @@ import (
 	"context"
 	"strconv"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/internal/registryutils"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/internal/registryutils"
 
 	"github.com/pkg/errors"
 	"github.com/segmentio/encoding/json"

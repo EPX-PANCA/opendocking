@@ -1,6 +1,6 @@
 package workflows
 
-import portainer "github.com/portainer/portainer/api"
+import portainer "github.com/opendocking/opendocking/api"
 
 func deriveStackTargetState(s portainer.Stack) WorkflowPhaseStatus {
 	if len(s.DeploymentStatus) == 0 {

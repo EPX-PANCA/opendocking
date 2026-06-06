@@ -1,6 +1,6 @@
 import _ from 'lodash-es';
 
-angular.module('portainer.docker').factory('InfoHelper', [
+angular.module('opendocking.docker').factory('InfoHelper', [
   function InfoHelperFactory() {
     'use strict';
 

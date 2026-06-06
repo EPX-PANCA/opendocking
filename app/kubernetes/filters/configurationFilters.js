@@ -1,6 +1,6 @@
 import { KubernetesConfigurationKinds } from '@/kubernetes/models/configuration/models';
 
-angular.module('portainer.kubernetes').filter('kubernetesConfigurationKindText', function () {
+angular.module('opendocking.kubernetes').filter('kubernetesConfigurationKindText', function () {
   'use strict';
   return function (type) {
     switch (type) {

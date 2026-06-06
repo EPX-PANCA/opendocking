@@ -1,7 +1,7 @@
 import angular from 'angular';
 
-angular.module('portainer.app').factory('Stack', StackFactory);
-angular.module('portainer.app').factory('StackByName', StackByNameFactory);
+angular.module('opendocking.app').factory('Stack', StackFactory);
+angular.module('opendocking.app').factory('StackByName', StackByNameFactory);
 
 /* @ngInject */
 function StackFactory($resource, API_ENDPOINT_STACKS) {

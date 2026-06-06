@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	dserrors "github.com/portainer/portainer/api/dataservices/errors"
+	dserrors "github.com/opendocking/opendocking/api/dataservices/errors"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"

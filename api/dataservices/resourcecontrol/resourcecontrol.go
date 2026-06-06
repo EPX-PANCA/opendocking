@@ -4,8 +4,8 @@ import (
 	"errors"
 	"slices"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
 )
 
 // BucketName represents the name of the bucket where this service stores data.

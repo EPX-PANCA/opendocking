@@ -86,4 +86,4 @@ class KubernetesSummaryController {
 }
 
 export default KubernetesSummaryController;
-angular.module('portainer.kubernetes').controller('KubernetesSummaryController', KubernetesSummaryController);
+angular.module('opendocking.kubernetes').controller('KubernetesSummaryController', KubernetesSummaryController);

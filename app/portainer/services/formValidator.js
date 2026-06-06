@@ -1,6 +1,6 @@
 import { ResourceControlOwnership as RCO } from '@/react/portainer/access-control/types';
 
-angular.module('portainer.app').factory('FormValidator', [
+angular.module('opendocking.app').factory('FormValidator', [
   function FormValidatorFactory() {
     'use strict';
 

@@ -1,4 +1,4 @@
-module github.com/portainer/portainer
+module github.com/opendocking/opendocking
 
 go 1.26.3
 

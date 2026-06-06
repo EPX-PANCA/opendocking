@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	httperrors "github.com/portainer/portainer/api/http/errors"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	httperrors "github.com/opendocking/opendocking/api/http/errors"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 	"github.com/stretchr/testify/require"
 )
 

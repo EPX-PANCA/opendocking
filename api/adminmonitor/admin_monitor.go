@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/dataservices"
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/dataservices"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 
 	"github.com/rs/zerolog/log"
 )
@@ -52,12 +52,12 @@ func (m *Monitor) Start(ctx context.Context) {
 		case <-time.After(m.timeout):
 			initialized, err := m.WasInitialized()
 			if err != nil {
-				log.Error().Err(err).Msg("AdminMonitor failed to determine if Portainer is Initialized")
+				log.Error().Err(err).Msg("AdminMonitor failed to determine if OpenDocking is Initialized")
 				return
 			}
 
 			if !initialized {
-				log.Info().Msg("the Portainer instance timed out for security purposes, to re-enable your Portainer instance, you will need to restart Portainer")
+				log.Info().Msg("the OpenDocking instance timed out for security purposes, to re-enable your OpenDocking instance, you will need to restart OpenDocking")
 
 				m.mu.Lock()
 				defer m.mu.Unlock()

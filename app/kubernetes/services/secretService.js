@@ -107,4 +107,4 @@ class KubernetesSecretService {
 }
 
 export default KubernetesSecretService;
-angular.module('portainer.kubernetes').service('KubernetesSecretService', KubernetesSecretService);
+angular.module('opendocking.kubernetes').service('KubernetesSecretService', KubernetesSecretService);

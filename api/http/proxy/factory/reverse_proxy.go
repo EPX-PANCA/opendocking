@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	httperror "github.com/portainer/portainer/pkg/libhttp/error"
+	httperror "github.com/opendocking/opendocking/pkg/libhttp/error"
 )
 
 // Note that we discard any non-canonical headers by design

@@ -4,7 +4,7 @@ import { AccessHeaders } from '@/portainer/authorization-guard';
 import { reactModule } from './react';
 
 angular
-  .module('portainer.edge', [reactModule])
+  .module('opendocking.edge', [reactModule])
 
   .config(function config($stateRegistryProvider) {
     const edge = {

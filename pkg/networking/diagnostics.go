@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/portainer/portainer/api/crypto"
-	"github.com/portainer/portainer/api/logs"
+	"github.com/opendocking/opendocking/api/crypto"
+	"github.com/opendocking/opendocking/api/logs"
 	"github.com/rs/zerolog/log"
 
 	"github.com/segmentio/encoding/json"

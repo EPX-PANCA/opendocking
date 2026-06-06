@@ -1,4 +1,4 @@
-angular.module('portainer.app').directive('onEnterKey', [
+angular.module('opendocking.app').directive('onEnterKey', [
   function porOnEnterKey() {
     var directive = {
       restrict: 'A',

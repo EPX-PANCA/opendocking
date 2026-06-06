@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/docker/docker/api/types/image"
 	dockerclient "github.com/docker/docker/client"

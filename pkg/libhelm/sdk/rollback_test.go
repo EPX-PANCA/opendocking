@@ -3,8 +3,8 @@ package sdk
 import (
 	"testing"
 
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/libhelm/test"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/libhelm/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

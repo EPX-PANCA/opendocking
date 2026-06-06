@@ -2,7 +2,7 @@ import _ from 'lodash-es';
 import { AccessControlFormData } from '../../../../portainer/components/accessControlForm/porAccessControlFormModel';
 import { MacvlanFormData } from '../../../components/network-macvlan-form/networkMacvlanFormModel';
 
-angular.module('portainer.docker').controller('CreateNetworkController', [
+angular.module('opendocking.docker').controller('CreateNetworkController', [
   '$q',
   '$scope',
   '$state',

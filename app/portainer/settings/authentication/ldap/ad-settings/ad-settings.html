@@ -5,13 +5,13 @@
       <auto-user-provision-toggle
         value="$ctrl.settings.AutoCreateUsers"
         on-change="($ctrl.onAutoUserProvisionChange)"
-        description="'With automatic user provisioning enabled, Portainer will create user(s) automatically with standard user role and assign them to team(s) which matches to LDAP group name(s). If disabled, users must be created in Portainer beforehand.'"
+        description="'With automatic user provisioning enabled, OpenDocking will create user(s) automatically with standard user role and assign them to team(s) which matches to LDAP group name(s). If disabled, users must be created in OpenDocking beforehand.'"
       ></auto-user-provision-toggle>
 
       <div>
         <div class="col-sm-12 form-section-title"> Information </div>
         <div class="form-group col-sm-12 text-muted small">
-          When using Microsoft AD authentication, Portainer will delegate user authentication to the Domain Controller(s) configured below; if there is no connectivity, Portainer
+          When using Microsoft AD authentication, OpenDocking will delegate user authentication to the Domain Controller(s) configured below; if there is no connectivity, Portainer
           will fallback to internal authentication.
         </div>
       </div>
@@ -92,7 +92,7 @@
       <div class="form-group">
         <label for="ldap_password" class="col-sm-3 control-label text-left">
           Service Account Password
-          <portainer-tooltip message="'If you do not enter a password, Portainer will leave the current password unchanged.'"></portainer-tooltip>
+          <portainer-tooltip message="'If you do not enter a password, OpenDocking will leave the current password unchanged.'"></portainer-tooltip>
         </label>
         <div class="col-sm-9">
           <input

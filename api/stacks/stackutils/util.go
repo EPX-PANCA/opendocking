@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/filesystem"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/filesystem"
 )
 
 func UserIsAdminOrEndpointAdmin(user *portainer.User) bool {

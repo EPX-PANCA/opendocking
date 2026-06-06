@@ -1,6 +1,6 @@
 import { SettingsViewModel, PublicSettingsViewModel } from '../../models/settings';
 
-angular.module('portainer.app').factory('SettingsService', [
+angular.module('opendocking.app').factory('SettingsService', [
   '$q',
   'Settings',
   function SettingsServiceFactory($q, Settings) {

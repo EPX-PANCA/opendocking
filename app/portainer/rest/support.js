@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Support', [
+angular.module('opendocking.app').factory('Support', [
   '$resource',
   'API_ENDPOINT_SUPPORT',
   function SupportFactory($resource, API_ENDPOINT_SUPPORT) {

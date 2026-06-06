@@ -9,8 +9,8 @@ package sdk
 //
 // 1. Cache Key Strategy: Registry ID
 //    - Uses portainer.RegistryID as the cache key instead of user sessions or URL+username
-//    - One cached client per registry per Portainer instance, regardless of users
-//    - Optimal for rate limiting: each registry only gets one login per Portainer instance
+//    - One cached client per registry per OpenDocking instance, regardless of users
+//    - Optimal for rate limiting: each registry only gets one login per OpenDocking instance
 //    - New users reuse existing cached clients rather than creating new ones
 //
 // 2. Cache Invalidation: Registry Change Events
@@ -34,10 +34,10 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/pkg/libhelm/cache"
-	"github.com/portainer/portainer/pkg/libhelm/options"
-	"github.com/portainer/portainer/pkg/registryhttp"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/pkg/libhelm/cache"
+	"github.com/opendocking/opendocking/pkg/libhelm/options"
+	"github.com/opendocking/opendocking/pkg/registryhttp"
 	"github.com/rs/zerolog/log"
 	"helm.sh/helm/v4/pkg/action"
 	"helm.sh/helm/v4/pkg/registry"
@@ -156,7 +156,7 @@ func authenticateChartSource(actionConfig *action.Configuration, reg *portainer.
 
 	// Cache Strategy Decision: Use registry ID as cache key
 	// This provides optimal rate limiting protection since each registry only gets
-	// logged into once per Portainer instance, regardless of how many users access it.
+	// logged into once per OpenDocking instance, regardless of how many users access it.
 	// RBAC security is enforced before reaching this caching layer.
 	// When a new user needs access, they reuse the same cached client.
 	//

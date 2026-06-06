@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/portainer/portainer/api/filesystem"
-	"github.com/portainer/portainer/pkg/libstack"
-	"github.com/portainer/portainer/pkg/libstack/compose"
-	"github.com/portainer/portainer/pkg/testhelpers"
+	"github.com/opendocking/opendocking/api/filesystem"
+	"github.com/opendocking/opendocking/pkg/libstack"
+	"github.com/opendocking/opendocking/pkg/libstack/compose"
+	"github.com/opendocking/opendocking/pkg/testhelpers"
 )
 
 func checkPrerequisites(t *testing.T) {

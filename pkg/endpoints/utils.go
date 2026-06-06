@@ -3,7 +3,7 @@ package endpoints
 import (
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
+	portainer "github.com/opendocking/opendocking/api"
 
 	"github.com/Masterminds/semver/v3"
 )

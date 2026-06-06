@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	portainer "github.com/portainer/portainer/api"
-	"github.com/portainer/portainer/api/logs"
+	portainer "github.com/opendocking/opendocking/api"
+	"github.com/opendocking/opendocking/api/logs"
 
 	"github.com/google/uuid"
 	"github.com/rs/zerolog/log"

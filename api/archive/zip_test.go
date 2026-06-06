@@ -3,7 +3,7 @@ package archive
 import (
 	"testing"
 
-	"github.com/portainer/portainer/api/filesystem"
+	"github.com/opendocking/opendocking/api/filesystem"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

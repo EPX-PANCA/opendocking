@@ -1,8 +1,8 @@
 package libhelm
 
 import (
-	"github.com/portainer/portainer/pkg/libhelm/sdk"
-	"github.com/portainer/portainer/pkg/libhelm/types"
+	"github.com/opendocking/opendocking/pkg/libhelm/sdk"
+	"github.com/opendocking/opendocking/pkg/libhelm/types"
 )
 
 // NewHelmPackageManager returns a new instance of HelmPackageManager based on HelmConfig

@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/portainer/portainer/api/filesystem"
-	libstack "github.com/portainer/portainer/pkg/libstack"
+	"github.com/opendocking/opendocking/api/filesystem"
+	libstack "github.com/opendocking/opendocking/pkg/libstack"
 	"github.com/stretchr/testify/require"
 )
 

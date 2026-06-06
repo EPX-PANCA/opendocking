@@ -1,4 +1,4 @@
-angular.module('portainer.app').factory('Auth', [
+angular.module('opendocking.app').factory('Auth', [
   '$resource',
   'API_ENDPOINT_AUTH',
   function AuthFactory($resource, API_ENDPOINT_AUTH) {

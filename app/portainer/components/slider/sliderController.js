@@ -42,4 +42,4 @@ class SliderController {
 }
 
 export default SliderController;
-angular.module('portainer.app').controller('SliderController', SliderController);
+angular.module('opendocking.app').controller('SliderController', SliderController);

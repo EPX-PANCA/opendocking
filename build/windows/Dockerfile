@@ -9,7 +9,7 @@ COPY --from=core /Windows/System32/netapi32.dll /Windows/System32/netapi32.dll
 USER ContainerAdministrator
 
 COPY dist/mustache-templates /mustache-templates/
-COPY dist/portainer.exe /
+COPY dist/opendocking.exe /
 COPY dist/public /public/
 
 # storybook exists only in portainerci builds
@@ -24,11 +24,10 @@ ARG BUILD_DATE=unspecified
 LABEL git_commit=$GIT_COMMIT \
   org.opencontainers.image.revision=$GIT_COMMIT \
   org.opencontainers.image.created=$BUILD_DATE \
-  org.opencontainers.image.title="Portainer CE" \
-  org.opencontainers.image.description="Portainer Community Edition server." \
-  org.opencontainers.image.vendor="Portainer.io" \
-  org.opencontainers.image.url="https://www.portainer.io" \
-  org.opencontainers.image.documentation="https://docs.portainer.io" \
-  io.portainer.server="true"
+  org.opencontainers.image.title="OpenDocking" \
+  org.opencontainers.image.description="OpenDocking server - full-featured edition." \
+  org.opencontainers.image.vendor="OpenDocking" \
+  org.opencontainers.image.url="https://opendocking.io" \
+  org.opencontainers.image.documentation="https://opendocking.io/docs"
 
-ENTRYPOINT ["/portainer.exe"]
+ENTRYPOINT ["/opendocking.exe"]

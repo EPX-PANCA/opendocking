@@ -7,4 +7,4 @@ export const registryDetails = {
   },
 };
 
-angular.module('portainer.app').component('registryDetails', registryDetails);
+angular.module('opendocking.app').component('registryDetails', registryDetails);

@@ -13,4 +13,4 @@ class NetworkHelper {
 }
 
 export default NetworkHelper;
-angular.module('portainer.app').service('NetworkHelper', NetworkHelper);
+angular.module('opendocking.app').service('NetworkHelper', NetworkHelper);

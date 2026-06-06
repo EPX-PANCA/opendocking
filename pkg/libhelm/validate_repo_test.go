@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/portainer/portainer/pkg/libhelm/test"
+	"github.com/opendocking/opendocking/pkg/libhelm/test"
 	"github.com/stretchr/testify/require"
 )
 
