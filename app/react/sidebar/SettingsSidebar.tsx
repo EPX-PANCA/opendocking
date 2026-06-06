@@ -191,14 +191,14 @@ export function SettingsSidebar({
             data-cy="portainerSidebar-edgeCompute"
           />
 
-          <SidebarItem.Wrapper label="Get Help">
+          <SidebarItem.Wrapper label="Documentation">
             <a
               href="https://opendocking.io/docs"
               target="_blank"
               rel="noreferrer"
               className="flex h-8 w-full items-center rounded px-3 text-sm !text-inherit transition-colors duration-200 hover:bg-blue-5/20 hover:!underline focus:no-underline be:hover:bg-gray-5/20 th-dark:hover:bg-gray-true-5/20"
             >
-              Get Help
+              Documentation
             </a>
           </SidebarItem.Wrapper>
         </SidebarParent>
