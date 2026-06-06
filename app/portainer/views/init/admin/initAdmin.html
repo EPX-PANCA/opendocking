@@ -5,9 +5,8 @@
       <!-- simple box logo -->
       <div class="row">
         <img ng-if="logo" ng-src="{{ logo }}" class="simple-box-logo" />
-        <div ng-if="!ctrl.logo">
-          <img src="~@/assets/images/logo_alt.svg" class="simple-box-logo hidden th-highcontrast:!block th-dark:!block" alt="OpenDocking" />
-          <img src="~@/assets/images/logo_alt_black.svg" class="simple-box-logo block th-highcontrast:hidden th-dark:hidden" alt="OpenDocking" />
+        <div ng-if="!logo">
+          <h2 class="text-center font-bold text-2xl text-gray-8 th-dark:text-gray-3">OpenDocking</h2>
         </div>
       </div>
       <!-- !simple box logo -->
