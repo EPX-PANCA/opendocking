@@ -65,7 +65,7 @@ export function HomeView() {
         breadcrumbs={[{ label: 'Environments' }]}
       />
 
-      {process.env.PORTAINER_EDITION !== 'CE' && <LicenseNodePanel />}
+      {process.env.PORTAINER_EDITION !== 'CE' && false && <LicenseNodePanel />}
 
       <MotdPanel />
 
