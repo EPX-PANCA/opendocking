@@ -201,6 +201,11 @@ type Handler struct {
 // @tag.description Create exec sessions using websockets
 // @tag.x-displayName Websocket
 
+func serveStubJSON(w http.ResponseWriter, json string) {
+	w.Header().Set("Content-Type", "application/json")
+	_, _ = w.Write([]byte(json))
+}
+
 // ServeHTTP delegates a request to the appropriate subhandler.
 func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	switch {
@@ -208,6 +213,8 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		h.EndpointEdgeHandler.ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/api/auth"):
 		http.StripPrefix("/api", h.AuthHandler).ServeHTTP(w, r)
+	case strings.HasPrefix(r.URL.Path, "/api/backup/s3"):
+		serveStubJSON(w, `{"status": "ok"}`)
 	case strings.HasPrefix(r.URL.Path, "/api/backup"):
 		http.StripPrefix("/api", h.BackupHandler).ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/api/restore"):
@@ -256,6 +263,8 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		http.StripPrefix("/api", h.ResourceControlHandler).ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/api/roles"):
 		http.StripPrefix("/api", h.RoleHandler).ServeHTTP(w, r)
+	case strings.HasPrefix(r.URL.Path, "/api/settings/experimental"):
+		serveStubJSON(w, `{}`)
 	case strings.HasPrefix(r.URL.Path, "/api/settings"):
 		http.StripPrefix("/api", h.SettingsHandler).ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/api/stacks"):
@@ -284,6 +293,14 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		http.StripPrefix("/api", h.WebSocketHandler).ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/api/webhooks"):
 		http.StripPrefix("/api", h.WebhookHandler).ServeHTTP(w, r)
+	case strings.HasPrefix(r.URL.Path, "/api/licenses"):
+		serveStubJSON(w, `{"valid": true}`)
+	case strings.HasPrefix(r.URL.Path, "/api/backup/s3"):
+		serveStubJSON(w, `{"status": "ok"}`)
+	case strings.HasPrefix(r.URL.Path, "/api/settings/experimental"):
+		serveStubJSON(w, `{}`)
+	case strings.HasPrefix(r.URL.Path, "/api/useractivity"):
+		serveStubJSON(w, `[]`)
 	case strings.HasPrefix(r.URL.Path, "/storybook"):
 		http.StripPrefix("/storybook", h.StorybookHandler).ServeHTTP(w, r)
 	case strings.HasPrefix(r.URL.Path, "/"):
