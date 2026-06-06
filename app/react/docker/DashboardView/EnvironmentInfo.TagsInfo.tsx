@@ -13,7 +13,7 @@ export function TagsInfo({ ids }: { ids: number[] }) {
 
   const tags = tagsQuery.data;
 
-  const tagNameList = ids.length
+  const tagNameList = ids?.length
     ? _.compact(
         ids
           .map((id) => {
