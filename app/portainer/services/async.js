@@ -4,7 +4,7 @@
  * https://github.com/portainer/portainer/pull/2945
  */
 
-angular.module('portainer').factory('$async', [
+angular.module('opendocking').factory('$async', [
   '$q',
   function ($q) {
     return function (asyncFunc, ...args) {
