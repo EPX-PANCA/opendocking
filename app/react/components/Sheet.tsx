@@ -6,12 +6,11 @@ import {
 } from 'react';
 import * as SheetPrimitive from '@radix-ui/react-dialog';
 import { cva, type VariantProps } from 'class-variance-authority';
-import clsx from 'clsx';
 import { RefreshCw, X } from 'lucide-react';
 
+import { cn } from '@/lib/utils';
 import { Button } from './buttons';
 
-// modified from shadcn sheet component
 const Sheet = SheetPrimitive.Root;
 
 const SheetTrigger = SheetPrimitive.Trigger;
@@ -27,7 +26,6 @@ type SheetTitleProps = {
   onReload?(): Promise<void> | void;
 };
 
-// similar to the PageHeader component with simplified props and no breadcrumbs
 function SheetHeader({
   onReload,
   title,
@@ -64,11 +62,10 @@ const SheetOverlay = forwardRef<
   ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Overlay
-    className={clsx(
+    className={cn(
       'fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
       className
     )}
-    // eslint-disable-next-line react/jsx-props-no-spreading
     {...props}
     ref={ref}
   />
@@ -76,7 +73,7 @@ const SheetOverlay = forwardRef<
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 const sheetVariants = cva(
-  'fixed z-50 bg-widget-color p-5 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500',
+  'fixed z-50 bg-background p-5 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500',
   {
     variants: {
       side: {
@@ -95,8 +92,7 @@ const sheetVariants = cva(
 );
 
 interface SheetContentProps
-  extends
-    ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
+  extends ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
     VariantProps<typeof sheetVariants> {
   showCloseButton?: boolean;
 }
@@ -120,8 +116,7 @@ const SheetContent = forwardRef<
       <SheetOverlay />
       <SheetPrimitive.Content
         ref={ref}
-        className={clsx(sheetVariants({ side }), className)}
-        // eslint-disable-next-line react/jsx-props-no-spreading
+        className={cn(sheetVariants({ side }), className)}
         {...props}
       >
         {title ? <SheetHeader title={title} /> : null}

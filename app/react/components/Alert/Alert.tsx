@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import {
   AlertCircle,
   AlertTriangle,
@@ -8,6 +7,7 @@ import {
 } from 'lucide-react';
 import { PropsWithChildren, ReactNode } from 'react';
 
+import { cn } from '@/lib/utils';
 import { Icon } from '@@/Icon';
 
 type AlertType = 'success' | 'error' | 'info' | 'warn' | 'default';
@@ -76,7 +76,7 @@ export function Alert({
   return (
     <AlertContainer
       role={roleMap[color]}
-      className={clsx(container, className)}
+      className={cn(container, className)}
     >
       {title ? (
         <>
@@ -84,14 +84,14 @@ export function Alert({
             <Icon icon={icon} />
             {title}
           </AlertHeader>
-          <AlertBody className={body} hasTitle={!!title}>
+          <AlertBody className={body} hasTitle>
             {children}
           </AlertBody>
         </>
       ) : (
         <AlertBody
-          className={clsx(body, 'flex items-start gap-2')}
-          hasTitle={!!title}
+          className={cn(body, 'flex items-start gap-2')}
+          hasTitle={false}
         >
           <Icon icon={icon} className="!mt-0.5 flex-none" /> {children}
         </AlertBody>
@@ -108,9 +108,8 @@ export function AlertContainer({
   return (
     <div
       role={role}
-      className={clsx(
-        'rounded-xl border border-solid [&_ul]:ps-8',
-        'p-3',
+      className={cn(
+        'rounded-xl border border-solid p-3 [&_ul]:ps-8',
         className
       )}
     >
@@ -125,11 +124,7 @@ function AlertHeader({
 }: PropsWithChildren<{ className?: string }>) {
   return (
     <h4
-      className={clsx(
-        'text-base',
-        '!m-0 mb-2 flex items-center gap-2',
-        className
-      )}
+      className={cn('!m-0 mb-2 flex items-center gap-2 text-base', className)}
     >
       {children}
     </h4>
@@ -142,7 +137,7 @@ function AlertBody({
   children,
 }: PropsWithChildren<{ className?: string; hasTitle: boolean }>) {
   return (
-    <div className={clsx('text-sm', className, { 'ml-6': hasTitle })}>
+    <div className={cn('text-sm', className, { 'ml-6': hasTitle })}>
       {children}
     </div>
   );

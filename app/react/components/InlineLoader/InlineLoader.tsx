@@ -1,8 +1,7 @@
 import { Loader2 } from 'lucide-react';
 import { ReactNode } from 'react';
-import clsx from 'clsx';
 
-import { Icon } from '@@/Icon';
+import { cn } from '@/lib/utils';
 
 type Size = 'xs' | 'sm' | 'md';
 
@@ -21,13 +20,13 @@ const sizeStyles: Record<Size, string> = {
 export function InlineLoader({ children, className, size = 'sm' }: Props) {
   return (
     <div
-      className={clsx(
-        'text-muted flex items-center',
-        className,
-        sizeStyles[size]
+      className={cn(
+        'flex items-center text-muted-foreground',
+        sizeStyles[size],
+        className
       )}
     >
-      <Icon icon={Loader2} className="flex-none animate-spin-slow" />
+      <Loader2 className="size-4 flex-none animate-spin-slow" />
       {children}
     </div>
   );

@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { Home } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 import { useIsEdgeAdmin, useIsPureAdmin } from '@/react/hooks/useUser';
 import { useIsCurrentUserTeamLeader } from '@/portainer/users/queries';
@@ -42,7 +43,13 @@ function InnerSidebar() {
   const { LogoURL } = settingsQuery.data;
 
   return (
-    <div className={clsx(styles.root, 'sidebar flex flex-col')}>
+    <motion.div
+      className={clsx(styles.root, 'sidebar flex flex-col')}
+      animate={{
+        width: isOpen ? 'var(--sidebar-width)' : 'var(--sidebar-closed-width)',
+      }}
+      transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+    >
       <UpgradeBEBannerWrapper />
       <nav
         className={clsx(
@@ -54,7 +61,7 @@ function InnerSidebar() {
       >
         <Header logo={LogoURL} />
         {/* negative margin + padding -> scrollbar won't hide the content */}
-        <div
+        <motion.div
           className={clsx(
             styles.navListContainer,
             'mt-6 flex-1 overflow-y-auto [color-scheme:light] be:[color-scheme:dark] th-highcontrast:[color-scheme:dark] th-dark:[color-scheme:dark]',
@@ -81,11 +88,11 @@ function InnerSidebar() {
               isTeamLeader={isTeamLeader}
             />
           </ul>
-        </div>
+        </motion.div>
         <div className="mt-auto pt-8">
           <Footer />
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 }

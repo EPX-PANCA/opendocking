@@ -1,54 +1,37 @@
-import clsx from 'clsx';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { ComponentType, PropsWithChildren, ReactNode } from 'react';
 
+import { cn } from '@/lib/utils';
+
 import { Icon } from '@@/Icon';
 
-const cardContainer = cva(
-  [
-    'overflow-hidden border border-solid border-gray-5',
-    'th-highcontrast:border-white',
-    'th-dark:border-legacy-grey-3',
-  ],
-  {
-    variants: {
-      variant: {
-        default: [
-          'rounded-xl bg-white',
-          'th-highcontrast:bg-black',
-          'th-dark:bg-gray-iron-11',
-        ],
-        filled: [
-          'rounded-lg bg-gray-neutral-3',
-          'th-highcontrast:bg-gray-warm-10',
-          'th-dark:bg-gray-iron-10',
-        ],
-      },
-      shadow: {
-        true: 'shadow-md',
-      },
+const cardContainer = cva('overflow-hidden border', {
+  variants: {
+    variant: {
+      default: [
+        'rounded-xl border-gray-5 bg-white',
+        'th-highcontrast:border-white th-highcontrast:bg-black',
+        'th-dark:border-legacy-grey-3 th-dark:bg-gray-iron-11',
+      ],
+      filled: [
+        'rounded-lg border-0 bg-gray-neutral-3',
+        'th-highcontrast:bg-gray-warm-10',
+        'th-dark:bg-gray-iron-10',
+      ],
     },
-    defaultVariants: {
-      variant: 'default',
+    shadow: {
+      true: 'shadow-md',
     },
-  }
-);
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+});
 
 export type CardVariant = NonNullable<
   VariantProps<typeof cardContainer>['variant']
 >;
 
-/**
- * Low-level card surface. Compose with `Card.Header` for a titled section and `Card.Body` for
- * padded content. Use `variant="filled"` for a gray background.
- * Reach for `Widget` when you need a full dashboard panel with toolbar.
- *
- * @example
- * <Card.Container>
- *   <Card.Header title="Container registries" subtitle="2 connected" />
- *   <Card.Body>Manage pull-through caching and credentials.</Card.Body>
- * </Card.Container>
- */
 export const Card = {
   Container: CardContainer,
   Header: CardHeader,
@@ -70,7 +53,7 @@ function CardContainer({
   return (
     <section
       aria-label={ariaLabel}
-      className={cardContainer({ variant, shadow, className })}
+      className={cn(cardContainer({ variant, shadow, className }))}
     >
       {children}
     </section>
@@ -82,7 +65,7 @@ interface CardBodyProps {
 }
 
 function CardBody({ className, children }: PropsWithChildren<CardBodyProps>) {
-  return <div className={clsx('p-5', className)}>{children}</div>;
+  return <div className={cn('p-5', className)}>{children}</div>;
 }
 
 interface CardHeaderProps {
@@ -95,15 +78,15 @@ interface CardHeaderProps {
 function CardHeader({ title, subtitle, icon, actions }: CardHeaderProps) {
   return (
     <div
-      className={clsx(
-        'min-h-14 flex items-center justify-between gap-4 px-4 py-3.5',
+      className={cn(
+        'flex min-h-14 items-center justify-between gap-4 px-4 py-3.5',
         'border-0 border-b border-solid border-gray-5 bg-gray-iron-2',
         'th-dark:border-legacy-grey-3 th-dark:bg-gray-iron-10',
         'th-highcontrast:border-white th-highcontrast:bg-gray-warm-10'
       )}
     >
       <div className="flex flex-col gap-1">
-        <div className="min-h-5 flex items-center gap-2">
+        <div className="flex min-h-5 items-center gap-2">
           {icon && (
             <Icon
               icon={icon}

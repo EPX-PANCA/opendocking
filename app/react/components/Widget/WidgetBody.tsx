@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 import { PropsWithChildren } from 'react';
 
 import { useWidgetContext } from './Widget';
@@ -17,7 +17,7 @@ export function WidgetBody({
   useWidgetContext();
 
   return (
-    <div className={clsx(className, 'widget-body')}>
+    <div className={cn('widget-body', className)}>
       {loading ? <Loading /> : <div className="widget-content">{children}</div>}
     </div>
   );

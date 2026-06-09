@@ -265,6 +265,41 @@
   --bg-button-group: var(--white-color);
   --border-button-group: var(--ui-gray-5);
   --text-button-group: var(--ui-gray-9);
+
+  /* shadcn/ui semantic tokens */
+  --radius: 0.5rem;
+  --background: var(--bg-body-color);
+  --foreground: var(--text-body-color);
+  --card: var(--bg-widget-color);
+  --card-foreground: var(--text-body-color);
+  --popover: var(--bg-dropdown-menu-color);
+  --popover-foreground: var(--text-dropdown-menu-color);
+  --primary: var(--blue-2);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bg-widget-header-color);
+  --secondary-foreground: var(--text-body-color);
+  --muted: var(--bg-widget-header-color);
+  --muted-foreground: var(--text-muted-color);
+  --accent: var(--bg-blocklist-hover-color);
+  --accent-foreground: var(--text-blocklist-hover-color);
+  --destructive: var(--red-4);
+  --destructive-foreground: #ffffff;
+  --border: var(--border-form-control-color);
+  --input: var(--border-form-control-color);
+  --ring: var(--blue-2);
+  --chart-1: var(--blue-2);
+  --chart-2: var(--green-3);
+  --chart-3: var(--orange-1);
+  --chart-4: var(--blue-9);
+  --chart-5: var(--blue-2);
+  --sidebar-background: var(--bg-sidebar-color);
+  --sidebar-foreground: var(--text-main-color);
+  --sidebar-primary: var(--blue-2);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--bg-sidebar-nav-color);
+  --sidebar-accent-foreground: var(--text-main-color);
+  --sidebar-border: var(--border-sidebar-color);
+  --sidebar-ring: var(--blue-2);
 }
 
 /* Dark Theme */
@@ -436,6 +471,32 @@
   --bg-button-group: var(--white-color);
   --border-button-group: var(--ui-gray-5);
   --text-button-group: var(--ui-gray-9);
+
+  /* shadcn/ui dark tokens */
+  --background: var(--bg-body-color);
+  --foreground: var(--text-body-color);
+  --card: var(--bg-widget-color);
+  --card-foreground: var(--text-body-color);
+  --popover: var(--bg-dropdown-menu-color);
+  --popover-foreground: var(--text-dropdown-menu-color);
+  --primary: var(--blue-9);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bg-widget-header-color);
+  --secondary-foreground: var(--text-body-color);
+  --muted: var(--bg-widget-header-color);
+  --muted-foreground: var(--text-muted-color);
+  --accent: var(--bg-blocklist-hover-color);
+  --accent-foreground: var(--text-blocklist-hover-color);
+  --destructive: var(--red-4);
+  --destructive-foreground: #ffffff;
+  --border: var(--border-form-control-color);
+  --input: var(--border-form-control-color);
+  --ring: var(--blue-9);
+  --chart-1: var(--blue-9);
+  --chart-2: var(--green-2);
+  --chart-3: var(--orange-1);
+  --chart-4: var(--blue-2);
+  --chart-5: var(--blue-9);
 }
 
 /* High Contrast Theme */
@@ -601,4 +662,30 @@
   --bg-button-group: var(--white-color);
   --border-button-group: var(--ui-gray-5);
   --text-button-group: var(--ui-gray-9);
+
+  /* shadcn/ui highcontrast tokens */
+  --background: var(--bg-body-color);
+  --foreground: var(--text-body-color);
+  --card: var(--bg-widget-color);
+  --card-foreground: var(--text-body-color);
+  --popover: var(--bg-dropdown-menu-color);
+  --popover-foreground: var(--text-dropdown-menu-color);
+  --primary: var(--blue-9);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bg-widget-header-color);
+  --secondary-foreground: var(--text-body-color);
+  --muted: var(--bg-widget-header-color);
+  --muted-foreground: var(--text-muted-color);
+  --accent: var(--bg-blocklist-hover-color);
+  --accent-foreground: var(--text-blocklist-hover-color);
+  --destructive: var(--red-7);
+  --destructive-foreground: #ffffff;
+  --border: var(--border-form-control-color);
+  --input: var(--border-form-control-color);
+  --ring: var(--blue-9);
+  --chart-1: var(--blue-9);
+  --chart-2: var(--green-2);
+  --chart-3: var(--orange-1);
+  --chart-4: var(--blue-2);
+  --chart-5: var(--blue-9);
 }

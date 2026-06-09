@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 import {
   createContext,
   PropsWithChildren,
@@ -6,6 +6,7 @@ import {
   useContext,
   useMemo,
 } from 'react';
+import { motion } from 'framer-motion';
 
 import { useId } from '@/react/hooks/useId';
 
@@ -46,16 +47,19 @@ export function Widget({
 
   return (
     <Context.Provider value={contextValue}>
-      <section
+      <motion.section
         id={id}
-        className={clsx('widget', className)}
+        className={cn('widget', className)}
         ref={mRef}
         aria-label={ariaLabel}
         aria-labelledby={titleId}
         data-cy={dataCy}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
       >
         {children}
-      </section>
+      </motion.section>
     </Context.Provider>
   );
 }

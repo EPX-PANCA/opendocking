@@ -7,6 +7,7 @@ import {
   MenuItem,
 } from '@reach/menu-button';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 export interface DropdownOption {
   key: string;
@@ -73,9 +74,14 @@ export function DropdownMenu({
       >
         {label}
         {badge && (
-          <span className="py-0.2 ml-1 rounded-md bg-blue-7 px-1 text-[10px] font-normal text-white">
+          <motion.span
+            className="py-0.2 ml-1 rounded-md bg-blue-7 px-1 text-[10px] font-normal text-white"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+          >
             {badge}
-          </span>
+          </motion.span>
         )}
         <ChevronDown
           className="ml-1 h-3 w-3 self-center transition-transform group-[[aria-expanded=true]]:rotate-180"
@@ -89,7 +95,11 @@ export function DropdownMenu({
             Loading...
           </div>
         ) : (
-          <>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -4 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.15, ease: 'easeOut' }}
+          >
             <MenuItem
               onSelect={() => onSelect(null)}
               className={clsx(
@@ -125,7 +135,7 @@ export function DropdownMenu({
                 )}
               </MenuItem>
             ))}
-          </>
+          </motion.div>
         )}
       </MenuList>
     </Menu>

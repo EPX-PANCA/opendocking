@@ -7,6 +7,7 @@ import {
   ReactNode,
 } from 'react';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 import { AutomationTestingProps } from '@/types';
 
@@ -69,7 +70,14 @@ export function Button<TasProps = unknown>({
   mRef,
   ...ariaProps
 }: PropsWithChildren<Props<TasProps>>) {
-  const Component = as as 'button';
+  const isButton = as === 'button';
+  const Component = isButton
+    ? (motion.button as unknown as 'button')
+    : (as as 'button');
+  const motionProps = isButton
+    ? { whileHover: { scale: 1.02 }, whileTap: { scale: 0.97 } }
+    : {};
+
   return (
     <Component
       ref={mRef}
@@ -78,7 +86,7 @@ export function Button<TasProps = unknown>({
       className={clsx(`btn btn-${color}`, sizeClass(size), className, {
         disabled,
       })}
-      onClick={(e) => {
+      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
         if (!disabled) {
           onClick?.(e);
         }
@@ -88,6 +96,8 @@ export function Button<TasProps = unknown>({
       {...ariaProps}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...motionProps}
     >
       {icon && <Icon icon={icon} size={getIconSize(size)} />}
       {children}

@@ -1,6 +1,7 @@
 import { DialogContent, DialogOverlay } from '@reach/dialog';
 import clsx from 'clsx';
 import { createContext, PropsWithChildren, useContext } from 'react';
+import { motion } from 'framer-motion';
 
 import { CloseButton } from './CloseButton';
 import styles from './Modal.module.css';
@@ -37,40 +38,52 @@ export function Modal({
 }: PropsWithChildren<Props>) {
   return (
     <Context.Provider value>
-      <DialogOverlay
-        isOpen
-        className={clsx(styles.overlay, 'flex items-center justify-center')}
-        onDismiss={onDismiss}
-        // When a Sheet is open and then a Modal opens, Radix DismissableLayer sets body.style.pointerEvents="none" for this modal overlay, so make it auto here.
-        // z-index ensures the modal renders above the base views and any Sheet (z-50).
-        style={{ zIndex: 60, pointerEvents: 'auto' }}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
       >
-        <DialogContent
-          aria-label={ariaLabel}
-          aria-labelledby={ariaLabelledBy}
-          className={clsx(
-            styles.modalDialog,
-            'max-h-[calc(100vh-2rem)] max-w-[calc(100vw-2rem)] bg-transparent p-0',
-            {
-              'w-[450px]': size === 'md',
-              'w-[700px]': size === 'lg',
-              'w-[1000px]': size === 'xl',
-            },
-            dialogClassName
-          )}
+        <DialogOverlay
+          isOpen
+          className={clsx(styles.overlay, 'flex items-center justify-center')}
+          onDismiss={onDismiss}
+          // When a Sheet is open and then a Modal opens, Radix DismissableLayer sets body.style.pointerEvents="none" for this modal overlay, so make it auto here.
+          // z-index ensures the modal renders above the base views and any Sheet (z-50).
+          style={{ zIndex: 60, pointerEvents: 'auto' }}
         >
-          <div
-            className={clsx(
-              styles.modalContent,
-              'relative overflow-y-auto rounded-lg p-5',
-              className
-            )}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
           >
-            {children}
-            {onDismiss && <CloseButton onClose={onDismiss} />}
-          </div>
-        </DialogContent>
-      </DialogOverlay>
+            <DialogContent
+              aria-label={ariaLabel}
+              aria-labelledby={ariaLabelledBy}
+              className={clsx(
+                styles.modalDialog,
+                'max-h-[calc(100vh-2rem)] max-w-[calc(100vw-2rem)] bg-transparent p-0',
+                {
+                  'w-[450px]': size === 'md',
+                  'w-[700px]': size === 'lg',
+                  'w-[1000px]': size === 'xl',
+                },
+                dialogClassName
+              )}
+            >
+              <div
+                className={clsx(
+                  styles.modalContent,
+                  'relative overflow-y-auto rounded-lg p-5',
+                  className
+                )}
+              >
+                {children}
+                {onDismiss && <CloseButton onClose={onDismiss} />}
+              </div>
+            </DialogContent>
+          </motion.div>
+        </DialogOverlay>
+      </motion.div>
     </Context.Provider>
   );
 }

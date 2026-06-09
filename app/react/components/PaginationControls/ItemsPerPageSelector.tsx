@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import _ from 'lodash';
 import { useState } from 'react';
 
@@ -10,7 +11,7 @@ interface Props {
 export function ItemsPerPageSelector({ value, onChange, showAll }: Props) {
   const [id] = useState(() => `${_.uniqueId()}-items-per-page`);
   return (
-    <span className="limitSelector">
+    <span className={cn('limitSelector')}>
       <label
         className="space-right text-xs font-normal text-[--text-main-color]"
         htmlFor={id}

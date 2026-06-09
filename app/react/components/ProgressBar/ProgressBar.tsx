@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 
 type Step = { value: number; color?: string; className?: string };
 type StepWithPercent = Step & { percent: number };
@@ -17,7 +17,6 @@ export function ProgressBar({ steps, total, className }: Props) {
     (acc, cur) => {
       const value =
         acc.total + cur.value > total ? total - acc.total : cur.value;
-      // If the remaining acc.total + the current value adds up to the total, then make sure the percentage will fill the remaining bar space
       const percent =
         acc.total + value === total
           ? 100 - acc.totalPercent
@@ -42,8 +41,8 @@ export function ProgressBar({ steps, total, className }: Props) {
 
   return (
     <div
-      className={clsx(
-        'progress h-2.5 rounded-full shadow-none',
+      className={cn(
+        'h-2.5 w-full overflow-hidden rounded-full bg-secondary',
         sum > 100 ? 'text-blue-8' : 'text-error-7',
         className
       )}
@@ -54,7 +53,10 @@ export function ProgressBar({ steps, total, className }: Props) {
       {reducedSteps.map((step, index) => (
         <div
           key={index}
-          className={clsx('progress-bar shadow-none', step.className)}
+          className={cn(
+            'h-full transition-all',
+            step.className
+          )}
           style={{
             width: `${step.percent}%`,
             backgroundColor: step.color,

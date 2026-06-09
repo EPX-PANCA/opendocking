@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 
 import { ItemsPerPageSelector } from './ItemsPerPageSelector';
 import { PageSelector } from './PageSelector';
@@ -25,7 +25,7 @@ export function PaginationControls({
   className,
 }: Props) {
   return (
-    <div className={clsx('paginationControls', className)}>
+    <div className={cn('paginationControls', className)}>
       <div className="form-inline flex">
         <ItemsPerPageSelector
           value={pageLimit}

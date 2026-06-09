@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 import { ReactNode } from 'react';
 
 interface Props {
@@ -17,7 +17,7 @@ export function PageButton({
   onPageChange,
 }: Props) {
   return (
-    <li className={clsx({ disabled, active })}>
+    <li className={cn({ disabled, active })}>
       <button
         type="button"
         onClick={() => typeof page === 'number' && onPageChange(page)}

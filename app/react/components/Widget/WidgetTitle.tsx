@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 import { PropsWithChildren, ReactNode } from 'react';
 
 import { WidgetIcon } from './WidgetIcon';
@@ -21,13 +21,13 @@ export function WidgetTitle({
   return (
     <div className="widget-header">
       <div className="flex items-center justify-between">
-        <span className={clsx('inline-flex items-center gap-1', className)}>
+        <span className={cn('inline-flex items-center gap-1', className)}>
           {icon && <WidgetIcon icon={icon} />}
-          <h2 id={titleId} className={clsx('m-0 text-base', icon && 'ml-1')}>
+          <h2 id={titleId} className={cn('m-0 text-base', icon && 'ml-1')}>
             {title}
           </h2>
         </span>
-        <span className={clsx('flex items-center', className)}>{children}</span>
+        <span className={cn('flex items-center', className)}>{children}</span>
       </div>
     </div>
   );

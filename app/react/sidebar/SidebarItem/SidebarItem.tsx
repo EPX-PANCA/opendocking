@@ -1,5 +1,6 @@
 import { type LucideIcon } from 'lucide-react';
 import clsx from 'clsx';
+import { motion, AnimatePresence } from 'framer-motion';
 import { MouseEventHandler, PropsWithChildren } from 'react';
 
 import { AutomationTestingProps } from '@/types';
@@ -109,7 +110,7 @@ function ItemAnchor({
   children,
 }: PropsWithChildren<ItemAnchorProps>) {
   return (
-    <a
+    <motion.a
       href={href}
       onClick={onClick}
       className={clsx(
@@ -124,12 +125,22 @@ function ItemAnchor({
         }
       )}
       data-cy={dataCy}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
     >
       {children}
-      {(isOpen || isSubMenu) && count !== undefined && count > 0 && (
-        // 99 is for a conventional badge overflow cap, same pattern as GitHub/Slack notification badges
-        <Badge type="info">{count > 99 ? '99+' : count}</Badge>
-      )}
-    </a>
+      <AnimatePresence>
+        {(isOpen || isSubMenu) && count !== undefined && count > 0 && (
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.15 }}
+          >
+            <Badge type="info">{count > 99 ? '99+' : count}</Badge>
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </motion.a>
   );
 }
